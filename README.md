@@ -12,6 +12,7 @@ Public project repository for the Lightpath AHJ / EDPA engineering due diligence
 - `edpa_workup/segment0_vendor_submission_report.md`, `segment1_vendor_submission_report.md`, `spurs_vendor_submission_report.md` — route-specific submissions.
 - `edpa_workup/imagery_audit/all_routes_visual_audit.md` — director-facing image review, route-by-route gap findings, and follow-up register.
 - `edpa_workup/rail_waterway_inventory_by_route.md` — railroad and waterway inventory for Chicago spurs and Segments 0 and 1, with exact, nearby, and screening-only candidates separated.
+- `edpa_workup/crossing_counts_and_permit_gameplan.md` — total mapped crossing counts, every route-register item, per-crossing permit path, and construction sequencing plan.
 
 ## Repository map
 
