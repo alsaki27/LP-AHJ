@@ -1,6 +1,6 @@
 # LP-AHJ: Engineering Due Diligence
 
-Private project repository for the Lightpath AHJ / EDPA engineering due diligence work on the Chicago spurs and the Marysville–New Albany route (Segments 0 and 1).
+Public project repository for the Lightpath AHJ / EDPA engineering due diligence work on the Chicago spurs and the Marysville–New Albany route (Segments 0 and 1).
 
 ## Start here
 
@@ -10,6 +10,7 @@ Private project repository for the Lightpath AHJ / EDPA engineering due diligenc
 - `outputs/*/vendor_reports/` — director-ready vendor reports and their rendered QA pages.
 - `outputs/*/AHJ_Permit_Readiness_Tracker.xlsx` — working tracker and authority rules.
 - `edpa_workup/segment0_vendor_submission_report.md`, `segment1_vendor_submission_report.md`, `spurs_vendor_submission_report.md` — route-specific submissions.
+- `edpa_workup/imagery_audit/all_routes_visual_audit.md` — director-facing image review, route-by-route gap findings, and follow-up register.
 
 ## Repository map
 
@@ -18,6 +19,7 @@ Private project repository for the Lightpath AHJ / EDPA engineering due diligenc
   - `waterway_permit_research/` — water crossings, agency/utility research, ROW records and supporting evidence.
   - `railroad_permit_research/` — railroad owner/crossing registers and application/process research.
   - `maps/` — route maps and director exhibits.
+  - `imagery_audit/` — 85 attributed NAIP crops and route-by-route visual findings for rail, water, bridge, highway, drainage, and constructability follow-up.
   - `scripts/` — project-specific data and report builders.
 - Root `*.py` — pipeline and analysis scripts used to assemble the screening matrices and reports.
 - `outputs/` — final report PDFs/DOCX, tracker workbook, build scripts and visual QA artifacts.
