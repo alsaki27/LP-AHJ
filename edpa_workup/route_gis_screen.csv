@@ -1,0 +1,53 @@
+﻿feature_id,state,county_candidates,place_candidates,township_candidates,road_candidate_count,top_road_candidate,top_road_jurisdiction_code,status
+S0-S001-Bore,OH,LICKING,,JERSEY,8,WORTHINGTON,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S002-Water,OH,LICKING,NEW ALBANY,JERSEY,2,WORTHINGTON,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S003-Bore,OH,FRANKLIN; LICKING,NEW ALBANY,JERSEY; PLAIN,22,WORTHINGTON,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S004-Water,OH,FRANKLIN,NEW ALBANY,PLAIN,1,DUBLIN-GRANVILLE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S005-Bore,OH,FRANKLIN,NEW ALBANY,PLAIN,2,DUBLIN-GRANVILLE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S006-Water,OH,FRANKLIN,NEW ALBANY,PLAIN,1,DUBLIN-GRANVILLE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S007-Bore,OH,FRANKLIN,NEW ALBANY,PLAIN,31,DUBLIN-GRANVILLE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S008-Water,OH,FRANKLIN,NEW ALBANY,PLAIN,2,DUBLIN-GRANVILLE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S009-Bore,OH,FRANKLIN,NEW ALBANY,PLAIN,2,DUBLIN-GRANVILLE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S010-Water,OH,FRANKLIN,COLUMBUS; NEW ALBANY,PLAIN,2,DUBLIN-GRANVILLE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S011-Bore,OH,FRANKLIN,COLUMBUS,BLENDON; PLAIN,75,MORSE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S012-Water,OH,FRANKLIN,COLUMBUS,BLENDON,2,MORSE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S013-Bore,OH,FRANKLIN,COLUMBUS,BLENDON,9,MORSE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S014-HW,OH,FRANKLIN,COLUMBUS,BLENDON,10,MORSE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S015-Bore,OH,FRANKLIN,COLUMBUS,BLENDON,19,MORSE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S016-Water,OH,FRANKLIN,COLUMBUS,BLENDON,2,MORSE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S017-Bore,OH,FRANKLIN,COLUMBUS,BLENDON; SHARON,75,CLEVELAND,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S018-HW,OH,FRANKLIN,COLUMBUS,SHARON,11,DUBLIN-GRANVILLE,S,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S019-Bore,OH,FRANKLIN,COLUMBUS; WORTHINGTON,SHARON,36,BUSCH,S,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S020-RR,OH,FRANKLIN,WORTHINGTON,SHARON,2,HUNTLEY,M,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S021-Bore,OH,FRANKLIN,WORTHINGTON,SHARON,3,HUNTLEY,M,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S022-HW,OH,FRANKLIN,WORTHINGTON,SHARON,5,WORTHINGTON GALENA,M,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S023-Bore,OH,FRANKLIN,COLUMBUS; WORTHINGTON,SHARON,81,SANCUS,M,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S024-RR,OH,FRANKLIN,COLUMBUS,SHARON,5,LAZELLE,C,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S025-Bore,OH,DELAWARE; FRANKLIN,COLUMBUS,ORANGE; SHARON,58,COLUMBUS,S,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S026-Water,OH,DELAWARE,,ORANGE,2,COLUMBUS,S,Boundary/road screen; legal ROW and permit issuer unverified
+S0-S027-Bore,OH,DELAWARE,,ORANGE,19,COLUMBUS,S,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S028-Bore,OH,DELAWARE,,LIBERTY; ORANGE,17,HOME,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S029-Water,OH,DELAWARE,,LIBERTY,6,HOME,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S030-Bore,OH,DELAWARE,POWELL,LIBERTY,19,HOME,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S031-RR,OH,DELAWARE,,LIBERTY,1,RUTHERFORD,T,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S032-Bore,OH,DELAWARE,POWELL,CONCORD; LIBERTY,53,SAWMILL,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S033-Water,OH,DELAWARE,,CONCORD,4,HOME,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S034-Bore,OH,DELAWARE,,CONCORD,15,HOME,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S035-Water,OH,DELAWARE,,CONCORD,3,CONCORD,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S036-Bore,OH,DELAWARE; UNION,,CONCORD; MILL CREEK,10,CONCORD,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S037-Water,OH,UNION,,MILL CREEK,1,WATKINS,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S038-Bore,OH,UNION,,MILL CREEK,16,WATKINS,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S039-Water,OH,UNION,,MILL CREEK,1,WATKINS,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S040-Bore,OH,UNION,MARYSVILLE,DOVER; MILL CREEK,18,WATKINS,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S041-Water,OH,UNION,,DOVER,1,WATKINS,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S042-Bore,OH,UNION,MARYSVILLE,DOVER; PARIS,27,WATKINS,C,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S043-HW,OH,UNION,MARYSVILLE,PARIS,16,US 36,S,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S044-Bore,OH,UNION,MARYSVILLE,PARIS,19,CHARLES,M,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S045-RR,OH,UNION,MARYSVILLE,PARIS,2,DELAWARE,M,Boundary/road screen; legal ROW and permit issuer unverified
+S1-S046-Bore,OH,UNION,MARYSVILLE,PARIS,9,DELAWARE,M,Boundary/road screen; legal ROW and permit issuer unverified
+Spur1-S01-Bore,IL,Cook; DuPage,Elk Grove Village; Itasca,Addison; Elk Grove,41,Arlington Heights Rd,3,Boundary/road screen; legal ROW and permit issuer unverified
+Spur1-S02-Water,IL,Cook,Elk Grove Village,Elk Grove,4,Arlington Heights Rd,3,Boundary/road screen; legal ROW and permit issuer unverified
+Spur1-S03-Bore,IL,Cook,Elk Grove Village,Elk Grove,35,Arlington Heights Rd,3,Boundary/road screen; legal ROW and permit issuer unverified
+Spur2-S01-Bore,IL,Cook,Elk Grove Village,Elk Grove,14,Oakton St,4,Boundary/road screen; legal ROW and permit issuer unverified
+Spur3-S01-Bore,IL,Cook,Elk Grove Village,Elk Grove,28,Touhy Ave,4,Boundary/road screen; legal ROW and permit issuer unverified
+Spur4-S01-Bore,IL,Cook,Elk Grove Village,Elk Grove,12,Arthur Ave,4,Boundary/road screen; legal ROW and permit issuer unverified

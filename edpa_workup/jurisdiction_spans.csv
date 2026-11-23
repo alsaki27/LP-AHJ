@@ -1,0 +1,161 @@
+﻿feature_id,state,boundary_type,boundary_name,centerline_length_ft,status,source_url
+S0-S001-Bore,OH,county,LICKING,3338.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S001-Bore,OH,township,JERSEY,3338.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S002-Water,OH,county,LICKING,562.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S002-Water,OH,place,NEW ALBANY,457.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S002-Water,OH,township,JERSEY,562.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S003-Bore,OH,county,FRANKLIN,5099.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S003-Bore,OH,county,LICKING,12079.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S003-Bore,OH,place,NEW ALBANY,16638.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S003-Bore,OH,township,JERSEY,12079.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S003-Bore,OH,township,PLAIN,5099.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S004-Water,OH,county,FRANKLIN,377.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S004-Water,OH,place,NEW ALBANY,377.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S004-Water,OH,township,PLAIN,377.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S005-Bore,OH,county,FRANKLIN,3338.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S005-Bore,OH,place,NEW ALBANY,3338.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S005-Bore,OH,township,PLAIN,3338.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S006-Water,OH,county,FRANKLIN,167.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S006-Water,OH,place,NEW ALBANY,167.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S006-Water,OH,township,PLAIN,167.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S007-Bore,OH,county,FRANKLIN,10651.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S007-Bore,OH,place,NEW ALBANY,10651.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S007-Bore,OH,township,PLAIN,10651.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S008-Water,OH,county,FRANKLIN,353.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S008-Water,OH,place,NEW ALBANY,353.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S008-Water,OH,township,PLAIN,353.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S009-Bore,OH,county,FRANKLIN,2060.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S009-Bore,OH,place,NEW ALBANY,2060.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S009-Bore,OH,township,PLAIN,2060.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S010-Water,OH,county,FRANKLIN,485.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S010-Water,OH,place,COLUMBUS,150.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S010-Water,OH,place,NEW ALBANY,334.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S010-Water,OH,township,PLAIN,485.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S011-Bore,OH,county,FRANKLIN,19530.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S011-Bore,OH,place,COLUMBUS,19530.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S011-Bore,OH,township,BLENDON,13045.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S011-Bore,OH,township,PLAIN,6485.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S012-Water,OH,county,FRANKLIN,527.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S012-Water,OH,place,COLUMBUS,527.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S012-Water,OH,township,BLENDON,527.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S013-Bore,OH,county,FRANKLIN,3181.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S013-Bore,OH,place,COLUMBUS,3181.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S013-Bore,OH,township,BLENDON,3181.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S014-HW,OH,county,FRANKLIN,1304.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S014-HW,OH,place,COLUMBUS,1304.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S014-HW,OH,township,BLENDON,1304.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S015-Bore,OH,county,FRANKLIN,5074.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S015-Bore,OH,place,COLUMBUS,5074.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S015-Bore,OH,township,BLENDON,5074.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S016-Water,OH,county,FRANKLIN,341.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S016-Water,OH,place,COLUMBUS,341.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S016-Water,OH,township,BLENDON,341.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S017-Bore,OH,county,FRANKLIN,26672.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S017-Bore,OH,place,COLUMBUS,26355.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S017-Bore,OH,township,BLENDON,8268.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S017-Bore,OH,township,SHARON,18404.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S018-HW,OH,county,FRANKLIN,1001.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S018-HW,OH,place,COLUMBUS,1001.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S018-HW,OH,township,SHARON,1001.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S019-Bore,OH,county,FRANKLIN,8835.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S019-Bore,OH,place,COLUMBUS,7364.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S019-Bore,OH,place,WORTHINGTON,1471.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S019-Bore,OH,township,SHARON,8835.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S020-RR,OH,county,FRANKLIN,71.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S020-RR,OH,place,WORTHINGTON,71.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S020-RR,OH,township,SHARON,71.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S021-Bore,OH,county,FRANKLIN,2100.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S021-Bore,OH,place,WORTHINGTON,2100.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S021-Bore,OH,township,SHARON,2100.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S022-HW,OH,county,FRANKLIN,321.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S022-HW,OH,place,WORTHINGTON,321.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S022-HW,OH,township,SHARON,321.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S023-Bore,OH,county,FRANKLIN,12820.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S023-Bore,OH,place,COLUMBUS,12465.5,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S023-Bore,OH,place,WORTHINGTON,355.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S023-Bore,OH,township,SHARON,12820.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S024-RR,OH,county,FRANKLIN,294.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S024-RR,OH,place,COLUMBUS,294.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S024-RR,OH,township,SHARON,294.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S025-Bore,OH,county,DELAWARE,13350.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S025-Bore,OH,county,FRANKLIN,1634.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S025-Bore,OH,place,COLUMBUS,2826.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S0-S025-Bore,OH,township,ORANGE,13350.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S025-Bore,OH,township,SHARON,1634.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S026-Water,OH,county,DELAWARE,453.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S026-Water,OH,township,ORANGE,453.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S0-S027-Bore,OH,county,DELAWARE,11623.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S0-S027-Bore,OH,township,ORANGE,11623.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S028-Bore,OH,county,DELAWARE,10746.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S028-Bore,OH,township,LIBERTY,3400.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S028-Bore,OH,township,ORANGE,7345.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S029-Water,OH,county,DELAWARE,848.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S029-Water,OH,township,LIBERTY,848.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S030-Bore,OH,county,DELAWARE,15504.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S030-Bore,OH,place,POWELL,1272.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S1-S030-Bore,OH,township,LIBERTY,15504.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S031-RR,OH,county,DELAWARE,140.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S031-RR,OH,township,LIBERTY,140.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S032-Bore,OH,county,DELAWARE,19581.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S032-Bore,OH,place,POWELL,12444.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S1-S032-Bore,OH,township,CONCORD,6182.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S032-Bore,OH,township,LIBERTY,13399.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S033-Water,OH,county,DELAWARE,1602.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S033-Water,OH,township,CONCORD,1602.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S034-Bore,OH,county,DELAWARE,8011.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S034-Bore,OH,township,CONCORD,8011.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S035-Water,OH,county,DELAWARE,144.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S035-Water,OH,township,CONCORD,144.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S036-Bore,OH,county,DELAWARE,6733.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S036-Bore,OH,county,UNION,8197.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S036-Bore,OH,township,CONCORD,6733.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S036-Bore,OH,township,MILL CREEK,8197.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S037-Water,OH,county,UNION,637.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S037-Water,OH,township,MILL CREEK,637.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S038-Bore,OH,county,UNION,17022.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S038-Bore,OH,township,MILL CREEK,17022.7,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S039-Water,OH,county,UNION,349.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S039-Water,OH,township,MILL CREEK,349.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S040-Bore,OH,county,UNION,19332.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S040-Bore,OH,place,MARYSVILLE,3009.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S1-S040-Bore,OH,township,DOVER,13149.2,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S040-Bore,OH,township,MILL CREEK,6182.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S041-Water,OH,county,UNION,336.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S041-Water,OH,township,DOVER,336.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S042-Bore,OH,county,UNION,9657.0,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S042-Bore,OH,place,MARYSVILLE,7913.4,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S1-S042-Bore,OH,township,DOVER,243.1,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S042-Bore,OH,township,PARIS,9413.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S043-HW,OH,county,UNION,743.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S043-HW,OH,place,MARYSVILLE,743.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S1-S043-HW,OH,township,PARIS,743.9,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S044-Bore,OH,county,UNION,2128.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S044-Bore,OH,place,MARYSVILLE,2128.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S1-S044-Bore,OH,township,PARIS,2128.6,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S045-RR,OH,county,UNION,120.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S045-RR,OH,place,MARYSVILLE,120.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S1-S045-RR,OH,township,PARIS,120.3,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+S1-S046-Bore,OH,county,UNION,1141.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/County/FeatureServer/0
+S1-S046-Bore,OH,place,MARYSVILLE,1141.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Cities_and_Villages/MapServer/0
+S1-S046-Bore,OH,township,PARIS,1141.8,Approximate GIS polygon overlap; ROW authority unverified,https://tims.dot.state.oh.us/ags/rest/services/Boundaries/Township/FeatureServer/0
+Spur1-S01-Bore,IL,county,Cook,7351.6,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/2
+Spur1-S01-Bore,IL,county,DuPage,1704.2,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/2
+Spur1-S01-Bore,IL,place,Elk Grove Village,7351.6,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/9
+Spur1-S01-Bore,IL,place,Itasca,973.7,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/9
+Spur1-S01-Bore,IL,township,Addison,1704.2,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/10
+Spur1-S01-Bore,IL,township,Elk Grove,7351.6,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/10
+Spur1-S02-Water,IL,county,Cook,380.7,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/2
+Spur1-S02-Water,IL,place,Elk Grove Village,380.7,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/9
+Spur1-S02-Water,IL,township,Elk Grove,380.7,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/10
+Spur1-S03-Bore,IL,county,Cook,9536.8,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/2
+Spur1-S03-Bore,IL,place,Elk Grove Village,9536.8,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/9
+Spur1-S03-Bore,IL,township,Elk Grove,9536.8,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/10
+Spur2-S01-Bore,IL,county,Cook,4083.4,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/2
+Spur2-S01-Bore,IL,place,Elk Grove Village,4083.4,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/9
+Spur2-S01-Bore,IL,township,Elk Grove,4083.4,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/10
+Spur3-S01-Bore,IL,county,Cook,16649.4,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/2
+Spur3-S01-Bore,IL,place,Elk Grove Village,16649.4,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/9
+Spur3-S01-Bore,IL,township,Elk Grove,16649.4,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/10
+Spur4-S01-Bore,IL,county,Cook,9432.7,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/2
+Spur4-S01-Bore,IL,place,Elk Grove Village,9432.7,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/9
+Spur4-S01-Bore,IL,township,Elk Grove,9432.7,Approximate GIS polygon overlap; ROW authority unverified,https://services.arcgis.com/R0IGaIgf2sox9aCY/ArcGIS/rest/services/IL_Boundary_Layers/FeatureServer/10

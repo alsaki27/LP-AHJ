@@ -1,0 +1,4 @@
+﻿feature_id,screened_route_station_range_ft,nearest_ROw_layer_line_distance_ft,route_station_at_closest_point_ft,nearest_line_GlobalID,row_dataset_creation_date,row_dataset_last_edit_date,source
+S0-S001-Bore,0.0-3338.7,4.9,0.0,{2D799D43-2A02-4383-B789-A88F2FC33A3C},2013-01-01 00:00:00,2013-01-01 00:00:00,Licking County Road Right of Way shapefile; GIS line proximity only; no road-name attribute and no title/survey value
+S0-S002-Water,0.0-562.1,26.4,0.0,{EBD3129E-F51D-4D24-983D-B1272808470C},2021-10-07 00:00:00,2022-07-22 00:00:00,Licking County Road Right of Way shapefile; GIS line proximity only; no road-name attribute and no title/survey value
+S0-S003-Bore,0.0-12079.7,7.9,803.1,{EBD3129E-F51D-4D24-983D-B1272808470C},2021-10-07 00:00:00,2022-07-22 00:00:00,Licking County Road Right of Way shapefile; GIS line proximity only; no road-name attribute and no title/survey value

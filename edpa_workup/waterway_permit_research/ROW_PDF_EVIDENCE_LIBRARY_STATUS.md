@@ -1,0 +1,28 @@
+# ROW PDF evidence library status
+
+**13 November 2026.** The library is keyed to all 52 original KMZ route features (S0, S1, and Chicago Spurs 1–4). Stations are measured from each feature's original start. Original downloaded PDFs are retained with SHA-256 and page counts; the route/record crosswalk is in `row_pdf_evidence/master_evidence_catalog.csv` and `roadside_choice_evidence_matrix.csv`.
+
+## Downloaded evidence
+
+- **183 validated PDFs, 2,160 pages:** 175 S0 PDFs, three S1 PDFs, and five Chicago PDFs. All 183 have catalog metadata. The 146 S0 Franklin Recorder PDFs comprise the 74 mapped instrument-number leads, 38 mapped deed-book leads, 32 mapped plat-book leads, plus the separately cited Morse Deed Book 3628:237 and Sancus Instrument 200604050063792. S0 also includes 24 official Worthington utility-linked construction plans and five ordinances, road maps, and permit precedents. Chicago now includes IDOT Devon/Arlington Heights 61L08, with ROW plat and utility sheets.
+- The `ROW_PDF_Evidence_Library.zip` contains the original scans, area manifests, catalog, inventory, route matrix, missing-record register, parcel/ROW/utility feasibility overlay, station table, and route findings. Its integrity was checked after packaging.
+- The route matrix has a candidate local PDF for **27 of 52 features**. A candidate may concern a nearby road or mapped ROW polygon; its legal boundary and exact fit to the proposed trench, bore pit, and access envelope still require review. No feature is marked grade A (station-verified controlling legal ROW and work-envelope fit).
+- Full public Worthington, Licking Regional Water District, Delaware County, and Marysville (Ohio) utility layers were screened locally. Together with existing MWRD and Union County layers, they yield public utility proximity leads on **29 of 52 features**. They are approximate GIS leads and do not establish complete plant coverage or depth. The detailed audit is in `ROW_AND_UTILITY_EVIDENCE_GAPS_2026-11-13.md`.
+- The missing-record register has **94 outstanding indexed entries/groups**: 33 ODOT plan-index OIDs, 29 Cook mapped-ROW polygons, two DuPage mapped-ROW polygons, eight instruments cited by IDOT 61L08, and 22 S1 cited record groups. Entries may overlap and are not a count of distinct legal instruments. The Franklin 74 instrument and 70 book/page leads have been retrieved and removed from this register.
+
+## Road-side evidence to inspect first
+
+| Route | PDF evidence | What it currently establishes |
+| --- | --- | --- |
+| S0-S003-Bore, about 12,081–12,243 ft | Franklin Instrument `200510280227577`, four-page recorded deed | County acquisition of a 0.330-acre Dublin–Granville Road parcel; Auditor ROW polygon FID 29417 cites this instrument and intersects the source route. The deed survey must be fitted to the current work envelope before selecting a side. |
+| S0-S011-Bore / S0-S012-Water | Franklin Deed Book `3628:237` (Instrument `197712210036648`), three-page Primeland deed | A roughly 2.113-acre, 60-ft south-side Morse Road strip toward Big Walnut Creek, with reserved access and a conditional repurchase clause. Its recorded limits, present title condition, and route offset remain to be verified. |
+| S0-S023-Bore, inferred about 1,676–2,363 ft | Franklin Instrument `200604050063792`, four-page Pingue deed | A 0.158-acre, approximately 10-ft east-side Sancus strip south of Worthington Woods. It does not by itself prove that the proposed fiber work lies within this strip. |
+| Chicago Spur1-S03 candidate | IDOT/Cook Landmeier–Busse 61K19 plan set, 63 pages | Existing ROW labels and utility features appear on the plan sheets. Plan stations still need a surveyed fit to the KMZ; recorded acquisition/ROW limits are outstanding. |
+| Chicago Higgins, Busse, Landmeier candidates | IDOT Higgins 62V85, IDOT Busse 80B09, Cook Landmeier contract 2411-10160 | Roadwork, signal, and utility-adjustment context; these are not recorded grants or full utility as-builts. |
+| Chicago Spur1 Devon/Arlington Heights | IDOT 61L08, 79 pages | Plat of Highways on PDF pp. 24-26 and existing ROW/utility drawings on pp. 46-47; underlying recorded instruments and survey fit remain open. |
+| Worthington S0, especially S0-S019 through S0-S023 | 24 utility-linked official construction PDFs, including 347-page Northeast Gateway plan 359-992 | Historical engineering context connected to route-near City utility GIS assets; current as-builts, ROW boundaries, depth and work-envelope fit remain open. |
+| S1 Union corridor | Union ROW compilation and Road Record Volumes 1 and 2 | Historic width and road-record leads. Referenced deeds, plats, survey records, and journals must be obtained and fitted to current route stations. |
+
+## Remaining retrieval and feasibility work
+
+The Franklin Recorder scans close the specific Auditor-indexed S0 download queue. They have not all received individual legal-description review. The route matrix treats most as **grade B leads**, pending survey georeferencing, title/condition checks, and a work-envelope overlay. The existing parcel and utility screens are context only. A repeat query of all 33 ODOT OhROW OIDs found no public plan-sheet or recorded-document links; Plan Vault results exposed internal `\\filestore` paths rather than public plan PDFs. Cook/DuPage ROW scans and the S1 underlying instruments remain in the missing register. Direct Elk Grove Village plan links returned CDN access denial and were excluded. The new Worthington, Licking Regional Water District, Delaware County, and Marysville (Ohio) public utility screens are documented in `ROW_AND_UTILITY_EVIDENCE_GAPS_2026-11-13.md`. No agency records request or utility locate was submitted.

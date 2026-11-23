@@ -1,0 +1,13 @@
+﻿source_feature,county_source,within_100ft_count,within_250ft_count,direct_parcel_intersection_count,sum_route_length_inside_parcel_ft,parcel_service
+Spur1-S01-Bore,Cook,126,226,5,408.39,https://gis.cookcountyil.gov/hosting/rest/services/Hosted/Parcel/FeatureServer/0
+Spur1-S01-Bore,DuPage,11,27,0,0.0,https://gis.dupageco.org/arcgis/rest/services/Tyler/ParcelsRealEstateCCWGS84SR4326/MapServer/0
+Spur1-S02-Water,Cook,5,8,0,0.0,https://gis.cookcountyil.gov/hosting/rest/services/Hosted/Parcel/FeatureServer/0
+Spur1-S02-Water,DuPage,0,0,0,0,https://gis.dupageco.org/arcgis/rest/services/Tyler/ParcelsRealEstateCCWGS84SR4326/MapServer/0
+Spur1-S03-Bore,Cook,72,153,4,325.3,https://gis.cookcountyil.gov/hosting/rest/services/Hosted/Parcel/FeatureServer/0
+Spur1-S03-Bore,DuPage,0,0,0,0,https://gis.dupageco.org/arcgis/rest/services/Tyler/ParcelsRealEstateCCWGS84SR4326/MapServer/0
+Spur2-S01-Bore,Cook,79,154,1,80.83,https://gis.cookcountyil.gov/hosting/rest/services/Hosted/Parcel/FeatureServer/0
+Spur2-S01-Bore,DuPage,0,0,0,0,https://gis.dupageco.org/arcgis/rest/services/Tyler/ParcelsRealEstateCCWGS84SR4326/MapServer/0
+Spur3-S01-Bore,Cook,136,291,26,3909.21,https://gis.cookcountyil.gov/hosting/rest/services/Hosted/Parcel/FeatureServer/0
+Spur3-S01-Bore,DuPage,0,0,0,0,https://gis.dupageco.org/arcgis/rest/services/Tyler/ParcelsRealEstateCCWGS84SR4326/MapServer/0
+Spur4-S01-Bore,Cook,50,105,29,5963.56,https://gis.cookcountyil.gov/hosting/rest/services/Hosted/Parcel/FeatureServer/0
+Spur4-S01-Bore,DuPage,0,0,0,0,https://gis.dupageco.org/arcgis/rest/services/Tyler/ParcelsRealEstateCCWGS84SR4326/MapServer/0

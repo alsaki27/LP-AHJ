@@ -1,0 +1,3 @@
+﻿feature_id,dupage_row_objectid,row_doc_source_field,station_start_ft_approx,station_end_ft_approx,mapped_overlap_ft,evidence_class
+Spur1-S01-Bore,20186,,0.0,1652.0,1652.0,official deeded ROW GIS polygon; recorded document not reviewed
+Spur1-S01-Bore,20226,507662,1652.0,1701.7,49.8,official deeded ROW GIS polygon; recorded document not reviewed

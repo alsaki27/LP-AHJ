@@ -1,0 +1,481 @@
+﻿feature_id,state,road_name,route_type,route_number,jurisdiction_code,county_code,total_road_length_within_30m_buffer_m,min_centerline_distance_m,source_road_segments,status
+S0-S001-Bore,OH,WORTHINGTON,CR,00162,C,LIC,1069.7,7.3,3,GIS candidate; ROW plans/agency confirmation required
+S0-S001-Bore,OH,MINK,CR,00041,C,LIC,65.7,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S001-Bore,OH,TEST,TR,80105,P,LIC,38.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S001-Bore,OH,HARRISON,CR,00026,C,LIC,37.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S001-Bore,OH,HARRISON,TR,00026,T,LIC,22.4,7.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S002-Water,OH,WORTHINGTON,CR,00162,C,LIC,229.3,7.5,2,GIS candidate; ROW plans/agency confirmation required
+S0-S003-Bore,OH,WORTHINGTON,CR,00162,C,LIC,1962.2,6.9,6,GIS candidate; ROW plans/agency confirmation required
+S0-S003-Bore,OH,GANTON,MR,01512,M,LIC,1613.9,0.0,4,GIS candidate; ROW plans/agency confirmation required
+S0-S003-Bore,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,1573.1,5.8,6,GIS candidate; ROW plans/agency confirmation required
+S0-S003-Bore,OH,BEECH,TR,00088,T,LIC,1165.4,0.0,4,GIS candidate; ROW plans/agency confirmation required
+S0-S003-Bore,OH,BABBITT,CR,00106,C,FRA,37.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S003-Bore,OH,LUCILLE LYND,TR,00162,T,LIC,21.5,8.5,1,GIS candidate; ROW plans/agency confirmation required
+S0-S004-Water,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,172.9,7.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S005-Bore,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,1075.9,6.2,1,GIS candidate; ROW plans/agency confirmation required
+S0-S005-Bore,OH,KITZMILLER,CR,00110,C,FRA,52.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S006-Water,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,109.7,6.2,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,2106.8,5.2,5,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,GRANVILLE,CR,00546,C,FRA,1197.4,0.0,8,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,MARKET,MR,04348,M,FRA,77.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,HIGH,CR,00006,C,FRA,72.4,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,MAIN,US,00062,S,FRA,63.6,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,FODOR,MR,04348,M,FRA,44.9,7.4,2,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,PICKETT,MR,10047,M,FRA,36.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,HARLEM,MR,04371,M,FRA,35.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,CHERRY,MR,09931,M,FRA,27.2,6.5,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,MORGAN,MR,02933,M,FRA,25.1,5.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,MEADWAY,MR,06510,M,FRA,24.6,5.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,2ND,MR,02933,M,FRA,24.1,6.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,WALNUT,MR,10097,M,FRA,24.1,6.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,BROOKSVIEW,MR,09914,M,FRA,23.4,6.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,3RD,MR,02934,M,FRA,23.4,6.7,1,GIS candidate; ROW plans/agency confirmation required
+S0-S007-Bore,OH,HARLEM,CR,00111,C,FRA,19.7,14.5,1,GIS candidate; ROW plans/agency confirmation required
+S0-S008-Water,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,166.5,6.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S008-Water,OH,HARLEM,CR,00111,C,FRA,23.1,6.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S009-Bore,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,686.5,6.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S009-Bore,OH,GREENSWARD,MR,04357,M,FRA,36.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S010-Water,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,205.8,7.6,2,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,HAMILTON,MR,04240,M,FRA,4802.7,0.0,17,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,MORSE,CR,00017,C,FRA,2423.0,5.7,6,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,DUBLIN-GRANVILLE,CR,00546,C,FRA,775.9,3.6,5,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,HAMILTON ACCESS,MR,88675,P,FRA,234.5,0.0,6,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,ALBANY PARK,MR,04759,M,FRA,118.5,0.0,4,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,WESLEY WOODS,MR,81106,P,FRA,76.3,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,SERVICE,MR,80967,P,FRA,68.5,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,HAMILTON,MR,80967,P,FRA,68.1,6.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,CHERRY BOTTOM,CR,00108,C,FRA,62.1,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,HAMILTON,MR,04241,M,FRA,58.8,7.2,2,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,CHERRY WAY,MR,08368,M,FRA,45.4,11.1,2,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,CHILMARK,MR,05353,M,FRA,43.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,BROADVIEW,CR,00181,C,FRA,43.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,MENEREY,MR,06528,M,FRA,42.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,UNNAMED,MR,87728,P,FRA,42.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,BENTRIDGE,MR,80428,P,FRA,42.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,CHRISTOPHER WREN,MR,80970,P,FRA,41.3,10.6,2,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,LEATHER STOCKING,MR,01206,M,FRA,41.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,CEDAR CREST,MR,87133,P,FRA,41.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,KENSINGWOOD,MR,82144,P,FRA,40.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,DECLARATION,MR,00535,M,FRA,40.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,SLEAFORD,MR,07174,M,FRA,40.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,MAIDSTONE,MR,06432,M,FRA,40.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,BLENDON PLACE,MR,80513,P,FRA,40.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,SHEFFIELD,MR,83595,P,FRA,19.4,10.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,GREENCROFT,MR,08423,M,FRA,19.2,10.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,HAYBROOK,MR,08438,M,FRA,18.8,11.2,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,THOMPSON,TR,00195,T,FRA,18.7,11.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,HIGHMEADOW,MR,02409,M,FRA,18.3,11.7,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,PRESERVE,MR,06850,M,FRA,17.2,12.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,CHESTNUT HILL,MR,05349,M,FRA,16.8,13.2,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,STONERIDGE,MR,83787,P,FRA,16.3,6.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,OLD DUBLIN GRANVILLE,MR,06695,M,FRA,13.9,19.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,,CR,00546,C,FRA,12.0,19.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S011-Bore,OH,STONERIDGE,MR,83786,P,FRA,10.6,19.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S012-Water,OH,MORSE,CR,00017,C,FRA,216.4,10.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S012-Water,OH,CHERRY WAY,MR,08368,M,FRA,10.7,19.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S013-Bore,OH,MORSE,CR,00017,C,FRA,1018.0,10.1,3,GIS candidate; ROW plans/agency confirmation required
+S0-S013-Bore,OH,APPIAN,MR,00166,M,FRA,43.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S013-Bore,OH,RAMP FROM CR 17 MORSE RD TO IR 270N,RA,25467,S,FRA,38.3,18.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S013-Bore,OH,LIMITED,MR,82316,P,FRA,34.3,13.6,2,GIS candidate; ROW plans/agency confirmation required
+S0-S013-Bore,OH,STYGLER,MR,04242,M,FRA,19.0,11.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S013-Bore,OH,LIMITED,MR,82320,P,FRA,19.0,11.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S014-HW,OH,MORSE,CR,00017,C,FRA,494.1,8.1,3,GIS candidate; ROW plans/agency confirmation required
+S0-S014-HW,OH,IR 270,IR,00270,S,FRA,125.3,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S014-HW,OH,RAMP FROM IR 270 TO IR 270,RA,25460,S,FRA,62.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S014-HW,OH,RAMP FROM IR 270N TO IR 270N,RA,25461,S,FRA,62.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S014-HW,OH,RAMP FROM CR 17 MORSE RD TO IR 270N,RA,25467,S,FRA,53.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S014-HW,OH,RAMP FROM IR 270 TO CR 17 MORSE RD,RA,25470,S,FRA,52.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S014-HW,OH,RAMP FROM CR 17 MORSE RD TO RA 25466,RA,25468,S,FRA,11.3,18.7,1,GIS candidate; ROW plans/agency confirmation required
+S0-S015-Bore,OH,MORSE,CR,00017,C,FRA,2624.0,0.0,10,GIS candidate; ROW plans/agency confirmation required
+S0-S015-Bore,OH,STELZER,CR,00177,C,FRA,120.2,0.0,4,GIS candidate; ROW plans/agency confirmation required
+S0-S015-Bore,OH,SUNBURY,CR,00008,C,FRA,73.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S015-Bore,OH,7A,MR,04721,M,FRA,41.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S015-Bore,OH,HQ,MR,87489,P,FRA,37.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S015-Bore,OH,MORSE CROSSING,MR,04355,M,FRA,20.8,7.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S015-Bore,OH,FENLON,MR,05743,M,FRA,20.8,9.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S016-Water,OH,MORSE,CR,00017,C,FRA,151.4,17.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,DUBLIN-GRANVILLE,SR,00161,S,FRA,5958.0,8.5,6,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,CLEVELAND,CR,00075,C,FRA,2989.4,0.0,3,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,DUBLIN-GRANVILLE SERVICE,MR,00605,M,FRA,2748.2,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,MORSE,CR,00017,C,FRA,2413.1,11.7,2,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,ABSHIRE,MR,80046,P,FRA,183.5,16.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,MAPLE CANYON,MR,01300,M,FRA,120.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,KARL,MR,04233,M,FRA,105.6,0.0,3,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,PARKVILLE,MR,01599,M,FRA,83.7,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,WESTERVILLE,SR,00003,S,FRA,66.6,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,BEECHCROFT,MR,00241,M,FRA,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,WREN,MR,84569,P,FRA,46.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,GROVEDALE,MR,81835,P,FRA,45.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,CLYBOURNE,MR,05396,M,FRA,44.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,MINERVA,MR,01390,M,FRA,44.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,TAYMOUTH,MR,01989,M,FRA,44.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,CHATEAU MORSE,MR,80918,P,FRA,43.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,STRIMPLE,MR,01964,M,FRA,43.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,TRINDEL,MR,02019,M,FRA,43.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,MINERVA PARK,MR,06563,M,FRA,43.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,KILBOURNE,MR,01155,M,FRA,43.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,OTTAWA,MR,82823,P,FRA,43.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,VINING,MR,07465,M,FRA,43.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,ADDA,TR,01007,T,FRA,43.2,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,EDMONTON,MR,00763,M,FRA,43.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,CALDERWOOD,MR,87067,P,FRA,42.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,BROOKLYN,MR,00335,M,FRA,42.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,SATINWOOD,MR,01843,M,FRA,42.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,TAMARACK,MR,01985,M,FRA,40.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,GREEN APPLE,MR,00942,M,FRA,39.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,TEAKWOOD,MR,01990,M,FRA,39.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,MALLARDS LANDING,MR,82423,P,FRA,39.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,RAMP FROM IR 71 TO SR 161 E DUBLIN-GRANVILLE RD,RA,25300,S,FRA,27.6,23.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,GRANVILLE CNTR SERV,MR,80570,P,FRA,24.2,5.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,PARKVILLE,MR,82927,P,FRA,22.8,7.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,RAINTREE,MR,83159,P,FRA,22.5,7.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,NORTHLAND PLAZA,MR,06656,M,FRA,21.2,8.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,JORDAN,MR,02917,M,FRA,20.9,9.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,WOODLEY,MR,02930,M,FRA,20.0,10.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,WILDWOOD,MR,02929,M,FRA,20.0,10.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,SHARON WOODS,MR,01872,M,FRA,19.6,10.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,GOLDENGATE,MR,81751,P,FRA,17.8,12.2,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,MINERVA LAKE,MR,04264,M,FRA,17.7,12.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,AMBLESIDE,MR,00157,M,FRA,17.7,12.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,CHESFORD,MR,00421,M,FRA,17.6,12.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,GLEN GROVE,MR,81731,P,FRA,17.4,12.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,NORTHWOLD,MR,01540,M,FRA,17.2,13.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,BRETTON WOODS,MR,00312,M,FRA,17.0,13.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,SUNDANCE,MR,83857,P,FRA,16.9,13.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,DUNBRIDGE,MR,00606,M,FRA,16.7,13.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,WALLCREST,MR,07486,M,FRA,16.6,13.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,MORSETOWN,MR,82631,P,FRA,16.0,14.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,CLYBOURNE,TR,01008,T,FRA,15.8,14.2,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,SPRING RUN,MR,07220,M,FRA,15.0,11.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,KILBOURNE,TR,01640,T,FRA,14.5,13.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,DUBLIN-GRANVILLE SERVICE,MR,05608,M,FRA,13.6,16.5,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,ASHBURY,TR,01009,T,FRA,12.9,15.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,CLARIDON,TR,01012,T,FRA,12.9,13.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,CHESTER,TR,01011,T,FRA,12.8,14.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,ABINGTON,TR,01010,T,FRA,12.8,14.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S017-Bore,OH,BROOKLYN,TR,01633,T,FRA,11.3,12.5,1,GIS candidate; ROW plans/agency confirmation required
+S0-S018-HW,OH,DUBLIN-GRANVILLE,SR,00161,S,FRA,680.2,12.1,4,GIS candidate; ROW plans/agency confirmation required
+S0-S018-HW,OH,IR 71,IR,00071,S,FRA,120.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S018-HW,OH,RAMP FROM SR 161 E DUBLIN-GRANVILLE RD TO IR 71N,RA,25302,S,FRA,54.3,15.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S018-HW,OH,RAMP FROM SR 161 E DUBLIN-GRANVILLE RD TO RA 25302,RA,25304,S,FRA,45.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S018-HW,OH,RAMP FROM IR 71 TO SR 161 E DUBLIN-GRANVILLE RD,RA,25300,S,FRA,42.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S018-HW,OH,RAMP FROM SR 161 E DUBLIN-GRANVILLE RD TO IR 71,RA,25303,S,FRA,17.8,12.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S018-HW,OH,RAMP FROM IR 71N TO SR 161 E DUBLIN-GRANVILLE RD,RA,25301,S,FRA,17.3,12.7,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,BUSCH,SR,00710,S,FRA,3239.5,4.7,6,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,SCHROCK,MR,04234,M,FRA,581.4,7.4,8,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,DUBLIN-GRANVILLE,SR,00161,S,FRA,485.0,0.0,4,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,HUNTLEY,MR,04293,M,FRA,376.0,6.7,3,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,ROCHE,MR,01714,M,FRA,182.2,3.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,RAMP FROM SR 161 E DUBLIN-GRANVILLE RD TO IR 71N,RA,25302,S,FRA,180.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,SCHROCK,SR,00710,S,FRA,98.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,SHAPTER,MR,01871,M,FRA,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,KINGSMILL,MR,01166,M,FRA,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,BOARDWALK,MR,80272,P,FRA,57.2,19.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,,MR,04234,M,FRA,42.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,NORTH MEADOWS,MR,01533,M,FRA,39.7,16.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,ATLANTIC,MR,04884,M,FRA,37.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,RAMP FROM SR 161 E DUBLIN-GRANVILLE RD TO RA 25302,RA,25304,S,FRA,34.1,15.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,NORTHGATE,MR,82736,P,FRA,23.7,6.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,ATLANTIC,MR,86799,P,FRA,15.2,7.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,RAMP FROM IR 71N TO SR 161 E DUBLIN-GRANVILLE RD,RA,25301,S,FRA,14.0,18.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S019-Bore,OH,DUBLIN-GRANVILLE SERVICE,MR,00605,M,FRA,12.7,19.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S020-RR,OH,HUNTLEY,MR,04293,M,FRA,80.2,7.4,2,GIS candidate; ROW plans/agency confirmation required
+S0-S021-Bore,OH,HUNTLEY,MR,04293,M,FRA,447.2,7.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S021-Bore,OH,WORTHINGTON GALENA,MR,04235,M,FRA,252.4,13.5,1,GIS candidate; ROW plans/agency confirmation required
+S0-S021-Bore,OH,WILSON BRIDGE,MR,04229,M,FRA,14.9,15.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S022-HW,OH,WORTHINGTON GALENA,MR,04235,M,FRA,145.4,9.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S022-HW,OH,IR 270,IR,00270,S,FRA,123.6,0.0,4,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,SANCUS,MR,04354,M,FRA,2712.0,0.0,5,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,LAZELLE,TR,00021,T,DEL,1264.8,2.7,10,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,LAZELLE,CR,00021,C,FRA,1142.7,2.7,8,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,WORTHINGTON GALENA,MR,04235,M,FRA,158.3,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,REEDY,MR,83208,P,FRA,87.0,28.5,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,STORROW,MR,01959,M,FRA,84.2,0.0,3,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,GORMAN,MR,81762,P,FRA,80.8,27.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,CEDAR VIEW,MR,87135,P,FRA,79.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,POLARIS CROSSING,MR,83063,P,FRA,74.2,9.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,PHILADELPHIA,MR,82990,P,FRA,60.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,SORAMILL,MR,83693,P,FRA,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,PARK,CR,00019,C,FRA,60.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,WORTHINGTON WOODS,MR,04208,M,FRA,60.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,OLD STATE,CR,00010,C,DEL,55.1,5.4,2,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,STAFFINGTON,MR,07229,M,FRA,45.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,CAMERON CROSSING,MR,80763,P,FRA,44.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,TALIA,MR,07296,M,FRA,43.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,BROCKWELL,MR,05163,M,FRA,42.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,ENGLISH OAK,MR,05707,M,FRA,42.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,NODDYMILL,MR,82723,P,FRA,42.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,CEDAR TRACE,MR,80857,P,FRA,41.4,9.5,2,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,MASTER,MR,82482,P,FRA,40.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,LAKEVIEW PLAZA,MR,10973,M,FRA,40.4,10.8,2,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,CAYMAN,MR,80842,P,FRA,40.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,OZEM GARDNER,MR,06749,M,FRA,40.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,CEDAR ROW,MR,80854,P,FRA,40.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,SUNTREE,MR,01975,M,FRA,39.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,MODOC,MR,01398,M,FRA,39.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,PINE WAY,MR,83018,P,FRA,39.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,WOODHOUSE,MR,84536,P,FRA,39.5,14.7,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,WELLINGSHIRE,MR,02183,M,FRA,39.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,NORAHROW,MR,82727,P,FRA,38.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,THE MCCOY CENTER,MR,80941,P,DEL,37.8,11.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,ANNAGLADYS,MR,00164,M,FRA,37.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,OLDE RICHMOND,MR,82797,P,FRA,31.2,15.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,FICUS,MR,81566,P,FRA,21.9,8.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,LYDIE,MR,82388,P,FRA,21.7,8.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,WHITE WATER,MR,02209,M,FRA,21.7,8.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,CEDAR ROW,MR,80853,P,FRA,21.6,25.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,PLANT,MR,83049,P,FRA,20.6,9.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,DEARBORN PARK,MR,00533,M,FRA,20.1,9.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,HICKOK,MR,81967,P,FRA,19.7,10.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,WORTHINGTON LAKE,MR,84564,P,FRA,19.4,10.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,NODDYMILL,MR,82722,P,FRA,19.3,10.9,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,STALYWOOD,MR,83740,P,FRA,18.6,12.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,CUTLIP,MR,81208,P,FRA,18.5,11.5,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,POLARIS VIEW,MR,80999,P,DEL,18.2,11.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,CHARLESTON WAY,MR,87153,P,FRA,17.7,16.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,DELALI,MR,87306,P,FRA,16.8,13.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,STONE TRACE,MR,83771,P,FRA,16.6,13.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,SYRACUSE,MR,83900,P,FRA,13.8,16.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S023-Bore,OH,IR 270,IR,00270,S,FRA,11.7,29.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S024-RR,OH,LAZELLE,CR,00021,C,FRA,142.5,14.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S024-RR,OH,LAZELLE,TR,00021,T,DEL,142.5,14.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S024-RR,OH,FLINT,CR,00085,C,FRA,44.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,COLUMBUS,US,00023,S,DEL,3343.8,12.8,4,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,LAZELLE,CR,00021,C,FRA,979.0,0.0,10,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,LAZELLE,TR,00021,T,DEL,823.1,5.0,7,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,HIGH,US,00023,S,DEL,281.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,SPRINGBORO,MR,83715,P,FRA,162.0,19.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,REMINGTON HILLS,MR,81006,P,DEL,133.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,NEVERLAND,TR,80645,P,DEL,86.2,0.0,3,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,EVERGREEN,TR,00995,T,DEL,85.8,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,POWELL,SR,00750,S,DEL,60.5,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,MEADOW PARK,TR,00425,T,DEL,60.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,GOLD MEADOW,MR,01112,M,DEL,59.8,14.1,2,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,MIRADA,MR,80995,P,DEL,57.7,14.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,WINDBRUSH,TR,00996,T,DEL,47.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,HIGHBANKS METRO PARK,TR,82021,P,DEL,45.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,CARRINGTON RIDGE,MR,80984,P,DEL,44.3,14.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,SPRINGBORO,MR,83714,P,FRA,42.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,SPRINGSTON,MR,83728,P,FRA,42.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,HORNBEAM,TR,80634,P,DEL,36.9,18.6,2,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,BELLA WOODS,MR,80985,P,DEL,36.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,FLINT,CR,00085,C,FRA,30.3,23.2,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,HIGH,US,00023,S,FRA,24.5,5.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,ARNOLD,TR,00295,T,DEL,23.4,9.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,LAZELLE VILLAGE,MR,80105,P,DEL,22.9,7.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,OLENCREST,MR,80108,P,DEL,22.7,7.3,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,OLENBROOK,MR,00460,M,DEL,22.4,7.6,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,LAZELLE,MR,01205,M,FRA,20.9,10.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,RESURRECTION CATHOLIC CEMETERY,TR,80714,P,DEL,17.2,12.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,RESURRECTION CATHOLIC CEMETERY,TR,80345,P,DEL,17.0,13.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,ARNOLD,MR,04864,M,FRA,15.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,OLENTANGY MEADOWS,MR,01123,M,DEL,15.6,14.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,GREEN MEADOWS,TR,00388,T,DEL,14.9,15.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S025-Bore,OH,ORANGE CENTRE,TR,01609,T,DEL,14.7,15.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S026-Water,OH,COLUMBUS,US,00023,S,DEL,190.7,12.1,1,GIS candidate; ROW plans/agency confirmation required
+S0-S026-Water,OH,HIDDEN RAVINES,TR,00658,T,DEL,33.6,21.8,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,COLUMBUS,US,00023,S,DEL,2084.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,CORDUROY,TR,01435,T,DEL,1113.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,GREEN MEADOWS,TR,00409,T,DEL,440.2,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,HALFWAY,TR,01350,T,DEL,109.1,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,HOME,CR,00124,C,DEL,102.2,15.4,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,KINGWOOD MEMORIAL PARK,TR,80702,P,DEL,87.4,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,ORANGE,TR,00114,T,DEL,62.9,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,GRAPHICS,TR,00808,T,DEL,61.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,CREEKSIDE,TR,01625,T,DEL,58.3,13.9,2,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,GOODING,TR,01347,T,DEL,50.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,PARKWAY,TR,00296,T,DEL,46.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,HIDDEN RAVINES,TR,00658,T,DEL,43.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,EAST HIDDEN RAVINES,TR,00658,T,DEL,16.3,13.7,1,GIS candidate; ROW plans/agency confirmation required
+S0-S027-Bore,OH,ORANGEPOINT,TR,00809,T,DEL,10.2,19.8,1,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,HOME,CR,00124,C,DEL,3611.2,7.7,6,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,OLD HOME,TR,00124,T,DEL,61.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,COLUMBUS,US,00023,S,DEL,61.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,GREEN MEADOWS,TR,00409,T,DEL,60.1,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,ORANGE GRAND,TR,81111,P,DEL,31.7,14.1,2,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,HOME,TR,80903,P,DEL,24.6,8.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,HOME,TR,80902,P,DEL,20.2,9.9,1,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,PERRY,TR,00145,T,DEL,19.1,10.9,1,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,GOODING,TR,01347,T,DEL,15.9,14.2,1,GIS candidate; ROW plans/agency confirmation required
+S1-S028-Bore,OH,GRAPHICS,TR,00808,T,DEL,15.2,14.8,1,GIS candidate; ROW plans/agency confirmation required
+S1-S029-Water,OH,HOME,CR,00124,C,DEL,317.8,2.9,3,GIS candidate; ROW plans/agency confirmation required
+S1-S029-Water,OH,OLENTANGY RIVER,SR,00315,S,DEL,60.2,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S029-Water,OH,TAGGART,TR,00144,T,DEL,47.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,HOME,CR,00124,C,DEL,2143.7,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,LIBERTY,CR,00009,C,DEL,1835.2,0.0,4,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,RUTHERFORD,TR,00122,T,DEL,873.6,6.7,5,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,CARRIAGE VALLEY,MR,01165,M,DEL,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,LIBERTY,TR,80385,P,DEL,41.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,WILDCAT RUN,TR,01610,T,DEL,39.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,WOODLAND GLEN,TR,01456,T,DEL,38.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,CARRIAGE,TR,00334,T,DEL,37.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,BRIDLESPUR,TR,00383,T,DEL,24.6,5.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,CARRIAGE,MR,01164,M,DEL,22.8,7.2,1,GIS candidate; ROW plans/agency confirmation required
+S1-S030-Bore,OH,OLENTANGY RIVER,SR,00315,S,DEL,18.2,28.7,1,GIS candidate; ROW plans/agency confirmation required
+S1-S031-RR,OH,RUTHERFORD,TR,00122,T,DEL,101.0,7.1,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,HOME,CR,00124,C,DEL,3839.0,3.5,18,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,SAWMILL,CR,00609,C,DEL,3654.7,0.0,4,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,RUTHERFORD,TR,00122,T,DEL,738.2,4.9,2,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,RIVERSIDE,SR,00257,S,DEL,154.3,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,O'CONNELL,MR,80048,P,DEL,145.1,0.0,3,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,SCIOTO RIDGE,TR,80300,P,DEL,111.8,25.5,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,PEARSE,MR,80050,P,DEL,107.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,SUTTON,MR,80052,P,DEL,76.5,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,TRAIL LAKE,MR,01320,M,DEL,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,VILLAGE CLUB,MR,01331,M,DEL,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,WOODCUTTER,MR,01363,M,DEL,55.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,SECTION LINE,CR,00005,C,DEL,46.6,8.4,2,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,DOLMAN,MR,80031,P,DEL,45.5,7.2,2,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,TREE LAKE,TR,01223,T,DEL,42.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,GATEWAY,TR,82078,P,DEL,42.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,NORTHWAY,MR,01711,M,DEL,41.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,RESERVE,MR,01276,M,DEL,41.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,STEITZ,TR,00125,T,DEL,39.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,GLENMORE,TR,00967,T,DEL,37.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,FLAGG VIEW,MR,01192,M,DEL,35.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,HILLINGDON,MR,80039,P,DEL,27.8,28.5,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,RUTHERFORD ESTATES,MR,01289,M,DEL,23.6,6.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,SCIOTO,TR,01226,T,DEL,22.1,7.9,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,MESA,TR,80295,P,DEL,19.1,10.9,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,SCIOTO CHASE,TR,01210,T,DEL,17.6,12.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S032-Bore,OH,STEITZ,CR,00125,C,DEL,14.4,15.6,1,GIS candidate; ROW plans/agency confirmation required
+S1-S033-Water,OH,HOME,CR,00124,C,DEL,543.8,9.6,4,GIS candidate; ROW plans/agency confirmation required
+S1-S034-Bore,OH,HOME,CR,00124,C,DEL,2007.3,0.0,6,GIS candidate; ROW plans/agency confirmation required
+S1-S034-Bore,OH,CONCORD,CR,00129,C,DEL,704.9,4.1,6,GIS candidate; ROW plans/agency confirmation required
+S1-S034-Bore,OH,DUBLIN,SR,00745,S,DEL,60.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S034-Bore,OH,CONCORD TOWNSHIP PARK,TR,82012,P,DEL,37.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S034-Bore,OH,DUFFY,TR,00135,T,DEL,27.1,19.7,1,GIS candidate; ROW plans/agency confirmation required
+S1-S035-Water,OH,CONCORD,CR,00129,C,DEL,102.9,5.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S035-Water,OH,DUFFY,TR,00135,T,DEL,35.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S036-Bore,OH,WATKINS,CR,00104,C,UNI,2527.7,6.1,3,GIS candidate; ROW plans/agency confirmation required
+S1-S036-Bore,OH,CONCORD,CR,00129,C,DEL,1761.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S036-Bore,OH,MOORE,CR,00136,C,DEL,373.9,6.9,2,GIS candidate; ROW plans/agency confirmation required
+S1-S036-Bore,OH,US 42,US,00042,S,UNI,82.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S036-Bore,OH,JEROME,CR,00011,C,UNI,38.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S036-Bore,OH,DUFFY,TR,00135,T,DEL,25.1,23.3,1,GIS candidate; ROW plans/agency confirmation required
+S1-S036-Bore,OH,CONCORD,TR,80929,P,DEL,24.7,5.6,1,GIS candidate; ROW plans/agency confirmation required
+S1-S037-Water,OH,WATKINS,CR,00104,C,UNI,251.9,8.1,1,GIS candidate; ROW plans/agency confirmation required
+S1-S038-Bore,OH,WATKINS,CR,00104,C,UNI,5244.0,3.9,10,GIS candidate; ROW plans/agency confirmation required
+S1-S038-Bore,OH,WATKINS CALIFORNIA,CR,00022,C,UNI,38.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S038-Bore,OH,DELAWARE,TR,01021,T,UNI,37.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S038-Bore,OH,BELL,CR,00019,C,UNI,36.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S038-Bore,OH,CLARK,TR,00026,T,UNI,35.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S038-Bore,OH,BELLEPOINT,CR,00100,C,UNI,23.0,7.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S038-Bore,OH,STATE,CR,00096,C,UNI,22.6,7.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S039-Water,OH,WATKINS,CR,00104,C,UNI,164.3,7.5,1,GIS candidate; ROW plans/agency confirmation required
+S1-S040-Bore,OH,WATKINS,CR,00104,C,UNI,5946.1,4.3,11,GIS candidate; ROW plans/agency confirmation required
+S1-S040-Bore,OH,BEECHER GAMBLE,CR,00036,C,UNI,40.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S040-Bore,OH,SCOTTSLAWN,CR,00105,C,UNI,39.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S040-Bore,OH,BUXTON,TR,80019,P,UNI,39.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S040-Bore,OH,HINTON MILL,TR,00145,T,UNI,37.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S040-Bore,OH,FELS,TR,00095,T,UNI,36.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S040-Bore,OH,JOLLY,TR,00109,T,UNI,23.3,7.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S040-Bore,OH,HINTON MILL,CR,00101,C,UNI,22.4,7.7,1,GIS candidate; ROW plans/agency confirmation required
+S1-S041-Water,OH,WATKINS,CR,00104,C,UNI,160.9,6.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,WATKINS,CR,00104,C,UNI,2788.6,6.3,15,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,US 36,US,00036,S,UNI,439.1,8.3,4,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,WILDWOOD,TR,00360,T,UNI,38.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,BRIDGEWATER,MR,80047,P,UNI,38.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,WATKINS GLEN,MR,80052,P,UNI,38.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,THREE OAKS,MR,80049,P,UNI,38.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,WATKINS GLEN,MR,80050,P,UNI,38.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,RAMP FROM US 33N TO US 36,RA,80042,S,UNI,30.6,18.7,1,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,RAMP FROM US 36 TO RA 80043,RA,80044,S,UNI,14.5,20.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S042-Bore,OH,RAMP FROM US 36N TO US 33N,RA,80043,S,UNI,14.4,28.3,1,GIS candidate; ROW plans/agency confirmation required
+S1-S043-HW,OH,US 36,US,00036,S,UNI,467.4,8.1,9,GIS candidate; ROW plans/agency confirmation required
+S1-S043-HW,OH,US 33,US,00033,S,UNI,123.7,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S043-HW,OH,DELAWARE,MR,00802,M,UNI,84.9,9.5,2,GIS candidate; ROW plans/agency confirmation required
+S1-S043-HW,OH,RAMP FROM US 36 TO US 33,RA,80045,S,UNI,41.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S043-HW,OH,RAMP FROM US 33N TO US 36,RA,80042,S,UNI,38.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S043-HW,OH,RAMP FROM US 36 TO RA 80043,RA,80044,S,UNI,21.8,8.3,1,GIS candidate; ROW plans/agency confirmation required
+S1-S044-Bore,OH,DELAWARE,MR,00802,M,UNI,991.8,4.3,10,GIS candidate; ROW plans/agency confirmation required
+S1-S044-Bore,OH,CHARLES,MR,00454,M,UNI,295.2,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S044-Bore,OH,COLEMANS CROSSING,MR,00302,M,UNI,80.1,0.0,3,GIS candidate; ROW plans/agency confirmation required
+S1-S044-Bore,OH,BUERGER,MR,00016,M,UNI,24.0,7.2,1,GIS candidate; ROW plans/agency confirmation required
+S1-S044-Bore,OH,CONNOLLY,MR,00024,M,UNI,23.6,7.4,1,GIS candidate; ROW plans/agency confirmation required
+S1-S044-Bore,OH,RAMP FROM US 36 TO US 33,RA,80045,S,UNI,18.4,26.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S044-Bore,OH,US 36,US,00036,S,UNI,10.3,26.2,1,GIS candidate; ROW plans/agency confirmation required
+S1-S045-RR,OH,DELAWARE,MR,00802,M,UNI,94.8,7.2,1,GIS candidate; ROW plans/agency confirmation required
+S1-S045-RR,OH,BUERGER,MR,00016,M,UNI,10.0,23.6,1,GIS candidate; ROW plans/agency confirmation required
+S1-S046-Bore,OH,DELAWARE,MR,00802,M,UNI,245.7,7.5,2,GIS candidate; ROW plans/agency confirmation required
+S1-S046-Bore,OH,CHERRY,MR,00019,M,UNI,128.6,5.1,1,GIS candidate; ROW plans/agency confirmation required
+S1-S046-Bore,OH,5,TR,00103,T,UNI,72.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S046-Bore,OH,COLUMBUS,CR,00001,C,UNI,54.1,0.0,2,GIS candidate; ROW plans/agency confirmation required
+S1-S046-Bore,OH,6,MR,00069,M,UNI,38.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+S1-S046-Bore,OH,5TH,CR,00001,C,UNI,31.3,14.1,1,GIS candidate; ROW plans/agency confirmation required
+S1-S046-Bore,OH,CHERRY,CR,00114,C,UNI,21.6,14.1,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Arlington Heights Rd,,,3,,2827.2,11.7,20,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,SHELLEY RD,,,4,,60.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,BRANTWOOD AVE,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,JF Kennedy Blvd,,,4,,53.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,MEADOW CT,,,4,,52.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Devon Ave,,,3,,51.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,CLEARMONT DR,,,4,,44.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Marino Ct,,,9,,44.3,12.4,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,TURNER AVE,,,4,,37.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,NEWPORT AVE,,,4,,36.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,PARKCHESTER RD,,,4,,25.4,4.6,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Pierce Rd,,,4,,23.5,16.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,ELK GROVE TOWN CTR,,,4,,22.8,7.2,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,BUCKINGHAM CT,,,4,,22.0,8.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,VILLAGE GROVE DR,,,4,,21.5,8.5,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,BOARDWALK ST,,,4,,21.3,8.8,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,BRANDYWINE AVE,,,4,,21.0,9.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Prospect Ave,,,3,,19.8,16.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,LONSDALE ROAD,,,4,,18.5,11.6,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,SYLVAN CT,,,4,,11.9,18.4,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,COSMAN RD,,,4,,10.7,19.4,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S02-Water,IL,Arlington Heights Rd,,,3,,169.5,13.3,4,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Arlington Heights Rd,,,3,,2238.0,13.6,20,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Arlington Heights Rd,,,1,,649.8,20.5,4,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,NORTHWEST PT DR,,,4,,72.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Higgins Rd,,,1,,56.6,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Landmeier Rd,,,3,,51.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,BENNETT ROAD,,,4,,51.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Oakton St,,,4,,50.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,OAKWOOD DR,,,4,,49.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,WESTGATE AVE,,,4,,48.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,ELK GROVE BLVD,,,4,,47.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,EDGEWARE RD,,,4,,44.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,BUSSE FOREST DAM FP,,,9,,15.6,14.4,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,Oakton St,,,4,,1264.9,2.9,3,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,CARROLL SQUARE,,,4,,66.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,Stanley St,,,4,,63.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,RIDGEWOOD ROAD,,,4,,60.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,Wildwood Rd,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,WOODCREST LANE,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,Arlington Heights Rd,,,3,,45.4,19.8,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,FOREST LANE,,,4,,37.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,EVERGREEN STREE,,,4,,35.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,STANLEY ST,,,4,,33.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,SHADYWOOD LN,,,4,,25.9,4.1,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,KENT AVE,,,4,,20.9,9.2,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Touhy Ave,,,4,,2530.7,3.3,4,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,ELK GROVE BLVD,,,4,,1951.4,3.8,4,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,NICHOLAS BLVD,,,4,,616.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Estes Ave,,,4,,114.9,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,VICTORIA LANE,,,4,,82.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Busse Rd,,,1,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,LOVE STREET,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Ridge Ave,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Lively Blvd,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Greenleaf Ave,,,4,,60.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,JF Kennedy Blvd,,,4,,56.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Tonne Rd NB,,,4,,54.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,LIONS DRIVE,,,4,,54.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Arlington Heights Rd,,,3,,44.5,17.7,2,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,BANYON DRIVE,,,4,,35.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Crest Ave,,,4,,24.5,5.6,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,TOWER LANE,,,4,,23.2,6.8,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,CHASE AV,,,4,,19.7,10.3,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,MCCABE AVE,,,4,,17.0,13.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Arthur Ave,,,4,,993.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Pratt Blvd,,,4,,749.4,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Lively Blvd,,,4,,343.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Busse Rd,,,1,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Greenleaf Ave,,,4,,60.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Touhy Ave,,,4,,39.7,9.9,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Morse Ave,,,4,,37.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Lunt Ave,,,4,,37.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,CLEARMONT,,,4,,21.3,8.7,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,ELK GROVE BLVD,,,4,,17.0,15.1,1,GIS candidate; ROW plans/agency confirmation required

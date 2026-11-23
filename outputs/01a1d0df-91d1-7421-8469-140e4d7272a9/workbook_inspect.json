@@ -1,0 +1,27 @@
+{
+  "recordCount": 7,
+  "truncated": true,
+  "metadata": {
+    "revision": "mzo30v",
+    "target": {
+      "id": "wb/3u04ya",
+      "beforeLines": 0,
+      "afterLines": 0
+    },
+    "kind": {
+      "requested": "workbook,sheet,table",
+      "tokens": [
+        "workbook",
+        "sheet",
+        "table"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  }
+}

@@ -1,0 +1,34 @@
+﻿plan_index_object_id,candidate_route_features,county,route_type_in_index,route_number_in_index,crs,pid,plan_type,plan_year,ctl_begin,ctl_end,plan_sheets_field,recorded_doc_field,status
+376491,S0-S004-Water; S0-S005-Bore,FRANKLIN,SR,6,FRA-6-22.64,0,R/W,1991,22.64,22.68,,,Plan index candidate only; retrieve and interpret original sheets
+376492,S0-S003-Bore; S0-S004-Water; S0-S005-Bore,FRANKLIN,SR,6,FRA-6-16.75,0,R/W,1993,16.75,23.36,,,Plan index candidate only; retrieve and interpret original sheets
+376495,S0-S017-Bore,FRANKLIN,SR,6,FRA-6-11.57,0,R/W,1967,11.57,13.45,,,Plan index candidate only; retrieve and interpret original sheets
+376498,S0-S003-Bore; S0-S004-Water; S0-S005-Bore,FRANKLIN,SR,6,FRA-6-21.2,0,R/W,1933,21.2,23.36,,,Plan index candidate only; retrieve and interpret original sheets
+376505,S0-S004-Water; S0-S005-Bore,FRANKLIN,SR,6,FRA-6-22.32,0,R/W,1970,22.32,22.68,,,Plan index candidate only; retrieve and interpret original sheets
+376515,S0-S018-HW; S0-S019-Bore,FRANKLIN,SR,6,FRA-6-10.76,0,R/W,1960,10.76,11.35,,,Plan index candidate only; retrieve and interpret original sheets
+378706,S0-S017-Bore,FRANKLIN,SR,6,FRA-6-20.84,0,R/W,1972,20.84,25.0,,,Plan index candidate only; retrieve and interpret original sheets
+378709,S0-S017-Bore,FRANKLIN,SR,6,FRA-6-22.63,0,R/W,1932,22.63,26.21,,,Plan index candidate only; retrieve and interpret original sheets
+379414,S0-S018-HW,FRANKLIN,IR,6,FRA-6-25.6,7278,R/W,1995,25.6,29.9,,,Plan index candidate only; retrieve and interpret original sheets
+379433,S0-S018-HW,FRANKLIN,IR,6,FRA-6-25.33,0,R/W,1957,25.33,29.0,,,Plan index candidate only; retrieve and interpret original sheets
+379633,S0-S025-Bore; S0-S026-Water; S0-S027-Bore; S1-S028-Bore,DELAWARE,US,6,DEL-6-0,0,R/W,1976,0.0,10.26,,,Plan index candidate only; retrieve and interpret original sheets
+379642,S0-S025-Bore; S0-S026-Water; S0-S027-Bore,DELAWARE,US,6,DEL-6-0,0,R/W,1940,0.0,3.8,,,Plan index candidate only; retrieve and interpret original sheets
+379645,S1-S028-Bore,DELAWARE,US,6,DEL-6-3.79,0,R/W,1954,3.79,8.69,,,Plan index candidate only; retrieve and interpret original sheets
+379646,S0-S025-Bore; S0-S026-Water; S0-S027-Bore; S1-S028-Bore,DELAWARE,US,6,DEL-6-0,0,R/W,1931,0.0,10.6,,,Plan index candidate only; retrieve and interpret original sheets
+379648,S0-S025-Bore,DELAWARE,US,6,DEL-6-1.22,0,R/W,1970,1.22,1.5,,,Plan index candidate only; retrieve and interpret original sheets
+380016,S1-S029-Water; S1-S030-Bore,DELAWARE,SR,6,DEL-6-0,0,R/W,0,0.0,8.68,,,Plan index candidate only; retrieve and interpret original sheets
+380297,S0-S003-Bore,LICKING,SR,5,LIC-5-0,0,R/W,1966,0.0,2.7,,,Plan index candidate only; retrieve and interpret original sheets
+382000,S0-S007-Bore,FRANKLIN,US,6,FRA-6-29.2,0,R/W,1925,29.2,33.15,,,Plan index candidate only; retrieve and interpret original sheets
+385560,S0-S025-Bore,DELAWARE,SR,6,DEL-6-5.45,8031,R/W,1993,5.45,6.85,,,Plan index candidate only; retrieve and interpret original sheets
+386019,S0-S019-Bore,FRANKLIN,SR,6,FRA-6-0,0,R/W,1967,0.0,1.7,,,Plan index candidate only; retrieve and interpret original sheets
+386655,S1-S043-HW,UNION,US,6,UNI-6-12.04,0,R/W,1965,12.04,20.34,,,Plan index candidate only; retrieve and interpret original sheets
+386656,S1-S043-HW,UNION,US,6,UNI-6-12,0,R/W,1933,12.0,20.0,,,Plan index candidate only; retrieve and interpret original sheets
+386661,S1-S043-HW,UNION,US,6,UNI-6-12.04,0,R/W,1932,12.04,14.9,,,Plan index candidate only; retrieve and interpret original sheets
+386859,S0-S025-Bore,FRANKLIN,US,6,FRA-6-23.4,0,R/W,1976,23.4,24.65,,,Plan index candidate only; retrieve and interpret original sheets
+386861,S0-S025-Bore,FRANKLIN,US,6,FRA-6-21.62,0,R/W,1935,21.62,24.65,,,Plan index candidate only; retrieve and interpret original sheets
+386862,S0-S025-Bore,FRANKLIN,US,6,FRA-6-22,0,R/W,1941,22.0,24.65,,,Plan index candidate only; retrieve and interpret original sheets
+387758,S1-S032-Bore,DELAWARE,SR,6,DEL-6-0,0,R/W,0,0.0,7.6,,,Plan index candidate only; retrieve and interpret original sheets
+387770,S1-S032-Bore,DELAWARE,SR,6,DEL-6-1.49,0,R/W,0,1.49,8.0,,,Plan index candidate only; retrieve and interpret original sheets
+389327,S0-S021-Bore; S0-S022-HW; S0-S023-Bore,FRANKLIN,IR,6,FRA-6-21.7,12495,R/W,1999,21.7,24.9,,,Plan index candidate only; retrieve and interpret original sheets
+389330,S0-S014-HW,FRANKLIN,IR,6,FRA-6-31.01,12521,R/W,1993,31.01,32.46,,,Plan index candidate only; retrieve and interpret original sheets
+389332,S0-S014-HW,FRANKLIN,IR,6,FRA-6-31.41,12526,R/W,1995,31.41,33.71,,,Plan index candidate only; retrieve and interpret original sheets
+389336,S0-S021-Bore; S0-S022-HW; S0-S023-Bore,FRANKLIN,IR,6,FRA-6-23.6,0,R/W,1965,23.6,25.0,,,Plan index candidate only; retrieve and interpret original sheets
+389348,S0-S014-HW,FRANKLIN,IR,6,FRA-6-31.3,0,R/W,1969,31.3,34.2,,,Plan index candidate only; retrieve and interpret original sheets

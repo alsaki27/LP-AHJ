@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07121d">
+  <meta name="description" content="Interactive route, ROW, utility, AHJ, water, and rail evidence atlas for the Ohio segments and Chicago spurs.">
+  <title>Lightpath Route Intelligence</title>
+  <link rel="stylesheet" href="assets/leaflet.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">L<span>+</span></div><div><strong>LIGHTPATH</strong><small>ROUTE INTELLIGENCE</small></div></div>
+      <div class="sidebar-eyebrow">WORKSPACE</div>
+      <nav class="nav" aria-label="Dashboard sections">
+        <button class="nav-item active" data-report="overview"><span class="nav-icon">◈</span><span>Overview</span><span class="nav-key">01</span></button>
+        <button class="nav-item" data-report="ahj"><span class="nav-icon">▦</span><span>AHJ &amp; permits</span><span class="nav-key">02</span></button>
+        <button class="nav-item" data-report="water"><span class="nav-icon">◉</span><span>Water crossings</span><span class="nav-key">03</span></button>
+        <button class="nav-item" data-report="rail"><span class="nav-icon">╋</span><span>Rail crossings</span><span class="nav-key">04</span></button>
+        <button class="nav-item" data-report="utilities"><span class="nav-icon">⌁</span><span>Utility screen</span><span class="nav-key">05</span></button>
+        <button class="nav-item" data-report="documents"><span class="nav-icon">▤</span><span>Evidence library</span><span class="nav-key">06</span></button>
+        <button class="nav-item" data-report="missing"><span class="nav-icon">△</span><span>Open records</span><span class="nav-key">07</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="status-card"><span class="live-dot"></span><div><strong>Desktop evidence build</strong><small>Public GIS + recorded documents<br>14 Nov 2026</small></div></div>
+        <div class="sidebar-note">Planning screen only. Legal ROW, utility depth and permit authority still require confirmation.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><div class="crumb"><span>PROJECTS</span><b>/</b><span>CHI + OHIO</span><b>/</b><strong>ROUTE ATLAS</strong></div><div class="topbar-right"><span class="privacy-pill"><span class="live-dot"></span> PRIVATE DIRECTOR VIEW</span><button id="helpButton" class="icon-button" title="How to read this atlas" aria-label="How to read this atlas">?</button></div></header>
+      <section class="headline"><div><div class="eyebrow"><span class="eyebrow-line"></span> ENGINEERING &amp; PERMITTING INTELLIGENCE</div><h1>See the route. <em>See the risk.</em></h1><p>One place for the Ohio segments and Chicago spurs: ROW leads, parcel context, public utilities, AHJs and crossings.</p></div><div class="headline-status"><span class="headline-status-icon">!</span><div><strong>DESIGN GATE</strong><span>No road side is cleared<br>for construction yet</span></div></div></section>
+      <section class="kpis" aria-label="Route statistics">
+        <div class="kpi"><div class="kpi-top"><span>ROUTE FOOTPRINT</span><span class="kpi-icon">⌁</span></div><strong id="statMiles">60.57 <small>mi</small></strong><div class="kpi-foot" id="statFeaturesLabel">52 supplied route features</div></div>
+        <div class="kpi"><div class="kpi-top"><span>ROW DOCUMENT LEADS</span><span class="kpi-icon">▤</span></div><strong id="statDocs">27 <small>/ 52</small></strong><div class="kpi-foot">Features with a candidate PDF</div></div>
+        <div class="kpi danger"><div class="kpi-top"><span>CONSTRUCTION CLEARED</span><span class="kpi-icon">△</span></div><strong id="statCleared">0 <small>/ 52</small></strong><div class="kpi-foot">Surveyed ROW + work area verified</div></div>
+        <div class="kpi"><div class="kpi-top"><span>PUBLIC UTILITY LEADS</span><span class="kpi-icon">◉</span></div><strong id="statUtilities">2,935</strong><div class="kpi-foot">Proximity links, not locates</div></div>
+      </section>
+
+      <section class="atlas-layout">
+        <div class="map-card">
+          <div class="map-topbar"><div><div class="panel-eyebrow">GEOSPATIAL VIEW</div><h2>Corridor atlas <span>52 features</span></h2></div><div class="map-actions"><button class="tiny-button" id="fitButton" title="Fit selected scope">↗ <span>Fit route</span></button><button class="tiny-button" id="baseButton" title="Change basemap">◐ <span>Basemap</span></button><button class="tiny-button active" id="layersButton" aria-expanded="true">☷ <span>Layers</span></button></div></div>
+          <div class="scope-switch" role="group" aria-label="Route scope"><button class="active" data-scope="S0">Segment 0</button><button data-scope="S1">Segment 1</button><button data-scope="Chicago">Chicago spurs</button><button data-scope="All">All routes</button></div>
+          <div class="map-wrap"><div id="map" role="application" aria-label="Interactive route map"></div><div class="map-corner-tag"><span class="map-corner-dot"></span> PUBLIC RECORD SCREEN <span class="tag-divider">/</span> NOT FOR CONSTRUCTION</div>
+            <div id="layersPanel" class="layers-panel"><div class="layers-heading"><strong>Map layers</strong><span>SHOW / HIDE</span></div>
+              <label class="layer-row"><span class="layer-swatch route"></span><span>Proposed route<small>52 original KMZ features</small></span><input type="checkbox" data-layer="routes" checked></label>
+              <label class="layer-row"><span class="layer-swatch parcel"></span><span>Corridor parcels<small>5,061 public tax parcels</small></span><input type="checkbox" data-layer="parcels"></label>
+              <label class="layer-row"><span class="layer-swatch row"></span><span>Mapped ROW leads<small>Franklin, Cook, DuPage</small></span><input type="checkbox" data-layer="row" checked></label>
+              <label class="layer-row"><span class="layer-swatch utility"></span><span>Public utilities<small>Water, sewer, storm &amp; more</small></span><input type="checkbox" data-layer="utilities" checked></label>
+              <div class="layer-selects"><select id="utilitySource" aria-label="Utility source"><option value="all">All utility sources</option></select><select id="utilityType" aria-label="Utility type"><option value="all">All utility types</option><option value="water">Water</option><option value="sanitary">Sanitary / sewer</option><option value="storm">Storm / drainage</option><option value="traffic">Traffic / lighting</option><option value="electric">Electric</option></select></div>
+              <label class="layer-row"><span class="layer-swatch water"></span><span>Water cases<small>16 crossing / drainage leads</small></span><input type="checkbox" data-layer="water" checked></label>
+              <label class="layer-row"><span class="layer-swatch rail"></span><span>Rail crossings<small>11 geometric crossing points</small></span><input type="checkbox" data-layer="rail" checked></label>
+            </div>
+            <div class="map-legend"><span><i class="legend-line s0"></i> S0</span><span><i class="legend-line s1"></i> S1</span><span><i class="legend-line chicago"></i> Chicago</span><span class="legend-sep"></span><span><i class="legend-dot water"></i> Water</span><span><i class="legend-dot rail"></i> Rail</span></div>
+            <div id="mapToast" class="map-toast" role="status"></div>
+          </div>
+        </div>
+        <aside class="insights"><div class="insights-head"><div><div class="panel-eyebrow">FIELD NOTES</div><h2 id="insightTitle">Decision watchlist</h2></div><span class="insight-count">P0 / P1</span></div><div id="insightBody" class="insights-body"><div class="loading">Loading evidence…</div></div><div class="insights-footer"><span class="dot-outline"></span> Click a route or issue to inspect its evidence.</div></aside>
+      </section>
+      <footer class="page-footer"><span>LIGHTPATH / ROUTE INTELLIGENCE</span><span>Evidence snapshot: 14 Nov 2026 · Public records only · No agency concurrence</span></footer>
+    </main>
+  </div>
+
+  <div id="reportBackdrop" class="report-backdrop" hidden></div>
+  <aside id="reportDrawer" class="report-drawer" aria-label="Research report" aria-hidden="true"><div class="report-top"><div><div class="panel-eyebrow" id="reportKicker">RESEARCH REGISTER</div><h2 id="reportTitle">Report</h2><p id="reportSubtitle"></p></div><button id="closeReport" class="icon-button close" aria-label="Close report">×</button></div><div class="report-tools"><input id="reportSearch" type="search" placeholder="Search this report…" aria-label="Search report"><select id="reportScope" aria-label="Filter report by route"><option value="All">All routes</option><option value="S0">Segment 0</option><option value="S1">Segment 1</option><option value="Chicago">Chicago spurs</option></select><button id="exportReport" class="export-button">↓ CSV</button></div><div class="report-summary"><span id="reportCount">0 records</span><span>Click a record to focus the map</span></div><div id="reportRows" class="report-rows"></div><div class="report-bottom"><button id="loadMore" class="load-more">Load more records</button></div></aside>
+
+  <dialog id="helpDialog" class="help-dialog"><form method="dialog"><button class="icon-button close" aria-label="Close">×</button><div class="panel-eyebrow">HOW TO READ THIS ATLAS</div><h2>Evidence first. Decisions second.</h2><p>Lines show the supplied conceptual route. Parcels, ROW polygons and utility features are public GIS screening leads. They do not establish legal access, current utility position, depth or a conflict-free road side.</p><div class="help-grid"><div><strong>01 · Explore</strong><span>Choose a route scope and toggle layers. Click any route, parcel, utility or crossing for details.</span></div><div><strong>02 · Review</strong><span>Use the left navigation for searchable AHJ, water, rail, utility, PDF and missing-record registers. Export filtered CSVs.</span></div><div><strong>03 · Confirm</strong><span>Before design: get controlling ROW/title, current owner as-builts, surveyed work limits, locates/SUE and written authority decisions.</span></div></div><button class="dialog-done">Got it</button></form></dialog>
+  <script src="assets/leaflet.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

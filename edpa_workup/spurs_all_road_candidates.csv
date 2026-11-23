@@ -1,0 +1,76 @@
+feature_id,state,road_name,route_type,route_number,jurisdiction_code,county_code,total_road_length_within_30m_buffer_m,min_centerline_distance_m,source_road_segments,status
+Spur1-S01-Bore,IL,Arlington Heights Rd,,,3,,2827.2,11.7,20,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,SHELLEY RD,,,4,,60.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,BRANTWOOD AVE,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,JF Kennedy Blvd,,,4,,53.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,MEADOW CT,,,4,,52.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Devon Ave,,,3,,51.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,CLEARMONT DR,,,4,,44.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Marino Ct,,,9,,44.3,12.4,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,TURNER AVE,,,4,,37.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,NEWPORT AVE,,,4,,36.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,PARKCHESTER RD,,,4,,25.4,4.6,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Pierce Rd,,,4,,23.5,16.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,ELK GROVE TOWN CTR,,,4,,22.8,7.2,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,BUCKINGHAM CT,,,4,,22.0,8.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,VILLAGE GROVE DR,,,4,,21.5,8.5,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,BOARDWALK ST,,,4,,21.3,8.8,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,BRANDYWINE AVE,,,4,,21.0,9.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,Prospect Ave,,,3,,19.8,16.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,LONSDALE ROAD,,,4,,18.5,11.6,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,SYLVAN CT,,,4,,11.9,18.4,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S01-Bore,IL,COSMAN RD,,,4,,10.7,19.4,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S02-Water,IL,Arlington Heights Rd,,,3,,169.5,13.3,4,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Arlington Heights Rd,,,3,,2238.0,13.6,20,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Arlington Heights Rd,,,1,,649.8,20.5,4,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,NORTHWEST PT DR,,,4,,72.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Higgins Rd,,,1,,56.6,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Landmeier Rd,,,3,,51.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,BENNETT ROAD,,,4,,51.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,Oakton St,,,4,,50.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,OAKWOOD DR,,,4,,49.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,WESTGATE AVE,,,4,,48.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,ELK GROVE BLVD,,,4,,47.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,EDGEWARE RD,,,4,,44.4,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur1-S03-Bore,IL,BUSSE FOREST DAM FP,,,9,,15.6,14.4,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,Oakton St,,,4,,1264.9,2.9,3,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,CARROLL SQUARE,,,4,,66.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,Stanley St,,,4,,63.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,RIDGEWOOD ROAD,,,4,,60.1,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,Wildwood Rd,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,WOODCREST LANE,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,Arlington Heights Rd,,,3,,45.4,19.8,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,FOREST LANE,,,4,,37.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,EVERGREEN STREE,,,4,,35.5,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,STANLEY ST,,,4,,33.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,SHADYWOOD LN,,,4,,25.9,4.1,1,GIS candidate; ROW plans/agency confirmation required
+Spur2-S01-Bore,IL,KENT AVE,,,4,,20.9,9.2,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Touhy Ave,,,4,,2530.7,3.3,4,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,ELK GROVE BLVD,,,4,,1951.4,3.8,4,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,NICHOLAS BLVD,,,4,,616.3,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Estes Ave,,,4,,114.9,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,VICTORIA LANE,,,4,,82.6,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Busse Rd,,,1,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,LOVE STREET,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Ridge Ave,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Lively Blvd,,,4,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Greenleaf Ave,,,4,,60.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,JF Kennedy Blvd,,,4,,56.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Tonne Rd NB,,,4,,54.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,LIONS DRIVE,,,4,,54.2,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Arlington Heights Rd,,,3,,44.5,17.7,2,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,BANYON DRIVE,,,4,,35.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,Crest Ave,,,4,,24.5,5.6,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,TOWER LANE,,,4,,23.2,6.8,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,CHASE AV,,,4,,19.7,10.3,1,GIS candidate; ROW plans/agency confirmation required
+Spur3-S01-Bore,IL,MCCABE AVE,,,4,,17.0,13.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Arthur Ave,,,4,,993.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Pratt Blvd,,,4,,749.4,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Lively Blvd,,,4,,343.7,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Busse Rd,,,1,,60.0,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Greenleaf Ave,,,4,,60.0,0.0,2,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Touhy Ave,,,4,,39.7,9.9,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Morse Ave,,,4,,37.9,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,Lunt Ave,,,4,,37.8,0.0,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,CLEARMONT,,,4,,21.3,8.7,1,GIS candidate; ROW plans/agency confirmation required
+Spur4-S01-Bore,IL,ELK GROVE BLVD,,,4,,17.0,15.1,1,GIS candidate; ROW plans/agency confirmation required

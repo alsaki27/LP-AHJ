@@ -1,0 +1,53 @@
+﻿feature_id,unique_corridor_parcel_count,direct_intersection_parcel_count,county_sources,parcel_ids_by_county
+S0-S001-Bore,32,10,OH:Licking,OH/Licking:32
+S0-S002-Water,7,2,OH:Licking,OH/Licking:7
+S0-S003-Bore,52,17,OH:Franklin | OH:Licking,OH/Franklin:21; OH/Licking:31
+S0-S004-Water,6,2,OH:Franklin,OH/Franklin:6
+S0-S005-Bore,20,9,OH:Franklin,OH/Franklin:20
+S0-S006-Water,4,2,OH:Franklin,OH/Franklin:4
+S0-S007-Bore,134,12,OH:Franklin,OH/Franklin:134
+S0-S008-Water,6,1,OH:Franklin,OH/Franklin:6
+S0-S009-Bore,7,1,OH:Franklin,OH/Franklin:7
+S0-S010-Water,9,2,OH:Franklin,OH/Franklin:9
+S0-S011-Bore,285,3,OH:Franklin,OH/Franklin:285
+S0-S012-Water,7,0,OH:Franklin,OH/Franklin:7
+S0-S013-Bore,7,0,OH:Franklin,OH/Franklin:7
+S0-S014-HW,3,0,OH:Franklin,OH/Franklin:3
+S0-S015-Bore,28,0,OH:Franklin,OH/Franklin:28
+S0-S016-Water,5,1,OH:Franklin,OH/Franklin:5
+S0-S017-Bore,528,19,OH:Franklin,OH/Franklin:528
+S0-S018-HW,7,1,OH:Franklin,OH/Franklin:7
+S0-S019-Bore,59,4,OH:Franklin,OH/Franklin:59
+S0-S020-RR,8,2,OH:Franklin,OH/Franklin:8
+S0-S021-Bore,19,0,OH:Franklin,OH/Franklin:19
+S0-S022-HW,7,0,OH:Franklin,OH/Franklin:7
+S0-S023-Bore,950,2,OH:Delaware | OH:Franklin,OH/Delaware:26; OH/Franklin:942
+S0-S024-RR,64,2,OH:Delaware | OH:Franklin,OH/Delaware:14; OH/Franklin:60
+S0-S025-Bore,207,6,OH:Delaware | OH:Franklin,OH/Delaware:539; OH/Franklin:175
+S0-S026-Water,6,1,OH:Delaware,OH/Delaware:9
+S0-S027-Bore,29,5,OH:Delaware,OH/Delaware:88
+S1-S028-Bore,27,14,OH:Delaware,OH/Delaware:79
+S1-S029-Water,4,1,OH:Delaware,OH/Delaware:11
+S1-S030-Bore,37,23,OH:Delaware,OH/Delaware:196
+S1-S031-RR,8,1,OH:Delaware,OH/Delaware:12
+S1-S032-Bore,42,5,OH:Delaware,OH/Delaware:461
+S1-S033-Water,3,2,OH:Delaware,OH/Delaware:5
+S1-S034-Bore,13,10,OH:Delaware,OH/Delaware:68
+S1-S035-Water,4,2,OH:Delaware,OH/Delaware:8
+S1-S036-Bore,41,25,OH:Delaware | OH:Union,OH/Delaware:52; OH/Union:33
+S1-S037-Water,3,2,OH:Union,OH/Union:3
+S1-S038-Bore,112,38,OH:Union,OH/Union:112
+S1-S039-Water,4,2,OH:Union,OH/Union:4
+S1-S040-Bore,136,56,OH:Union,OH/Union:136
+S1-S041-Water,6,2,OH:Union,OH/Union:6
+S1-S042-Bore,54,24,OH:Union,OH/Union:54
+S1-S043-HW,9,1,OH:Union,OH/Union:9
+S1-S044-Bore,46,5,OH:Union,OH/Union:46
+S1-S045-RR,24,1,OH:Union,OH/Union:24
+S1-S046-Bore,55,2,OH:Union,OH/Union:55
+Spur1-S01-Bore,252,5,IL:Cook | IL:Dupage,IL/Cook:225; IL/Dupage:27
+Spur1-S02-Water,8,0,IL:Cook,IL/Cook:8
+Spur1-S03-Bore,151,4,IL:Cook,IL/Cook:151
+Spur2-S01-Bore,153,1,IL:Cook,IL/Cook:153
+Spur3-S01-Bore,286,26,IL:Cook,IL/Cook:286
+Spur4-S01-Bore,105,29,IL:Cook,IL/Cook:105

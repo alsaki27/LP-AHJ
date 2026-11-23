@@ -1,0 +1,32 @@
+# Generated and local state
+__pycache__/
+*.py[cod]
+*.tmp
+*.log
+
+# Archived duplicate copy of the entire project workspace
+edpa_workup/waterway_permit_research/lp_source_copy/
+
+# Original RFP inputs: intentionally not part of this repository
+edpa_workup/source_files/EDPA Process.pdf
+edpa_workup/source_files/MT - CMH - v4.0 - Segment0.kmz
+edpa_workup/source_files/MT - CMH - v4.0 - Segment1.kmz
+edpa_workup/source_files/MT - CMH - v4.0 - Spurs.kmz
+edpa_workup/waterway_permit_research/rfp_source/
+
+# Redundant delivery ZIP snapshots; their individual contents are represented in the tree
+EDPA_Desktop_Screening_Package.zip
+Vendor_EDPA_Full_Analysis_Package*.zip
+outputs/**/Vendor_EDPA_Full_Analysis_Package*.zip
+edpa_workup/waterway_permit_research/ROW_PDF_Evidence_Library.zip
+
+# Duplicate extracted county parcel DBF (the canonical copy is retained under parcel_data)
+edpa_workup/row_records/union_parcels_extracted/Property_Parcels.dbf
+
+# Temporary scratch renderings
+edpa_workup/tmp_page_*.png
+edpa_workup/waterway_permit_research/review_tmp/
+edpa_workup/waterway_permit_research/tmp/
+
+# The excluded original EDPA process PDF may also appear as a duplicate at project root
+**/EDPA Process.pdf
