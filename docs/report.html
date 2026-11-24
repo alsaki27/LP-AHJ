@@ -27,7 +27,7 @@
 <div class="tools"><select id="rsev"><option value="">All severities</option><option>Critical</option><option>High</option><option>Medium</option></select><select id="rtype"></select><input type="search" id="rq" placeholder="filter risks"><button id="rcsv">CSV</button><span class="note" id="rcnt"></span></div>
 <div class="scroll"><table class="t" id="rr"><thead><tr><th>ID</th><th>Severity</th><th>Type</th><th>Segment</th><th>Where</th><th>Risk</th><th>Agencies</th><th>Action</th><th></th></tr></thead><tbody></tbody></table></div>
 <h2 id="screening-leads">10. Unresolved sites and structure leads</h2><p class="note">These are separate checks for unresolved water locations and nearby structures. See the <a href="water.html">water crossing register</a> for the mapped intersections and their decisions.</p><div class="scroll"><table class="t" id="lt"><thead><tr><th>ID</th><th>Segment</th><th>Feature</th><th>Lead</th><th>What remains unverified</th><th>Close-out</th></tr></thead><tbody></tbody></table></div>
-<h2>11. Reroute opportunities (conceptual)</h2><p class="note">Alignments are drawn on mapped ROW / parcel gaps with no road-centerline file; they need survey and owner confirmation.</p><div id="rrs"></div>
+<h2>11. Reroute opportunities (conceptual)</h2><p class="note">Alignment sources and remaining survey and approval checks are listed on each card.</p><div id="rrs"></div>
 <h2>12. Open items to confirm</h2><div class="scroll" style="max-height:none"><table class="t"><thead><tr><th>#</th><th>Item</th><th>Who</th><th>Why</th></tr></thead><tbody id="oi"></tbody></table></div>
 </div>
 <script>
@@ -74,7 +74,7 @@ function drawR(){const s=$('#rsev').value,t=tsel.value,q=$('#rq').value.toLowerC
 ['rsev','rtype','rq'].forEach(i=>$('#'+i).oninput=drawR);$('#rcsv').onclick=()=>csv(window._rrows.map(r=>({id:r.id,severity:r.sev,type:r.type,segment:r.seg,feature:r.feature,station:r.station,title:r.title,detail:r.detail,agencies:r.agencies,action:r.action,lat:r.ll[1],lon:r.ll[0],source:r.source})),'risk_register.csv');drawR();sortable($('#rr'));
 // reroutes
 const A=x=>Array.isArray(x)?x.join('; '):(x||'');
-$('#rrs').innerHTML=LP.reroutes.map(r=>{const d=r.rfp_ft&&r.alt_ft?r.alt_ft-r.rfp_ft:null;return `<div class="rrcard"><div>${r.map?`<img src="${r.map}" alt="${esc(r.id)}" onclick="lightbox(this.src,this.alt)">`:'<span class="note">(no map)</span>'}</div>
+$('#rrs').innerHTML=LP.reroutes.map(r=>{const d=r.rfp_ft&&r.alt_ft?r.alt_ft-r.rfp_ft:null;return `<div class="rrcard" id="${esc(r.id)}"><div>${r.map?`<img src="${r.map}" alt="${esc(r.title)}" onclick="lightbox(this.src,this.alt)">`:'<span class="note">(no map)</span>'}</div>
  <div><h3 style="margin:0 0 4px">${esc(r.id)}: ${esc(r.title)} <span class="chip st">${esc(r.seg)}</span> <span class="chip ok">${esc(r.conf)}</span></h3>
  <p class="note">RFP ${r.rfp_ft?fmt(r.rfp_ft):'–'} ft → alternative ${r.alt_ft?fmt(r.alt_ft):'–'} ft ${d!=null?'('+(d>0?'+':'')+fmt(d)+' ft)':''} · <a href="map.html#rr=${r.id}">show on map</a></p>
  <p><b>Benefit:</b> ${esc(r.benefit)}</p><p><b>Removed:</b> ${esc(A(r.removed))}</p><p><b>Added:</b> ${esc(A(r.added))}</p><p><b>Risks:</b> ${esc(A(r.risks))}</p>${r.notes?`<details><summary><b>Full write-up</b></summary><div class="notes">${r.notes}</div></details>`:''}</div></div>`}).join('');

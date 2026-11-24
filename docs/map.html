@@ -160,9 +160,12 @@ function openReroute(id,fly){const r=LP.reroutes.find(x=>x.id===id);history.repl
  if(fly&&r.c.length>1)map.fitBounds(L.latLngBounds(r.c.map(p=>[p[1],p[0]])).pad(.25));
  const d=r.rfp_ft&&r.alt_ft?r.alt_ft-r.rfp_ft:null;
  panel(`<div class="dh"><button class="x">×</button><span class="chip ok">Reroute opportunity</span> <span class="chip st">${esc(r.seg)}</span><h3>${esc(r.id)}: ${esc(r.title)}</h3><div class="note">Conceptual alignment – not surveyed · confidence ${esc(r.conf)}</div></div>
- <div class="dc">${r.map?`<div class="thumbs"><img style="width:100%;height:auto" src="${r.map}" alt="${esc(r.id)}"></div>`:''}
+ <div class="dc">${r.focus?`<p><button type="button" id="reroute-focus">${esc(r.focus.label)}</button></p>`:''}
+ ${r.map?`<div class="thumbs"><img style="width:100%;height:auto" src="${r.map}" alt="${esc(r.title)}"></div>`:''}
  <h5>Length</h5><p>RFP stretch ${r.rfp_ft?fmt(r.rfp_ft)+' ft':'–'} → alternative ${r.alt_ft?fmt(r.alt_ft)+' ft':'–'} ${d!=null?`(<b>${d>0?'+':''}${fmt(d)} ft</b>)`:''}</p>
- <h5>Benefit</h5><p>${esc(r.benefit)}</p><h5>Authorities removed</h5><p>${esc(Array.isArray(r.removed)?r.removed.join('; '):r.removed)}</p><h5>Authorities added</h5><p>${esc(Array.isArray(r.added)?r.added.join('; '):r.added)}</p><h5>Risks / unknowns</h5><p>${esc(Array.isArray(r.risks)?r.risks.join('; '):r.risks)}</p>${r.notes?`<h5>Full write-up (street by street, evidence, sources)</h5><div class="notes">${r.notes}</div>`:''}</div>`);}
+ <h5>Benefit</h5><p>${esc(r.benefit)}</p><h5>Authorities removed</h5><p>${esc(Array.isArray(r.removed)?r.removed.join('; '):r.removed)}</p><h5>Authorities added</h5><p>${esc(Array.isArray(r.added)?r.added.join('; '):r.added)}</p><h5>Risks / unknowns</h5><p>${esc(Array.isArray(r.risks)?r.risks.join('; '):r.risks)}</p>${r.notes?`<h5>Full write-up (street by street, evidence, sources)</h5><div class="notes">${r.notes}</div>`:''}</div>`);
+ if(r.focus)$('#reroute-focus').onclick=()=>map.setView(r.focus.point,16.5,{animate:false});
+}
 // ---- sidebar controls ----
 const LAYERS=[['Jurisdiction: counties / ODOT & IDOT districts',L_counties,true,'#1971c2'],['Jurisdiction: cities & villages',L_places,true,'#868e96'],['Route (by authority / land)',L_route,true,'#c0262d'],
  ['Risk flags',L_risk,true,'#e07b00'],
