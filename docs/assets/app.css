@@ -45,6 +45,11 @@ table.t td{border:1px solid var(--line);padding:5px 8px;vertical-align:top}table
 
 .notes{font-size:12.5px;line-height:1.45}.notes table.t{margin:6px 0}.notes h6{margin:10px 0 3px;font-size:12px;color:#27415c}.notes p{margin:0 0 6px}.notes ul{margin:2px 0 6px 18px;padding:0}.notes code{background:#eef1f5;padding:0 3px;border-radius:3px}details summary{cursor:pointer;margin:4px 0}
 .lead{width:14px;height:14px;border:1.5px solid #5a6b7d;background:#fff;color:#5a6b7d;font:10px/11px Arial;text-align:center;border-radius:2px;transform:rotate(0)}
+.construction-marker{display:grid;place-items:center;border:2px solid #fff;border-radius:5px;background:#ad4300;color:#fff;font-weight:700;font-size:11px;box-shadow:0 0 0 1px #ad4300}
+.construction-menu{display:grid;gap:5px}
+.construction-menu button{text-align:left;white-space:normal}
+.construction-card-link{display:inline-block;margin-top:9px;color:var(--navy);text-decoration:none;font-weight:700}
+.construction-card-link:hover{background:#eef3f9}
 .rk.Critical,.rk.High{width:22px;height:22px}
 .map-shell{position:relative;flex:1;display:flex;min-width:0}
 .street-view-control { background:#fff; border:2px solid rgba(0,0,0,.2); border-radius:5px; max-width:158px; }

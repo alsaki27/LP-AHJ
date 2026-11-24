@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>AHJ atlas – risky segments (planned construction)</title><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="assets/app.css"><script src="data/data.js"></script><script src="assets/common.js"></script>
+<link rel="stylesheet" href="assets/app.css"><script src="data/data.js"></script><script src="assets/common.js"></script><script src="assets/construction-map.js"></script>
 <style>
 .how{background:#fff;border:1px solid var(--line);border-left:5px solid #e8590c;border-radius:6px;padding:10px 14px;font-size:13px;margin:10px 0}
 .sv{display:inline-block;padding:2px 9px;border-radius:10px;font-size:11px;font-weight:700;color:#fff}
@@ -16,6 +16,10 @@
 .act{background:#eef7ee;border:1px solid #a9d6ae;border-radius:6px;padding:8px 10px}
 .tag{font-size:11px;background:#eef1f5;border-radius:8px;padding:1px 7px;margin-right:4px;white-space:nowrap}
 .pc:target{outline:3px solid #e8590c}
+.project-map-link{display:inline-flex;min-height:40px;align-items:center;gap:9px;padding:8px 13px;border-radius:5px;background:var(--navy);color:#fff;text-decoration:none;font-weight:700;white-space:nowrap}
+.project-map-link:hover{background:#24517f}
+.project-map-link:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.glance-map-link{display:block;margin-top:4px;white-space:nowrap;font-size:12px}
 </style></head><body>
 <div class="nav" id="nav"></div>
 <div class="page">
@@ -42,17 +46,16 @@ const cnt=s=>C.filter(p=>p.severity===s).length;
 $('#kpi').innerHTML=[['Projects found',C.length],['Critical',cnt('Critical')],['High',cnt('High')],['Medium',cnt('Medium')],['Low',cnt('Low')]].map(([a,b])=>`<div class="kpi"><div class="v">${b}</div><div class="l">${a}</div></div>`).join('');
 const timing=p=>[p.start&&('Start: '+p.start),p.end&&('End: '+p.end)].filter(Boolean).join(' · ')||'Not published: contact agency';
 const where=p=>esc(p.road)+(p.place?'<br><span class="mini">'+esc(p.place)+'</span>':'')+'<br><span class="mini">'+esc(p.seg)+'</span>';
-$('#glance tbody').innerHTML=C.filter(p=>p.severity!=='Low').map(p=>`<tr><td><span class="sv ${p.severity}">${p.severity}</span></td><td>${where(p)}</td><td><a href="#${p.id}">${esc(p.title)}</a></td><td>${esc(p.agency)}</td><td>${esc(p.status)}</td><td>${esc(timing(p))}</td><td>${esc(p.action)}</td></tr>`).join('');
+$('#glance tbody').innerHTML=C.filter(p=>p.severity!=='Low').map(p=>`<tr><td><span class="sv ${p.severity}">${p.severity}</span></td><td>${where(p)}</td><td><a href="#${p.id}">${esc(p.title)}</a>${constructionView(p)?`<a class="glance-map-link" href="${constructionMapLink(p.id)}" aria-label="View on map: ${esc(p.title)}">View on map →</a>`:''}</td><td>${esc(p.agency)}</td><td>${esc(p.status)}</td><td>${esc(timing(p))}</td><td>${esc(p.action)}</td></tr>`).join('');
 const segs=[...new Set(C.map(p=>p.seg))];$('#seg').innerHTML+=segs.map(s=>`<option>${esc(s)}</option>`).join('');
 function draw(){const q=$('#q').value.toLowerCase(),sg=$('#seg').value,sv=$('#sev').value;
  const L=C.filter(p=>(!sg||p.seg===sg)&&(!sv||p.severity===sv)&&(!q||JSON.stringify(p).toLowerCase().includes(q)));
  $('#cnt').textContent=L.length+' of '+C.length;
- $('#grid').innerHTML=L.map(p=>`<div class="pc ${p.severity}" id="${p.id}"><header><span class="sv ${p.severity}">${p.severity}</span><h3>${esc(p.title)}</h3><span class="tag">${esc(p.status)}</span><span class="tag">${esc(p.type)}</span><span class="tag">confidence: ${esc(p.confidence)}</span></header><div class="body">
+ $('#grid').innerHTML=L.map(p=>`<div class="pc ${p.severity}" id="${p.id}"><header><span class="sv ${p.severity}">${p.severity}</span><h3>${esc(p.title)}</h3><span class="tag">${esc(p.status)}</span><span class="tag">${esc(p.type)}</span><span class="tag">confidence: ${esc(p.confidence)}</span>${constructionView(p)?`<a class="project-map-link" href="${constructionMapLink(p.id)}" aria-label="View on map: ${esc(p.title)}">View on map <span aria-hidden="true">→</span></a>`:''}</header><div class="body">
  <div><h5>Where</h5>${where(p)}${p.station?'<div class="mini">Stations: '+esc(p.station)+'</div>':''}${(p.features||[]).length?'<div class="mini">Features: '+p.features.map(esc).join(', ')+'</div>':''}
  <h5>What is happening</h5>${esc(p.what)}<h5>Lead agency</h5>${esc(p.agency)}<h5>Timing (as published)</h5>${esc(timing(p))}</div>
  <div><h5>Effect on our permit</h5><div class="eff">${esc(p.permit_effect)}</div><h5>What to do</h5><div class="act">${esc(p.action)}${p.reroute_hint?'<br><b>Reroute idea:</b> '+esc(p.reroute_hint):''}</div>
- ${p.contact?'<h5>Contact</h5>'+esc(p.contact):''}<h5>Source</h5>${p.source_url?'<a href="'+esc(p.source_url)+'" target="_blank" rel="noopener">'+esc(p.source_url)+'</a>':'none'}<div class="mini">Source date: ${esc(p.source_date||'not stated')}</div>
- ${p.ll?'<div class="mini"><a href="map.html">Map layer: Planned construction (C)</a></div>':''}</div></div></div>`).join('')||'<p>No matches.</p>';}
+ ${p.contact?'<h5>Contact</h5>'+esc(p.contact):''}<h5>Source</h5>${p.source_url?'<a href="'+esc(p.source_url)+'" target="_blank" rel="noopener">'+esc(p.source_url)+'</a>':'none'}<div class="mini">Source date: ${esc(p.source_date||'not stated')}</div></div></div></div>`).join('')||'<p>No matches.</p>';}
 ['#q','#seg','#sev'].forEach(s=>$(s).oninput=draw);draw();
 $('#clear tbody').innerHTML=LP.cons_clear.map(c=>`<tr><td>${esc(c.seg)}</td><td>${esc(c.road)}</td><td>${esc(c.note)}</td></tr>`).join('');
 $('#gaps tbody').innerHTML=LP.cons_gaps.map(c=>`<tr><td>${esc(c.seg)}</td><td>${esc(c.gap)}</td></tr>`).join('');
