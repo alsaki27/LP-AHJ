@@ -18,6 +18,9 @@ def apply_reroute_updates(atlas):
         if any(identifier in withdrawn for identifier in risk.get('reroute', [])):
             risk['reroute'] = [identifier for identifier in risk['reroute'] if identifier not in withdrawn]
         if risk['id'] == 'R005':
+            risk['rail_note'] = json.loads(
+                (DOCS / 'data' / 'rail-crossing-r005.json').read_text(encoding='utf-8')
+            )
             risk['action'] = (
                 'Hold this base-route crossing at Delaware Avenue (FRA 513830W). '
                 'Confirm a public corridor and tie-in clear of railroad property before advancing. '

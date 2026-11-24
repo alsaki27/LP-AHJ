@@ -217,6 +217,7 @@ function openRisk(id,fly){if(waterByLegacyId.has(id))return openWater(waterByLeg
  $$('#list .item').forEach(e=>e.classList.toggle('sel',e.dataset.id===id));
  panel(`<div class="dh"><button class="x">×</button>${lead?'<span class="chip st">Screening lead (not counted as a risk)</span>':`<span class="chip ${r.sev}">${r.sev}</span>`} <span class="chip st">${esc(r.type)}</span><h3>${esc(r.title)}</h3><div class="note">${esc(SEGS[r.seg]||r.seg)} · ${esc(r.feature)} · ${esc(r.station)} · ${r.id}</div></div>
  <div class="dc"><h5>Why it matters</h5><p>${esc(r.detail)}</p><h5>Agencies / owners</h5><p>${esc(r.agencies)} ${jdxLink(r.agencies)}</p><h5>Close-out / action</h5><p>${esc(r.action)}</p>
+ ${railCrossingNote(r.rail_note,true)}
  ${r.reroute&&r.reroute.length?`<h5>Reroute opportunities touching this stretch</h5><p>${r.reroute.map(x=>`<button data-open="rr:${x}">${x}</button>`).join(' ')}</p>`:''}
  ${r.imgs&&r.imgs.length?`<h5>Nearby aerial review crops (NAIP)</h5><div class="thumbs">${r.imgs.map(i=>{const m=LP.images.find(z=>z.id===i);return `<img src="${m.img}" alt="${esc(m.id+': '+m.obs)}">`}).join('')}</div><p class="note">${r.imgs.map(i=>`<a href="#" data-open="img:${i}" onclick="return false">${i}</a>`).join(' · ')}</p>`:''}
  <h5>Source</h5><p class="note">${srcLink(r.source)}</p></div>`);}

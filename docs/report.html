@@ -61,6 +61,15 @@ function tab(id,rows,cols,heads){const t=$(id);t.tHead.innerHTML='<tr>'+heads.ma
 const dg=R.dot_gates;const gk=Object.keys(dg[0]);
 tab('#dt',dg,['Segment','Feature','Road / route','From (ft)','To (ft)','Run length (ft)','Municipality','DOT / district','Permit lead','Type','Priority',gk[gk.length-1]],['Segment','Feature','Road / route','From','To','Run ft','Municipality','DOT / district','Permit lead','Type','Pri.','Notes']);
 const rk=Object.keys(R.rail[0]);tab('#rt',R.rail,rk,rk);
+const railNotes=new Map(LP.risks.filter(r=>r.rail_note).map(r=>[r.feature,r]));
+[...$('#rt tbody').rows].forEach((row,index)=>{
+ const risk=railNotes.get(R.rail[index].Feature);
+ if(!risk)return;
+ row.id='rail-'+risk.id;
+ const linked=location.hash==='#'+row.id;
+ row.cells[rk.indexOf('Permit path')].insertAdjacentHTML('beforeend',railCrossingNote(risk.rail_note,linked));
+ if(linked)requestAnimationFrame(()=>row.scrollIntoView({block:'nearest'}));
+});
 const mk=Object.keys(R.road_maint[0]);tab('#mt',R.road_maint,mk,mk);
 // risks
 const tsel=$('#rtype');tsel.innerHTML='<option value="">All types</option>'+[...new Set(LP.risks.map(r=>r.type))].map(t=>`<option>${t}</option>`).join('');

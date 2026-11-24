@@ -1,0 +1,53 @@
+{
+  "title": "U.S. 33 existing fiber",
+  "status": "Conditional opportunity",
+  "summary": "Evaluate a lease of an existing fiber pair or an owner-operated circuit between the Watkins and Five Points tie-ins. The Delaware Avenue base crossing (FRA 513830W) remains on hold.",
+  "checks": [
+    {
+      "label": "Installed plant",
+      "text": "ODOT as-built GIS for PID 103719 shows seven 22 × 16 mm microducts and an existing 432-strand cable on segment 54."
+    },
+    {
+      "label": "CSX property",
+      "text": "About 67 ft of the mapped conduit and crossing pullbox 87 overlap a railroad tax parcel. ODOT lists CSX as the rail ROW owner. This GIS overlay does not establish the limits of any highway easement."
+    },
+    {
+      "label": "East handoff",
+      "text": "Scottslawn pullbox 130 falls in mapped road ROW. The original Watkins tie-in falls in a private tax parcel. Verify the recorded road easement and the full connection to the box."
+    },
+    {
+      "label": "West handoff",
+      "text": "Northwest Parkway pullbox 85 and the Five Points tie-in fall in mapped road ROW. Verify the full connection and work area from the box to Fifth Street."
+    },
+    {
+      "label": "What clears the hold",
+      "text": "Obtain the executed crossing agreement and signed as-built profile from ODOT District 6 and DriveOhio. Confirm commercial capacity, authorized connection points and maintenance responsibility with the fiber owner. Carry existing fiber as a candidate only if the proposed use can proceed without project access to CSX property. A new cable pull requires separate confirmation of duct capacity and installation rights."
+    }
+  ],
+  "sources": [
+    {
+      "label": "ODOT conduit record",
+      "url": "https://odotgis.dot.state.oh.us/arcgis/rest/services/D06/US33_Fiber_Corridor_Webmap/MapServer/3/query?objectIds=54&outFields=*&f=pjson"
+    },
+    {
+      "label": "ODOT pullbox records",
+      "url": "https://odotgis.dot.state.oh.us/arcgis/rest/services/D06/US33_Fiber_Corridor_Webmap/MapServer/2/query?objectIds=85%2C86%2C87%2C130&outFields=*&outSR=4326&f=pjson"
+    },
+    {
+      "label": "Railroad parcel",
+      "url": "https://www7.co.union.oh.us/unioncountyohio/rest/services/parcel/MapServer/0/query?where=camano%3D%272900022300010%27&outFields=ACCOUNT%2COwner&f=pjson"
+    },
+    {
+      "label": "Watkins parcel",
+      "url": "https://www7.co.union.oh.us/unioncountyohio/rest/services/parcel/MapServer/0/query?where=camano%3D%271000120060000%27&outFields=ACCOUNT%2CGISNO%2CPARCELTYPE&f=pjson"
+    },
+    {
+      "label": "ODOT rail ownership",
+      "url": "https://odotgis.dot.state.oh.us/arcgis/rest/services/D06/US33_Fiber_Corridor_Webmap/MapServer/4/query?objectIds=17&outFields=RR_NAME%2CROW_OWNER1&f=pjson"
+    },
+    {
+      "label": "Marysville commercial leasing precedent",
+      "url": "https://www.marysvilleohio.org/ArchiveCenter/ViewFile/Item/5087?web=1"
+    }
+  ]
+}

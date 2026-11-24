@@ -12,6 +12,16 @@ window.SEGS={Segment0:'Segment 0',Segment1:'Segment 1',Spurs:'Chicago spurs'};
 window.CLS_COL={'State DOT':'#c0262d','State DOT (limited access)':'#7b0f16','State route in city':'#e8590c','County':'#1f6feb','County-numbered, in city':'#7048e8','County-numbered road, city maintains':'#7048e8','County-numbered road, shared / unresolved':'#e03131','Municipal street':'#2a8f5c','Township':'#a0762c','Off-road / no public road':'#888'};
 window.LAND_COL={'Mapped / presumptive public ROW':'#2a8f5c','Private parcel':'#d6336c','Public-owner parcel':'#1098ad','Parcel (owner not published)':'#e8a317','Unparceled (public ROW / water / rail)':'#868e96'};
 window.SEV_COL={Critical:'#c0262d',High:'#e07b00',Medium:'#c9a400'};
+window.railCrossingNote = (note, expanded = false) => {
+  if (!note) return '';
+  const checks = note.checks.map(({label, text}) => `<li><strong>${esc(label)}.</strong> ${esc(text)}</li>`).join('');
+  const sources = note.sources.map(({label, url}) =>
+    `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join(' · ');
+  return `<details class="rail-crossing-note"${expanded ? ' open' : ''}>
+    <summary><strong>${esc(note.title)}</strong> <span class="chip warn">${esc(note.status)}</span></summary>
+    <div class="notes"><p>${esc(note.summary)}</p><ul>${checks}</ul><p>${sources}</p></div>
+  </details>`;
+};
 window.nav=function(active){
  const items=[['index.html','Director Brief'],['map.html','Engineering map'],['water.html','Water crossings'],['report.html','Jurisdiction report'],['construction.html','Project risks'],['jdx.html','Requirements & contacts'],['research.html','Research & proof']];
  $('#nav').setAttribute('role','navigation');

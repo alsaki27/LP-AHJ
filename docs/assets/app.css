@@ -50,6 +50,9 @@ table.t td{border:1px solid var(--line);padding:5px 8px;vertical-align:top}table
 .construction-menu button{text-align:left;white-space:normal}
 .construction-card-link{display:inline-block;margin-top:9px;color:var(--navy);text-decoration:none;font-weight:700}
 .construction-card-link:hover{background:#eef3f9}
+.rail-crossing-note{margin:10px 0;border-left:3px solid #ad4300;padding:4px 8px;background:#fff9f0}
+.rail-crossing-note li{margin-bottom:4px}
+.t .rail-crossing-note .notes{width:min(42ch,65vw)}
 .rk.Critical,.rk.High{width:22px;height:22px}
 .map-shell{position:relative;flex:1;display:flex;min-width:0}
 .street-view-control { background:#fff; border:2px solid rgba(0,0,0,.2); border-radius:5px; max-width:158px; }
