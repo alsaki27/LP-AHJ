@@ -1,0 +1,11 @@
+{
+  "name": "lp-ahj-atlas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build-vercel.mjs"
+  },
+  "dependencies": {
+    "@vercel/functions": "3.11.3"
+  }
+}

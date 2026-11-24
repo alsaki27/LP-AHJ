@@ -1,5 +1,7 @@
 # Generated and local state
 .vercel/
+docs/dist/
+docs/node_modules/
 __pycache__/
 *.py[cod]
 *.tmp
