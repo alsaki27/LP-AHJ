@@ -1,4 +1,4 @@
-LP AHJ & permitting-risk atlas (offline, no server, no internet needed)
+LP AHJ & permitting-risk atlas
 
 HOW TO LAUNCH
 1. Unzip the folder anywhere (keep the folder contents together).
@@ -8,8 +8,10 @@ HOW TO LAUNCH
    Other pages: map.html (engineering map), water.html (crossing register), report.html
    (jurisdiction report), construction.html (project risks), jdx.html (requirements and contacts)
    and research.html (research process, downloads and decision evidence).
-3. Optional basemap: put aerial tiles in tiles/{z}/{x}/{y}.jpg (zoom 8-18). See tiles/README.txt and assets/config.js.
-   Without tiles the map shows the vector jurisdiction background.
+3. When served over HTTPS, the engineering map opens with OpenStreetMap Streets. Use the
+   map's basemap switcher for USGS Aerial or No basemap. Local copies start with No basemap.
+   To add local imagery, place tiles in tiles/{z}/{x}/{y}.jpg (zoom 8–18) and select Local aerial tiles.
+   See tiles/README.txt and assets/config.js.
 If a browser blocks anything when opened from a file, run from the folder:  python -m http.server 8000  and open http://localhost:8000
 
 DATA

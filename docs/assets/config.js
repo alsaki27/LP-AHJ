@@ -1,7 +1,31 @@
-// Basemap configuration. Drop downloaded tiles into ./tiles/{z}/{x}/{y}.jpg (or .png) and set enabled:true.
-window.BASEMAP = {
-  enabled: true,                       // the app falls back to the plain vector background if tiles are missing
-  imagery: { url: 'tiles/{z}/{x}/{y}.jpg', minZoom: 8, maxZoom: 18, attribution: 'Imagery: USGS / USDA FSA NAIP (public domain)' },
-  // optional second basemap (e.g. roads/labels), same format
-  streets: { url: 'tiles_streets/{z}/{x}/{y}.png', minZoom: 8, maxZoom: 18, attribution: '' }
+window.BASEMAPS = {
+  hosted: [
+    {
+      name: 'Streets (OpenStreetMap)',
+      url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+      maxNativeZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+    },
+    {
+      name: 'Aerial (USGS)',
+      url: 'https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}',
+      maxNativeZoom: 16,
+      attribution: '<a href="https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer">USDA, USGS The National Map: Orthoimagery</a>',
+    },
+  ],
+  offline: [
+    {
+      name: 'Local aerial tiles',
+      url: 'tiles/{z}/{x}/{y}.jpg',
+      minZoom: 8,
+      maxNativeZoom: 18,
+      attribution: 'Imagery: USGS / USDA FSA NAIP',
+    },
+    {
+      name: 'Local street tiles',
+      url: 'tiles_streets/{z}/{x}/{y}.png',
+      minZoom: 8,
+      maxNativeZoom: 18,
+    },
+  ],
 };

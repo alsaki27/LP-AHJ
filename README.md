@@ -6,7 +6,7 @@ Public project repository for the Lightpath AHJ / EDPA engineering due diligence
 
 - [Director Brief and engineering atlas](docs/) — four priority decisions, 36 water crossing cards, a map, research methods and proof. For offline use, open `docs/index.html` in Chrome or Edge.
 - [Atlas audit and crossing evidence](edpa_workup/atlas_audit/) — route-by-route audit, 36-point water deep dive, source extracts and reproducibility scripts.
-- [Hosting and basemap plan](edpa_workup/atlas_audit/HOSTING.md) — launch the director view on GitHub Pages and add street and aerial basemaps.
+- [Deployment and basemaps](edpa_workup/atlas_audit/HOSTING.md) — Vercel settings, OpenStreetMap streets, USGS aerial imagery and offline use.
 - `edpa_workup/vendor_master_analysis.md` — overall route, authority, parcel, rail and waterway synthesis.
 - `edpa_workup/vendor_workflow.md` — recommended engineering, records, permitting and construction workflow.
 - `edpa_workup/README_FULL_ANALYSIS.md` and `edpa_workup/desktop_edpa_analysis.md` — scope, screening method and navigation.

@@ -16,7 +16,7 @@
   <div class="sec" style="padding:6px 12px;display:flex;align-items:center;gap:8px"><b id="cnt" style="font-size:12px"></b><span style="flex:1"></span><button id="exp" title="Download the filtered risks as CSV">CSV</button></div>
   <div id="list"></div>
  </div>
- <div class="map-shell"><div id="map"></div><div class="legend" id="legend"></div><div class="nobase" id="nobase" style="display:none">No basemap tiles found in /tiles – showing vector background only</div></div>
+ <div class="map-shell"><div id="map"></div><div class="legend" id="legend"></div><div class="nobase" id="nobase" role="status" hidden></div></div>
  <div id="detail"></div>
 </div>
 <script>
@@ -24,11 +24,39 @@ nav('map.html');
 const GLYPH={'Rail crossing':'R','Rail adjacency':'r','Water crossing':'W','Structure / drainage lead':'S','DOT occupancy':'D','DOT crossing / interchange':'d','Off-ROW / private land':'P','Permit owner unclear':'?','Programme risk':'!','Schedule / cost':'$','Access / constructability':'A'};
 const map=L.map('map',{zoomControl:true,preferCanvas:false,maxZoom:19,minZoom:7,zoomSnap:.5});
 map.createPane('bounds');map.getPane('bounds').style.zIndex=300;map.createPane('route');map.getPane('route').style.zIndex=410;map.createPane('rr');map.getPane('rr').style.zIndex=430;
-// ---- basemap (optional, offline tiles) ----
-let tl=0,te=0;
-if(BASEMAP.enabled){['imagery','streets'].forEach(k=>{const b=BASEMAP[k];if(!b)return;const lay=L.tileLayer(b.url,{minZoom:b.minZoom,maxZoom:19,maxNativeZoom:b.maxZoom,attribution:b.attribution,errorTileUrl:'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='});
- lay.on('tileload',()=>tl++);lay.on('tileerror',()=>{te++;if(!tl&&te>8)$('#nobase').style.display='block'});if(k==='imagery')lay.addTo(map);else lay.addTo(map)});}
-else $('#nobase').style.display='block';
+function addBasemaps() {
+  const hosted = location.protocol === 'https:';
+  const sources = hosted ? BASEMAPS.hosted : BASEMAPS.offline;
+  const status = $('#nobase');
+  const blank = L.layerGroup();
+  const layers = Object.fromEntries(sources.map(({name, url, ...options}) => {
+    const layer = L.tileLayer(url, {
+      maxZoom: map.getMaxZoom(),
+      referrerPolicy: 'strict-origin-when-cross-origin',
+      ...options,
+    });
+    let failures = 0;
+    layer.on('loading', () => { failures = 0; });
+    layer.on('tileerror', () => { failures++; });
+    layer.on('tileload', () => { status.hidden = true; });
+    layer.on('load', () => {
+      if (failures && !layer.getContainer()?.querySelector('.leaflet-tile-loaded')) {
+        status.textContent = `${name} tiles unavailable. Try another basemap.`;
+        status.hidden = false;
+      }
+    });
+    return [name, layer];
+  }));
+  layers['No basemap'] = blank;
+  (hosted ? layers[sources[0].name] : blank).addTo(map);
+  map.on('baselayerchange', () => { status.hidden = true; });
+  L.control.layers(layers, {}, {collapsed: false}).addTo(map);
+  if (hosted) {
+    map.attributionControl.setPrefix(
+      '<a href="https://leafletjs.com">Leaflet</a> · <a href="https://www.openstreetmap.org/fixthemap">Report a street map issue</a>'
+    );
+  }
+}
 // ---- boundaries ----
 const L_counties=L.layerGroup(),L_places=L.layerGroup();
 const DCOL={'ODOT District 5':'#f08c00','ODOT District 6':'#1971c2','IDOT District 1':'#2f9e44'};
@@ -141,4 +169,5 @@ function legend(){const cols=byAuth?CLS_COL:LAND_COL;const used=new Set((byAuth?
  +'<div class="row"><span class="sw line" style="background:#82c91e"></span>Reroute alternative</div><div class="row" style="margin-top:4px"><span class="sw" style="border:2px dashed #1971c2"></span>ODOT D6</div><div class="row"><span class="sw" style="border:2px dashed #f08c00"></span>ODOT D5</div><div class="row"><span class="sw" style="border:2px dashed #2f9e44"></span>IDOT D1</div>'}
 drawRoute();drawRisks();drawWater();map.fitBounds(bounds('All').pad(.05));
 function fromHash(){const h=location.hash.match(/^#(risk|img|rr|water)=(.+)/);if(h){const handlers={risk:openRisk,img:openImage,rr:openReroute,water:openWater};handlers[h[1]](h[2],true)}}fromHash();addEventListener('hashchange',fromHash);
+addBasemaps();
 </script></body></html>
