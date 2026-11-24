@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>AHJ atlas – risky segments (planned construction)</title><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="assets/app.css"><script src="data/data.js"></script><script src="assets/common.js"></script>
+<style>
+.how{background:#fff;border:1px solid var(--line);border-left:5px solid #e8590c;border-radius:6px;padding:10px 14px;font-size:13px;margin:10px 0}
+.sv{display:inline-block;padding:2px 9px;border-radius:10px;font-size:11px;font-weight:700;color:#fff}
+.sv.Critical{background:#c0262d}.sv.High{background:#e8590c}.sv.Medium{background:#e0a100;color:#222}.sv.Low{background:#868e96}
+.pc{background:#fff;border:1px solid var(--line);border-radius:10px;margin:12px 0;overflow:hidden;break-inside:avoid}
+.pc.Critical{border-left:6px solid #c0262d}.pc.High{border-left:6px solid #e8590c}.pc.Medium{border-left:6px solid #e0a100}.pc.Low{border-left:6px solid #adb5bd}
+.pc header{padding:10px 14px;background:#f3f6fa;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap}
+.pc header h3{margin:0;font-size:15.5px;flex:1;min-width:260px}
+.pc .body{padding:12px 14px;display:grid;grid-template-columns:1fr 1fr;gap:6px 22px;font-size:13.5px}
+@media(max-width:1000px){.pc .body{grid-template-columns:1fr}}
+.pc h5{margin:8px 0 2px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--mut)}
+.eff{background:#fff4e5;border:1px solid #f0c98a;border-radius:6px;padding:8px 10px}
+.act{background:#eef7ee;border:1px solid #a9d6ae;border-radius:6px;padding:8px 10px}
+.tag{font-size:11px;background:#eef1f5;border-radius:8px;padding:1px 7px;margin-right:4px;white-space:nowrap}
+.pc:target{outline:3px solid #e8590c}
+</style></head><body>
+<div class="nav" id="nav"></div>
+<div class="page">
+<h1>Risky segments: planned and active construction</h1>
+<div class="how"><b>What this page is.</b> Every route segment was searched again for road, bridge, utility and rail projects and for no-cut rules that could make an encroachment permit unrealistic or slow. Each item shows where, who, when (only as published), what it does to our permit, and what to do now. Where a source gives no date we say so and name the agency to call. Overlap with our route is matched by road name and station; items marked "inferred" still need a map check with the agency. Sources and dates are on every card. <b>Not a permit determination.</b></div>
+<div class="how" style="border-left-color:#1971c2"><b>Chicago spur reroutes withdrawn.</b> The three spur reroute ideas (SP-OPP-1/2/3) were reviewed again and removed. They either ran through private parcels, rested on an estimated rail count, or were only a 10–20 ft redraw. No credible spur reroute exists; the spur items below are about timing and dig-once instead.</div>
+<div class="cards" id="kpi"></div>
+<h2>Act first</h2>
+<div class="tools"><button id="gcsv">CSV</button></div>
+<div class="scroll" style="max-height:520px"><table class="t" id="glance"><thead><tr><th>Sev.</th><th>Where</th><th>Project</th><th>Agency</th><th>Status</th><th>Published timing</th><th>Do this</th></tr></thead><tbody></tbody></table></div>
+<h2>Detail by project</h2>
+<div class="tools"><input type="search" id="q" placeholder="Search road, agency, project…" style="width:280px"><select id="seg"><option value="">All segments</option></select><select id="sev"><option value="">All severities</option><option>Critical</option><option>High</option><option>Medium</option><option>Low</option></select><span class="note" id="cnt"></span></div>
+<div id="grid"></div>
+<h2>Checked, nothing found</h2>
+<div class="scroll" style="max-height:420px"><table class="t" id="clear"><thead><tr><th>Segment</th><th>Road</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+<h2>What we could not check</h2>
+<div class="scroll" style="max-height:360px"><table class="t" id="gaps"><thead><tr><th>Segment</th><th>Gap (call the agency)</th></tr></thead><tbody></tbody></table></div>
+</div>
+<script>
+nav('construction.html');
+/* $ and esc come from common.js */
+const C=LP.construction;
+const cnt=s=>C.filter(p=>p.severity===s).length;
+$('#kpi').innerHTML=[['Projects found',C.length],['Critical',cnt('Critical')],['High',cnt('High')],['Medium',cnt('Medium')],['Low',cnt('Low')]].map(([a,b])=>`<div class="kpi"><div class="v">${b}</div><div class="l">${a}</div></div>`).join('');
+const timing=p=>[p.start&&('Start: '+p.start),p.end&&('End: '+p.end)].filter(Boolean).join(' · ')||'Not published: contact agency';
+const where=p=>esc(p.road)+(p.place?'<br><span class="mini">'+esc(p.place)+'</span>':'')+'<br><span class="mini">'+esc(p.seg)+'</span>';
+$('#glance tbody').innerHTML=C.filter(p=>p.severity!=='Low').map(p=>`<tr><td><span class="sv ${p.severity}">${p.severity}</span></td><td>${where(p)}</td><td><a href="#${p.id}">${esc(p.title)}</a></td><td>${esc(p.agency)}</td><td>${esc(p.status)}</td><td>${esc(timing(p))}</td><td>${esc(p.action)}</td></tr>`).join('');
+const segs=[...new Set(C.map(p=>p.seg))];$('#seg').innerHTML+=segs.map(s=>`<option>${esc(s)}</option>`).join('');
+function draw(){const q=$('#q').value.toLowerCase(),sg=$('#seg').value,sv=$('#sev').value;
+ const L=C.filter(p=>(!sg||p.seg===sg)&&(!sv||p.severity===sv)&&(!q||JSON.stringify(p).toLowerCase().includes(q)));
+ $('#cnt').textContent=L.length+' of '+C.length;
+ $('#grid').innerHTML=L.map(p=>`<div class="pc ${p.severity}" id="${p.id}"><header><span class="sv ${p.severity}">${p.severity}</span><h3>${esc(p.title)}</h3><span class="tag">${esc(p.status)}</span><span class="tag">${esc(p.type)}</span><span class="tag">confidence: ${esc(p.confidence)}</span></header><div class="body">
+ <div><h5>Where</h5>${where(p)}${p.station?'<div class="mini">Stations: '+esc(p.station)+'</div>':''}${(p.features||[]).length?'<div class="mini">Features: '+p.features.map(esc).join(', ')+'</div>':''}
+ <h5>What is happening</h5>${esc(p.what)}<h5>Lead agency</h5>${esc(p.agency)}<h5>Timing (as published)</h5>${esc(timing(p))}</div>
+ <div><h5>Effect on our permit</h5><div class="eff">${esc(p.permit_effect)}</div><h5>What to do</h5><div class="act">${esc(p.action)}${p.reroute_hint?'<br><b>Reroute idea:</b> '+esc(p.reroute_hint):''}</div>
+ ${p.contact?'<h5>Contact</h5>'+esc(p.contact):''}<h5>Source</h5>${p.source_url?'<a href="'+esc(p.source_url)+'" target="_blank" rel="noopener">'+esc(p.source_url)+'</a>':'none'}<div class="mini">Source date: ${esc(p.source_date||'not stated')}</div>
+ ${p.ll?'<div class="mini"><a href="map.html">Map layer: Planned construction (C)</a></div>':''}</div></div></div>`).join('')||'<p>No matches.</p>';}
+['#q','#seg','#sev'].forEach(s=>$(s).oninput=draw);draw();
+$('#clear tbody').innerHTML=LP.cons_clear.map(c=>`<tr><td>${esc(c.seg)}</td><td>${esc(c.road)}</td><td>${esc(c.note)}</td></tr>`).join('');
+$('#gaps tbody').innerHTML=LP.cons_gaps.map(c=>`<tr><td>${esc(c.seg)}</td><td>${esc(c.gap)}</td></tr>`).join('');
+$('#gcsv').onclick=()=>{const cols=['id','severity','seg','road','place','title','agency','type','status','start','end','what','permit_effect','action','reroute_hint','confidence','source_url','source_date','contact'];
+ const q=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';const t=[cols.join(',')].concat(C.map(p=>cols.map(c=>q(p[c])).join(','))).join('\n');
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/csv'}));a.download='planned_construction_risks.csv';a.click();};
+if(location.hash){const e=document.getElementById(location.hash.slice(1));if(e)e.scrollIntoView();}
+</script></body></html>

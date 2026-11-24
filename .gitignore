@@ -8,10 +8,10 @@ __pycache__/
 edpa_workup/waterway_permit_research/lp_source_copy/
 
 # Original RFP inputs: intentionally not part of this repository
+**/MT - CMH - v4.0 - Segment0.kmz
+**/MT - CMH - v4.0 - Segment1.kmz
+**/MT - CMH - v4.0 - Spurs.kmz
 edpa_workup/source_files/EDPA Process.pdf
-edpa_workup/source_files/MT - CMH - v4.0 - Segment0.kmz
-edpa_workup/source_files/MT - CMH - v4.0 - Segment1.kmz
-edpa_workup/source_files/MT - CMH - v4.0 - Spurs.kmz
 edpa_workup/waterway_permit_research/rfp_source/
 
 # Redundant delivery ZIP snapshots; their individual contents are represented in the tree

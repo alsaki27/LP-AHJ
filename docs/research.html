@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research and proof | LP-AHJ Atlas</title>
+<link rel="stylesheet" href="assets/app.css"><link rel="stylesheet" href="assets/director.css">
+<link rel="stylesheet" href="assets/water.css">
+<script src="data/data.js"></script><script src="data/water.js"></script>
+<script src="assets/common.js"></script><script src="assets/water-common.js"></script>
+<script src="assets/director.js"></script>
+</head><body>
+<div class="nav" id="nav"></div>
+<main class="page director-page">
+  <header class="brief-header">
+    <div><p class="brief-kicker">LP-AHJ · Research record</p>
+    <h1>Research process and proof</h1>
+    <p class="brief-deck">Chicago spurs &amp; Marysville–New Albany · November 24, 2026</p></div>
+    <a class="brief-return" href="index.html">Back to Director Brief</a>
+  </header>
+  <section class="research-method" aria-labelledby="research-method-title">
+    <h2 id="research-method-title">What work went into the atlas</h2>
+    <ol>
+      <li><strong>Reconstructed and checked the route.</strong> Used the original RFP KMZs for all 52 source features. Checked the atlas vertices against the source and measured along each feature in a local projected coordinate system, UTM 16N in Illinois and 17N in Ohio. Stations are measured from the start of each individual feature. The 319,773 ft atlas length sums the rounded feature lengths.</li>
+      <li><strong>Screened road control, parcel exposure and right-of-way.</strong> Compared route stations to county and municipal bounds, DOT road inventories and available county parcel and recorded ROW data. Road maintenance, legal property rights and permit authority were treated as separate questions. Some station assignments are inferred from GIS. The original atlas builder’s full sample ledger and workbook are not in this package.</li>
+      <li><strong>Recomputed rail and water intersections across every route feature.</strong> Intersected the original linework against FRA/NARN rail geometry and the Ohio and Illinois official flowline layers. Reproduced 11 rail intersection points and found 36 water-line points, including crossings on bore-labeled features that the earlier atlas omitted. A repeated flowline can cross the alignment at several stations. NARN reporting marks provide railroad leads and property records establish the signatory.</li>
+      <li><strong>Checked the physical setting and controlling records.</strong> Used 85 indexed USGS/USDA NAIP image crops to review bridge, drainage, rail, access and staging conditions. Cross-referenced structure IDs and nearby parcel IDs, and screened NWI within 100 m and FEMA at the specific water point. The FEMA service returned results for 24 of 36 points. Twelve require an effective panel check. Image acquisition dates vary and were not independently resolved.</li>
+      <li><strong>Translated the screening into construction and permit choices.</strong> Compared independent HDD, culvert-clearance bores, existing duct, bridge attachment and local realignments. Researched agency permit intake, applicable rules, agreement and project records. Each of the 36 crossing cards identifies the blocker, likely approval path, required exhibits and fallback. Agency confirmation, survey and final work limits govern which reviews apply.</li>
+      <li><strong>Reconciled mapped points and unresolved leads.</strong> Kept 17 separate unresolved water sites and structure records in the engineering register. Some may be the same asset or work location as a mapped hit. They remain inputs for plan retrieval and field checks.</li>
+    </ol>
+    <h3>Data and source index</h3>
+    <ul class="research-sources">
+      <li><a href="data/atlas_audit_gis_intersections.csv" download>Recomputed GIS intersections CSV</a> · 11 rail and 36 water points, with source IDs, coordinates and feature stations.</li>
+      <li><a href="data/water_crossing_point_evidence.csv" download>Water point evidence CSV</a> · structure, flood, wetland and parcel screening by crossing.</li>
+      <li><a href="water.html">Water crossing register</a> · 36 decisions with detailed evidence and export.</li>
+      <li><a href="report.html">Jurisdiction report</a> · road, parcel exposure, rail, screening leads and alternatives.</li>
+      <li><a href="map.html">Engineering map</a> · switch on the aerial review layer to inspect indexed crops.</li>
+      <li><a href="https://services.arcgis.com/xOi1kZaI0eWDREZv/ArcGIS/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0" target="_blank" rel="noopener">USDOT rail layer</a> ·
+      <a href="https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0" target="_blank" rel="noopener">ODOT stream layer</a> ·
+      <a href="https://geoservices.epa.illinois.gov/arcgis/rest/services/Environmental/WaterFeatures/MapServer/2" target="_blank" rel="noopener">Illinois EPA flowlines</a> ·
+      <a href="https://www.fema.gov/flood-maps/national-flood-hazard-layer" target="_blank" rel="noopener">FEMA flood layer</a> ·
+      <a href="https://www.fws.gov/program/national-wetlands-inventory/wetlands-mapper" target="_blank" rel="noopener">USFWS wetlands</a></li>
+    </ul>
+  </section>
+  <section aria-labelledby="site-proof-title">
+    <h2 id="site-proof-title">Evidence behind the priority decisions</h2>
+    <div id="decision-proof-list"></div>
+  </section>
+</main>
+<script>
+nav('research.html');
+$('#decision-proof-list').innerHTML = directorDecisions.map(decision => {
+  const crossing = waterById.get(decision.id);
+  return `<article class="decision-proof" id="proof-${esc(decision.id)}" tabindex="-1">
+    <header><p class="brief-ref">${esc(SEGS[crossing.segment])} · ${esc(decision.id)} · ${esc(crossing.feature)} · ${waterStation(crossing.station)} ft</p>
+      <h3>${esc(decision.title)}</h3><p>${esc(decision.finding)}</p>
+      <div class="brief-record-links"><a href="${waterRegisterLink(decision.id)}">Crossing card</a> <a href="${waterMapLink(decision.id)}">Map</a></div></header>
+    <div class="proof-columns">
+      <div><h4>Controlling records</h4><ul>${decision.proof.map(([label, url, finding]) =>
+        `<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a><p>${esc(finding)}</p></li>`
+      ).join('')}</ul><h4>What remains open</h4><p>${esc(crossing.blocker)}</p></div>
+      <figure><a href="${esc(decision.image)}"><img src="${esc(decision.image)}" alt="${esc(decision.title)} aerial crop"></a>
+        <figcaption>${esc(decision.caption)} <span>USGS/USDA NAIP.</span></figcaption></figure>
+    </div>
+    ${waterEvidence(crossing)}
+  </article>`;
+}).join('');
+function landOnProof() {
+  const target = document.getElementById(location.hash.slice(1));
+  if (!target?.classList.contains('decision-proof')) return;
+  target.querySelector('.water-evidence').open = true;
+  target.focus({preventScroll: true});
+  target.scrollIntoView({block: 'start'});
+}
+addEventListener('hashchange', landOnProof);
+landOnProof();
+</script>
+</body></html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Director Brief | LP-AHJ Atlas</title>
+<script>
+  if (/^#(?:risk|img|rr|water)=/.test(location.hash)) {
+    location.replace('map.html' + location.search + location.hash);
+  }
+</script>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/director.css">
+<script src="data/data.js"></script><script src="data/water.js"></script>
+<script src="assets/common.js"></script><script src="assets/water-common.js"></script>
+<script src="assets/director.js"></script>
+</head><body>
+<div class="nav" id="nav"></div>
+<main class="page director-page">
+  <header class="brief-header">
+    <div>
+      <p class="brief-kicker">LP-AHJ · Director Brief</p>
+      <h1>Chicago spurs &amp; Marysville–New Albany</h1>
+      <p class="brief-deck">Crossing decisions, approval gates and the evidence behind them</p>
+      <p class="note">Research snapshot · November 24, 2026</p>
+    </div>
+    <div class="brief-actions"><button type="button" id="print-brief">Print one-page brief</button></div>
+  </header>
+  <section aria-labelledby="decision-title">
+    <h2 id="decision-title">Decisions to make first</h2>
+    <div id="brief-decisions" class="brief-decisions"></div>
+  </section>
+  <section aria-labelledby="coverage-title">
+    <h2 id="coverage-title">Research coverage</h2>
+    <table class="brief-coverage">
+      <thead><tr><th scope="col">Route</th><th scope="col">Mapped water points</th><th scope="col">Mapped rail intersections</th><th scope="col">Indexed aerial crops</th></tr></thead>
+      <tbody id="brief-coverage-rows"></tbody>
+      <tfoot id="brief-coverage-total"></tfoot>
+    </table>
+    <p class="note" id="brief-coverage-note"></p>
+  </section>
+  <section aria-labelledby="method-title" class="brief-process">
+    <h2 id="method-title">How we built the record</h2>
+    <ol>
+      <li><strong>Measured the original routes.</strong> Used 52 KMZ features to measure route length and crossing stations. Screened road control, parcels and available right-of-way records.</li>
+      <li><strong>Recomputed the crossings.</strong> Intersected the routes with FRA/NARN rail, ODOT stream and Illinois EPA flowlines. Checked structures, aerials, wetlands and available FEMA flood mapping.</li>
+      <li><strong>Compared construction and permit options.</strong> Used owner records and agency requirements to identify blockers, approval steps, submittals and fallbacks for each mapped water point.</li>
+    </ol>
+    <p class="note">Mapped points and candidate authorities are design screening. Field survey, recorded rights and agency responses establish final work limits and approvals.</p>
+    <p class="brief-screen-only"><a href="research.html">Read the full research process and source index</a></p>
+  </section>
+</main>
+<script>
+nav('index.html');
+const totals = directorRoutes.reduce((sum, route) => ({
+  water: sum.water + route.water, rail: sum.rail + route.rail, images: sum.images + route.images
+}), {water: 0, rail: 0, images: 0});
+$('#brief-coverage-rows').innerHTML = directorRoutes.map(route => `<tr>
+  <th scope="row">${esc(route.name)}</th><td>${route.water}</td><td>${route.rail}</td><td>${route.images}</td>
+</tr>`).join('');
+$('#brief-coverage-total').innerHTML = `<tr><th scope="row">Total</th><td>${totals.water}</td><td>${totals.rail}</td><td>${totals.images}</td></tr>`;
+const unresolved = LP.leads.filter(lead => !waterByLegacyId.has(lead.id)).length;
+$('#brief-coverage-note').innerHTML = `${unresolved} separate unresolved site and structure leads are tracked in the <a href="report.html#screening-leads">engineering register</a>.`;
+$('#brief-decisions').innerHTML = directorDecisions.map(decision => {
+  const crossing = waterById.get(decision.id);
+  return `<article class="brief-decision">
+    <header><span class="brief-ref">${esc(SEGS[crossing.segment])} · ${esc(decision.id)}</span>
+      <h3>${esc(decision.title)}</h3></header>
+    <p class="brief-call">${esc(decision.decision)}</p>
+    <p><strong>Evidence</strong> ${esc(decision.finding)}</p>
+    <p><strong>Review lead</strong> ${esc(decision.owner)}</p>
+    <p><strong>Next action</strong> ${esc(decision.next)}</p>
+    ${directorDecisionLinks(decision.id)}
+  </article>`;
+}).join('');
+$('#print-brief').addEventListener('click', () => print());
+</script>
+</body></html>

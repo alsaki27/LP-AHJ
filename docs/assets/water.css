@@ -1,0 +1,32 @@
+.water-page { max-width: 1130px; }
+.water-header { padding: 12px 0 4px; }
+.water-header h1 { font-size: 28px; }
+.water-scopes { margin: 12px 0; flex-wrap: wrap; }
+.water-tools input { min-width: min(270px, 100%); }
+.water-card { background: #fff; border: 1px solid #ccd7e2; border-radius: 7px; margin: 12px 0; padding: 15px 17px; scroll-margin-top: 12px; }
+.water-card:focus { outline: 2px solid #217099; }
+.water-card > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.water-card h3 { font-size: 18px; margin: 4px 0 0; }
+.water-priority { border-radius: 5px; padding: 4px 8px; font-size: 12px; color: #053e59; background: #dceef6; }
+.water-decision { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; margin: 12px 0; }
+.water-decision > div { padding: 9px 11px; border-left: 2px solid #81aabe; background: #f3f7fa; }
+.water-decision dt, .water-evidence dt { font-weight: 700; color: #163754; }
+.water-decision dd, .water-evidence dd { margin: 4px 0 0; line-height: 1.45; }
+.water-evidence { border-top: 1px solid #ccd7e2; margin: 9px 0; padding: 8px 0; }
+.water-evidence summary { cursor: pointer; font-weight: 600; }
+.water-evidence dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.water-evidence dd { overflow-wrap: anywhere; }
+.water-checklist { border: 1px solid #ccd7e2; border-radius: 7px; padding: 10px 14px; }
+.water-checklist li { margin: 6px 0; }
+.water-links { line-height: 1.6; }
+.water-map-link { display: inline-block; margin-top: 5px; }
+.water-marker { background: #0e7490; color: #fff; border: 2px solid #fff; border-radius: 50%; width: 19px; height: 19px; box-shadow: 0 0 0 1px #0e5267; display: grid; place-items: center; font: bold 10px/1 system-ui, sans-serif; }
+#detail .water-decision, #detail .water-evidence dl { grid-template-columns: 1fr; }
+@media (max-width: 640px) {
+  .water-decision { grid-template-columns: 1fr; }
+  .water-card > header { flex-wrap: wrap; }
+}
+@media print {
+  .water-scopes, .water-map-link { display: none; }
+  .water-card { break-inside: avoid; }
+}

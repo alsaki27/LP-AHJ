@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>AHJ atlas – requirements &amp; contacts</title><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="assets/app.css"><script src="data/data.js"></script><script src="assets/common.js"></script>
+<style>
+.how{background:#fff;border:1px solid var(--line);border-left:5px solid var(--navy);border-radius:6px;padding:10px 14px;font-size:13px;margin:10px 0}
+.tl{display:inline-block;padding:2px 9px;border-radius:10px;font-size:11px;font-weight:700;white-space:nowrap}
+.tl.published{background:#dff3e8;color:#17623e}.tl.reported{background:#e0ecfb;color:#1b4a85}.tl.unknown{background:#fdecd2;color:#8a4b00}
+.st-verified,.st-mostly{background:#dff3e8;color:#17623e}.st-partly{background:#fff3cd;color:#7a5b00}.st-verify{background:#fdecd2;color:#8a4b00}
+.jx{background:#fff;border:1px solid var(--line);border-radius:10px;margin:14px 0;overflow:hidden;break-inside:avoid}
+.jx header{padding:12px 16px;background:#f3f6fa;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.jx header h3{margin:0;font-size:17px;flex:1;min-width:260px}.jx .body{padding:14px 16px;display:grid;grid-template-columns:1.1fr 1fr;gap:18px}
+@media(max-width:1000px){.jx .body{grid-template-columns:1fr}}
+.jx h5{margin:12px 0 4px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--mut)}.jx h5:first-child{margin-top:0}
+.bl{font-size:15px;line-height:1.5;background:#fffdf2;border-left:4px solid #e0b100;padding:8px 12px;margin:0 0 8px;border-radius:3px}
+.tbox{border:1px solid;border-radius:8px;padding:9px 12px;margin:4px 0}.tbox.published{border-color:#9ad3b3;background:#f2fbf6}.tbox.reported{border-color:#a9c6ef;background:#f3f8fe}.tbox.unknown{border-color:#efc58a;background:#fff9ee}
+.tbox .v{font-size:15px;font-weight:700}.tbox .n{font-size:12.5px;margin-top:3px;color:#33404f}
+.jx ol,.jx ul{margin:2px 0 4px 18px;padding:0}.jx li{margin:2px 0}
+.ct{border:1px solid var(--line);border-radius:6px;padding:6px 10px;margin:4px 0;font-size:13px}.ct b{display:block}
+.call{background:#fff4e5;border:1px solid #f0c98a;border-radius:6px;padding:6px 10px;margin:4px 0;font-size:13px}
+.src a{font-size:12px;display:block;margin:1px 0}
+table.g td,table.g th{font-size:12.5px}
+.mini{font-size:12px;color:var(--mut)}
+#glance td:nth-child(4){max-width:420px}
+.chip.st-verified,.chip.st-mostly,.chip.st-partly,.chip.st-verify{font-weight:700}
+</style></head><body>
+<div class="nav" id="nav"></div>
+<div class="page">
+<h1>Jurisdiction requirements &amp; contacts</h1>
+<div class="how"><b>How to read this page.</b> Each authority was investigated separately from its own sources (permit pages, application forms, codes, resolutions, staff pages), checked 2026-11-24. A timeline is shown only when we can point to a source: <span class="tl published">Published</span> means the agency states it; <span class="tl reported">Reported</span> means a credible secondary source; <span class="tl unknown">Call to verify</span> means nothing is published, so we say who to call and exactly what to ask instead of guessing. Any "planning allowance" is our own assumption and is labelled as such. Where agencies disagree with each other, the conflict is shown.</div>
+<div class="cards" id="kpi"></div>
+
+<h2>Timelines at a glance</h2>
+<div class="tools"><button id="gcsv">CSV</button></div>
+<div class="scroll" style="max-height:620px"><table class="t g" id="glance"><thead><tr><th>Authority</th><th>Level</th><th>Review timeline</th><th>What it is / what to do</th><th>Evidence</th><th>Overall</th></tr></thead><tbody></tbody></table></div>
+
+<h2>Authority detail</h2>
+<div class="tools"><input type="search" id="q" placeholder="Search authority, road, rule, person…" style="width:300px"><select id="seg"><option value="">All segments</option><option>Segment 0</option><option>Segment 1</option><option>Spurs</option></select>
+<select id="lvl"><option value="">All levels</option></select><select id="stat"><option value="">All evidence levels</option><option value="published">Timeline published</option><option value="unknown">Needs a call (timeline not published)</option></select>
+<label><input type="checkbox" id="callonly"> only authorities with open calls</label><button id="ccsv">Contacts CSV</button><span class="note" id="cnt"></span></div>
+<div id="grid"></div>
+
+<h2>Open calls to make (all authorities)</h2>
+<div class="tools"><button id="callcsv">Call list CSV</button></div>
+<div class="scroll" style="max-height:640px"><table class="t" id="calls"><thead><tr><th>Authority</th><th>Who to call</th><th>Question to ask</th></tr></thead><tbody></tbody></table></div>
+<h2>Earlier open items</h2>
+<div class="scroll" style="max-height:none"><table class="t"><thead><tr><th>#</th><th>Item</th><th>Who</th><th>Why</th></tr></thead><tbody id="oi"></tbody></table></div>
+</div>
+<script>
+nav('jdx.html');
+const J=LP.jdx;
+const stKey=s=>/^verified|^mostly/.test(s)?(s==='verified'?'st-verified':'st-mostly'):/^partly/.test(s)?'st-partly':'st-verify';
+const TLL={published:'Published',reported:'Reported',unknown:'Call to verify'};
+const tlchip=s=>`<span class="tl ${s}">${TLL[s]||s}</span>`;
+const lk=u=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">source</a>`:'';
+const telify=t=>esc(t||'').replace(/\(?\d{3}\)?[ .-]\d{3}-\d{4}(?: ?x\d+)?/g,m=>`<a href="tel:${m.replace(/\D/g,'')}">${m}</a>`).replace(/[\w.+-]+@[\w-]+\.[\w.-]+/g,m=>`<a href="mailto:${m}">${m}</a>`);
+const lvl=[...new Set(J.map(a=>a.level))];$('#lvl').innerHTML+=lvl.map(l=>`<option>${esc(l)}</option>`).join('');
+const nCalls=J.reduce((n,a)=>n+a.call_to_verify.length,0);
+$('#kpi').innerHTML=[['Authorities investigated',J.length],['Timeline published',J.filter(a=>a.timeline.status==='published').length],['Timeline reported',J.filter(a=>a.timeline.status==='reported').length],['Need a call (not published)',J.filter(a=>a.timeline.status==='unknown').length],['Mostly / fully verified',J.filter(a=>/^verified|^mostly/.test(a.overall_status)).length],['Calls on the list',nCalls]].map(([l,v])=>`<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join('');
+const short=(s,n)=>{s=s||'';return s.length>n?s.slice(0,n-1)+'…':s};
+$('#glance tbody').innerHTML=J.map(a=>`<tr><td><a href="#${a.id}"><b>${esc(a.name)}</b></a><div class="mini">${esc(a.segments.join(' · '))}</div></td><td>${esc(a.level)}</td><td>${tlchip(a.timeline.status)}<div>${esc(short(a.timeline.value,160))}</div></td><td>${esc(short(a.permit.name,140))}</td><td>${lk(a.timeline.source_url)}</td><td><span class="chip ${stKey(a.overall_status)}">${esc(a.overall_status)}</span></td></tr>`).join('');
+sortable($('#glance'));
+$('#gcsv').onclick=()=>csv(J.map(a=>({authority:a.name,level:a.level,segments:a.segments,timeline:a.timeline.value,timeline_status:a.timeline.status,timeline_source:a.timeline.source_url,permit:a.permit.name,fees:a.fees.value,bond_insurance:a.bond_insurance.value,overall:a.overall_status})),'jdx_timelines.csv');
+const blk=(t,x)=>x&&x.length?`<h5>${t}</h5>${x}`:'';
+const list=(a,tag)=>a&&a.length?`<${tag||'ul'}>${a.map(x=>`<li>${esc(x)}</li>`).join('')}</${tag||'ul'}>`:'';
+const fact=(t,o)=>o&&o.value?`<h5>${t} ${tlchip(o.status)}</h5><div>${esc(o.value)} ${lk(o.source_url)}</div>`:'';
+function card(a){const T=a.timeline;
+ return `<div class="jx" id="${a.id}"><header><h3>${esc(a.name)}</h3><span class="chip st">${esc(a.level)}</span><span class="chip st">${esc(a.segments.join(' · '))}</span><span class="chip ${stKey(a.overall_status)}">${esc(a.overall_status)}</span></header>
+ <div class="body"><div>
+  <div class="bl">${esc(a.bottom_line)}</div>
+  ${blk('Where we meet them on this route',`<div>${esc(a.route_exposure)}</div>`)}
+  ${blk('What to file: '+esc(a.permit.name||''),list(a.permit.how_to_apply,'ol')+(a.permit.portal_or_form_url?`<div><a href="${esc(a.permit.portal_or_form_url)}" target="_blank" rel="noopener">Application / portal</a></div>`:''))}
+  ${a.permit.required_documents&&a.permit.required_documents.length?blk('Documents they will want',list(a.permit.required_documents)):''}
+  ${a.restrictions&&a.restrictions.length?`<h5>Restrictions that affect scheduling and method</h5><table class="t g"><tbody>${a.restrictions.map(r=>`<tr><td style="width:30%"><b>${esc(r.rule)}</b></td><td>${esc(r.detail)}</td><td style="white-space:nowrap">${tlchip(r.status)} ${lk(r.source_url)}</td></tr>`).join('')}</tbody></table>`:''}
+  ${a.known_conflicts&&a.known_conflicts.length?blk('Where sources disagree',list(a.known_conflicts)):''}
+  ${a.corrections_to_earlier_matrix&&a.corrections_to_earlier_matrix.length?blk('Corrections to our earlier matrix',list(a.corrections_to_earlier_matrix)):''}
+ </div><div>
+  <h5>Review timeline ${tlchip(T.status)}</h5><div class="tbox ${T.status}"><div class="v">${esc(T.value||'Not published')}</div><div class="n">${esc(T.note||'')} ${lk(T.source_url)}${T.checked?` <span class="mini">checked ${esc(T.checked)}</span>`:''}</div></div>
+  ${a.other_timelines&&a.other_timelines.length?`<h5>Other time rules</h5><table class="t g"><tbody>${a.other_timelines.map(o=>`<tr><td style="width:36%">${esc(o.item)}</td><td>${esc(o.value)}</td><td style="white-space:nowrap">${tlchip(o.status)} ${lk(o.source_url)}</td></tr>`).join('')}</tbody></table>`:''}
+  ${fact('Fees',a.fees)}${fact('Bond / insurance',a.bond_insurance)}
+  ${a.contacts&&a.contacts.length?`<h5>Contacts</h5>${a.contacts.map(c=>`<div class="ct"><b>${esc(c.name||'(office)')}${c.role?' · <span class="mini">'+esc(c.role)+'</span>':''}</b>${telify([c.phone,c.email].filter(Boolean).join(' · '))}${c.address?'<div class="mini">'+esc(c.address)+'</div>':''}${c.source_url?'<div>'+lk(c.source_url)+'</div>':''}</div>`).join('')}`:''}
+  ${a.call_to_verify&&a.call_to_verify.length?`<h5>Call to verify</h5>${a.call_to_verify.map(c=>`<div class="call"><b>${telify(c.who)}</b><div>Ask: ${esc(c.ask)}</div></div>`).join('')}`:''}
+  <h5>How sure are we</h5><div class="mini">${esc(a.confidence_note)}</div>
+  <details class="src"><summary class="mini">Sources (${(a.sources||[]).length})</summary>${(a.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title||s.url)}</a>`).join('')}</details>
+ </div></div></div>`;}
+function draw(){const q=$('#q').value.toLowerCase(),s=$('#seg').value,l=$('#lvl').value,st=$('#stat').value,co=$('#callonly').checked;
+ const rows=J.filter(a=>(!q||JSON.stringify(a).toLowerCase().includes(q))&&(!s||a.segments.includes(s))&&(!l||a.level===l)&&(!st||a.timeline.status===st)&&(!co||a.call_to_verify.length));
+ window._r=rows;$('#cnt').textContent=rows.length+' of '+J.length+' authorities';$('#grid').innerHTML=rows.map(card).join('')||'<p class="note">No match.</p>';}
+['q','seg','lvl','stat','callonly'].forEach(i=>$('#'+i).oninput=draw);
+const u=new URLSearchParams(location.search).get('q');if(u)$('#q').value=u;draw();
+if(location.hash){const e=document.getElementById(location.hash.slice(1));if(e)e.scrollIntoView()}
+$('#ccsv').onclick=()=>csv(window._r.flatMap(a=>a.contacts.map(c=>({authority:a.name,name:c.name,role:c.role,phone:c.phone,email:c.email,address:c.address,source:c.source_url}))),'jdx_contacts.csv');
+const calls=J.flatMap(a=>a.call_to_verify.map(c=>({authority:a.name,who:c.who,ask:c.ask})));
+$('#calls tbody').innerHTML=calls.map(c=>`<tr><td><b>${esc(c.authority)}</b></td><td>${telify(c.who)}</td><td>${esc(c.ask)}</td></tr>`).join('');sortable($('#calls'));
+$('#callcsv').onclick=()=>csv(calls,'open_calls.csv');
+$('#oi').innerHTML=LP.open_items.map(o=>`<tr><td>${esc(o.n)}</td><td>${esc(o.item)}</td><td>${telify(o.who)}</td><td>${esc(o.why)}</td></tr>`).join('');
+</script></body></html>

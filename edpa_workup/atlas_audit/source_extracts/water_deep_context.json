@@ -1,0 +1,586 @@
+{
+  "0": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39089C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "1": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "2": {
+    "fema": [
+      {
+        "FLD_ZONE": "AE",
+        "ZONE_SUBTY": "FLOODWAY",
+        "SFHA_TF": "T",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "3": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "4": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "5": {
+    "fema": [
+      {
+        "FLD_ZONE": "AE",
+        "ZONE_SUBTY": "FLOODWAY",
+        "SFHA_TF": "T",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "6": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "7": {
+    "fema": [
+      {
+        "FLD_ZONE": "AE",
+        "ZONE_SUBTY": "FLOODWAY",
+        "SFHA_TF": "T",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Forested/Shrub Wetland",
+        "ATTRIBUTE": "PFO1C"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R2UBH"
+      }
+    ]
+  },
+  "8": {
+    "fema": [
+      {
+        "FLD_ZONE": "AE",
+        "ZONE_SUBTY": "FLOODWAY",
+        "SFHA_TF": "T",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R2UBH"
+      }
+    ]
+  },
+  "9": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "10": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39049C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "11": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBGx"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "12": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBFh"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "13": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "14": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39041C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "15": {
+    "fema": [
+      {
+        "FLD_ZONE": "AE",
+        "ZONE_SUBTY": "FLOODWAY",
+        "SFHA_TF": "T",
+        "DFIRM_ID": "39041C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "16": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39041C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "17": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "18": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBGx"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "19": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39041C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBGx"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "20": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBGx"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "21": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBGh"
+      },
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBGh"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "22": {
+    "fema": [
+      {
+        "FLD_ZONE": "A",
+        "ZONE_SUBTY": null,
+        "SFHA_TF": "T",
+        "DFIRM_ID": "39041C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Lake",
+        "ATTRIBUTE": "L1UBHh"
+      }
+    ]
+  },
+  "23": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39041C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R3UBH"
+      }
+    ]
+  },
+  "24": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39041C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "25": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "26": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      }
+    ]
+  },
+  "27": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39159C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "28": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Emergent Wetland",
+        "ATTRIBUTE": "PEM1C"
+      },
+      {
+        "WETLAND_TYPE": "Freshwater Emergent Wetland",
+        "ATTRIBUTE": "PEM1C"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "29": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39159C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBGh"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "30": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39159C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "31": {
+    "fema": [
+      {
+        "FLD_ZONE": "A",
+        "ZONE_SUBTY": null,
+        "SFHA_TF": "T",
+        "DFIRM_ID": "39159C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "32": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "39159C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  },
+  "33": {
+    "fema": [
+      {
+        "FLD_ZONE": "X",
+        "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+        "SFHA_TF": "F",
+        "DFIRM_ID": "17043C"
+      }
+    ],
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Freshwater Pond",
+        "ATTRIBUTE": "PUBGx"
+      }
+    ]
+  },
+  "34": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R5UBH"
+      },
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R2UBHx"
+      }
+    ]
+  },
+  "35": {
+    "fema": {
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+    },
+    "nwi": [
+      {
+        "WETLAND_TYPE": "Riverine",
+        "ATTRIBUTE": "R4SBC"
+      }
+    ]
+  }
+}

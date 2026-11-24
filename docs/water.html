@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AHJ atlas – water crossing decisions</title>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/water.css">
+<script src="data/data.js"></script>
+<script src="data/water.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/water-common.js"></script>
+</head><body>
+<div class="nav" id="nav"></div>
+<main class="page water-page">
+  <header class="water-header">
+    <h1>Water crossing decisions</h1>
+    <p>Working methods and approval gates for all mapped route-to-water intersections.</p>
+    <p class="note">Reviewed November 24, 2026. Stations are feet from the start of each KMZ feature. Final approval pathways depend on the surveyed work, both approaches and access limits.</p>
+  </header>
+  <div id="water-scopes" class="scopes water-scopes" role="group" aria-label="Filter by segment"></div>
+  <div class="tools water-tools">
+    <label for="water-search">Find crossings</label>
+    <input type="search" id="water-search" placeholder="Name, station, structure or authority">
+    <button id="water-export" type="button">Export visible CSV</button>
+    <button id="water-print" type="button">Print / save PDF</button>
+    <span id="water-result" class="note" role="status"></span>
+  </div>
+  <details class="water-evidence water-checklist">
+    <summary>Standard submission checklist and agency intake</summary>
+    <p>For each crossing, attach the site-specific items listed on its card to this base package.</p>
+    <ul>
+      <li>Location map, crossing ID and station, surveyed limits and ROW or work access rights. Show both approaches and rig, pit or bridge access areas.</li>
+      <li>Plan and profile with surveyed structures, drainage and utility clearances, proposed means and methods, and traffic and restoration plans. Add sealed geotechnical or structural design where required.</li>
+      <li>For environmental review, include delineation, effective flood data, and temporary and permanent impact tables. Show drilling fluid handling and contingency where relevant.</li>
+      <li>Ask the applicable Corps district to determine Section 10 and Section 404 and whether NWP 57, pre-construction notification or an individual permit applies. Coordinate state certification and local floodplain review when triggered. An alternate alignment or method needs the same review against its new footprint.</li>
+      <li>For Delaware County, follow the field-dimensioned utility plan checklist and submit the ordinary utility application 4–8 weeks before planned work. Confirm the separate approval process and schedule for bridge work. <a href="https://engineer.co.delaware.oh.us/wp-content/uploads/sites/12/2025/07/Public_Utility_Permit_Process.pdf" target="_blank" rel="noopener">County utility process</a></li>
+      <li>For New Albany, the current application checklist includes proposed work drawings, maintenance of traffic plans, insurance, bond and fee. Coordinate the city’s pre-release site visit. <a href="https://newalbanyohio.org/right-of-way/" target="_blank" rel="noopener">City ROW application</a></li>
+    </ul>
+    <p class="water-links"><a href="https://rrs.usace.army.mil/" target="_blank" rel="noopener">USACE Regulatory Request System</a> ·
+      <a href="https://www.lrd.usace.army.mil/Missions/Regulatory/Ohio/" target="_blank" rel="noopener">Ohio districts and contacts</a> ·
+      <a href="https://www.lrd.usace.army.mil/Public-Notices/Programs/Article/3647633/regulatory-program-illinois/" target="_blank" rel="noopener">Illinois districts and contacts</a> ·
+      <a href="https://epa.ohio.gov/divisions-and-offices/surface-water/permitting/water-quality-certification-and-isolated-wetland-permits" target="_blank" rel="noopener">Ohio EPA 401 / wetlands</a> ·
+      <a href="https://epa.illinois.gov/topics/forms/water-permits/401-water-quality-certification.html" target="_blank" rel="noopener">Illinois EPA 401</a></p>
+  </details>
+  <div id="water-register"></div>
+  <p class="note">Unresolved Water-labeled locations and structure-only checks are retained in the <a href="report.html#screening-leads">jurisdiction report screening leads</a>.</p>
+</main>
+<script src="assets/water-page.js"></script>
+</body></html>
