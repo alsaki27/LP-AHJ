@@ -446,7 +446,7 @@ for r in reroutes:
                 if b_ > a_ and b_ <= feat[nm]['len'] + 60: segs += slice_(nm, a_, b_)
     if segs: r['rfp'] = segs
 for r in reroutes:
-    if r['id'] == 'S0-OPP-1':
+    if r['id'] in {'S0-OPP-1', 'S1U-01'}:
         continue  # The parcel and aerial exhibit is maintained with the reviewed alignment.
     pth = None
     if r['src'] == 'us23': pth = '/mnt/user-data/outputs/US23_alternative_snapshot.png'

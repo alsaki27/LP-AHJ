@@ -75,7 +75,7 @@ function drawRoute(){L_route.clearLayers();
  legend();}
 // ---- reroutes ----
 const L_rr=L.layerGroup(),L_rfp=L.layerGroup();
-LP.reroutes.forEach(r=>{if(r.c&&r.c.length>1)L.polyline(r.c.map(p=>[p[1],p[0]]),{pane:'rr',color:'#82c91e',weight:5,dashArray:'10 7',opacity:.95}).on('click',()=>openReroute(r.id)).bindTooltip(r.id+' (alternative, conceptual)',{sticky:true}).addTo(L_rr);
+LP.reroutes.filter(r=>r.status!=='withdrawn').forEach(r=>{if(r.c&&r.c.length>1)L.polyline(r.c.map(p=>[p[1],p[0]]),{pane:'rr',color:'#82c91e',weight:5,dashArray:'10 7',opacity:.95}).on('click',()=>openReroute(r.id)).bindTooltip(r.id+' (alternative, conceptual)',{sticky:true}).addTo(L_rr);
  if(r.rfp&&r.rfp.length>1)L.polyline(r.rfp.map(p=>[p[1],p[0]]),{pane:'rr',color:'#fa5252',weight:7,opacity:.45}).bindTooltip(r.id+' – RFP stretch replaced',{sticky:true}).addTo(L_rfp);});
 // ---- mapped water crossings ----
 const waterLayers = Object.fromEntries(Object.keys(WATER_SITE_CLASSES).map(type => [type, L.layerGroup()]));
@@ -156,7 +156,15 @@ function openImage(id,fly){const i=LP.images.find(x=>x.id===id);if(fly)map.setVi
  panel(`<div class="dh"><button class="x">×</button><span class="chip ${i.pri==='High'?'High':'Medium'}">${esc(i.pri)} priority</span> <span class="chip st">Aerial review</span><h3>${esc(i.id)}</h3><div class="note">${esc(i.seg)} · ${esc(i.feature)} · confidence ${esc(i.conf||'n/a')}</div></div>
  <div class="dc"><div class="thumbs"><img style="width:100%;height:auto" src="${i.img}" alt="${esc(i.id)}"></div><h5>What the image shows</h5><p>${esc(i.obs)}</p>${i.gap?`<h5>Gap / constructability</h5><p>${esc(i.gap)}</p>`:''}<h5>Register status</h5><p>${esc(i.issue)}</p><h5>Follow-up</h5><p>${esc(i.follow)}</p>
  <p class="note">NAIP crop (USGS / USDA FSA). Screening location only; not a surveyed crossing point.</p></div>`);}
-function openReroute(id,fly){const r=LP.reroutes.find(x=>x.id===id);history.replaceState(null,'','#rr='+id);
+function openReroute(id,fly){const r=LP.reroutes.find(x=>x.id===id);if(!r)return;history.replaceState(null,'','#rr='+id);
+ if(r.status==='withdrawn'){
+   panel(`<div class="dh"><button class="x" aria-label="Close reroute review">×</button><span class="chip st">Withdrawn</span>
+   <h3>${esc(r.id)}: ${esc(r.title)}</h3></div><div class="dc"><p>${esc(r.benefit)}</p>
+   <div class="thumbs"><img style="width:100%;height:auto" src="${esc(r.map)}" alt="Evidence for withdrawing ${esc(r.id)}"></div>
+   <p><a href="report.html#${encodeURIComponent(r.id)}">Read the withdrawal decision and sources</a></p></div>`);
+   if(fly)map.setView(r.review_point,13.5,{animate:false});
+   return;
+ }
  if(fly&&r.c.length>1)map.fitBounds(L.latLngBounds(r.c.map(p=>[p[1],p[0]])).pad(.25));
  const d=r.rfp_ft&&r.alt_ft?r.alt_ft-r.rfp_ft:null;
  panel(`<div class="dh"><button class="x">×</button><span class="chip ok">Reroute opportunity</span> <span class="chip st">${esc(r.seg)}</span><h3>${esc(r.id)}: ${esc(r.title)}</h3><div class="note">Conceptual alignment – not surveyed · confidence ${esc(r.conf)}</div></div>

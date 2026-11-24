@@ -36,7 +36,7 @@ $('#water-summary').innerHTML=`<a href="water.html">Water crossing register</a> 
 const segTot=R.seg_ft;const tot=Object.values(segTot).reduce((a,b)=>a+b,0);
 const sc=s=>LP.risks.filter(r=>r.sev===s).length;
 $('#kpis').innerHTML=[['Route length',fmt(tot)+' ft'],['Segment 0',fmt(segTot.Segment0)+' ft'],['Segment 1',fmt(segTot.Segment1)+' ft'],['Chicago spurs',fmt(segTot.Spurs)+' ft'],
- ['Critical risks',sc('Critical')],['High risks',sc('High')],['Medium risks',sc('Medium')],['Reroute options',LP.reroutes.length]].map(([l,v])=>`<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join('');
+ ['Critical risks',sc('Critical')],['High risks',sc('High')],['Medium risks',sc('Medium')],['Reroute options',LP.reroutes.filter(r=>r.status!=='withdrawn').length]].map(([l,v])=>`<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join('');
 // 1 jurisdictions
 const bar=(v,m)=>`<div class="bar" style="width:${Math.max(1,v/m*160)}px"></div>`;
 function riskCount(i){const k=i.issuer.split(' – ')[0].split(' (')[0].trim().toLowerCase();return k.length>6&&!k.startsWith('no public')?LP.risks.filter(r=>r.seg===i.seg&&r.agencies.toLowerCase().includes(k)).length:0}
@@ -74,7 +74,12 @@ function drawR(){const s=$('#rsev').value,t=tsel.value,q=$('#rq').value.toLowerC
 ['rsev','rtype','rq'].forEach(i=>$('#'+i).oninput=drawR);$('#rcsv').onclick=()=>csv(window._rrows.map(r=>({id:r.id,severity:r.sev,type:r.type,segment:r.seg,feature:r.feature,station:r.station,title:r.title,detail:r.detail,agencies:r.agencies,action:r.action,lat:r.ll[1],lon:r.ll[0],source:r.source})),'risk_register.csv');drawR();sortable($('#rr'));
 // reroutes
 const A=x=>Array.isArray(x)?x.join('; '):(x||'');
-$('#rrs').innerHTML=LP.reroutes.map(r=>{const d=r.rfp_ft&&r.alt_ft?r.alt_ft-r.rfp_ft:null;return `<div class="rrcard" id="${esc(r.id)}"><div>${r.map?`<img src="${r.map}" alt="${esc(r.title)}" onclick="lightbox(this.src,this.alt)">`:'<span class="note">(no map)</span>'}</div>
+$('#rrs').innerHTML=LP.reroutes.map(r=>{
+ if(r.status==='withdrawn')return `<article class="rrcard" id="${esc(r.id)}">
+ <div><img src="${esc(r.map)}" alt="Evidence for withdrawing ${esc(r.id)}" onclick="lightbox(this.src,this.alt)"></div>
+ <div><h3>${esc(r.id)}: ${esc(r.title)} <span class="chip st">Withdrawn</span></h3>
+ <p>${esc(r.benefit)}</p><details><summary>Withdrawal evidence and sources</summary><div class="notes">${r.notes}</div></details></div></article>`;
+ const d=r.rfp_ft&&r.alt_ft?r.alt_ft-r.rfp_ft:null;return `<div class="rrcard" id="${esc(r.id)}"><div>${r.map?`<img src="${r.map}" alt="${esc(r.title)}" onclick="lightbox(this.src,this.alt)">`:'<span class="note">(no map)</span>'}</div>
  <div><h3 style="margin:0 0 4px">${esc(r.id)}: ${esc(r.title)} <span class="chip st">${esc(r.seg)}</span> <span class="chip ok">${esc(r.conf)}</span></h3>
  <p class="note">RFP ${r.rfp_ft?fmt(r.rfp_ft):'–'} ft → alternative ${r.alt_ft?fmt(r.alt_ft):'–'} ft ${d!=null?'('+(d>0?'+':'')+fmt(d)+' ft)':''} · <a href="map.html#rr=${r.id}">show on map</a></p>
  <p><b>Benefit:</b> ${esc(r.benefit)}</p><p><b>Removed:</b> ${esc(A(r.removed))}</p><p><b>Added:</b> ${esc(A(r.added))}</p><p><b>Risks:</b> ${esc(A(r.risks))}</p>${r.notes?`<details><summary><b>Full write-up</b></summary><div class="notes">${r.notes}</div></details>`:''}</div></div>`}).join('');

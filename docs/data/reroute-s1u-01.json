@@ -1,0 +1,17 @@
+{
+  "id": "S1U-01",
+  "title": "Scottslawn–Industrial Parkway bypass",
+  "status": "withdrawn",
+  "c": [],
+  "rfp": [],
+  "rfp_ft": null,
+  "alt_ft": null,
+  "benefit": "Withdrawn. The former sketch left Scottslawn Road, ran beside the CSX tracks and intersected two CSX-coded rail arcs. No same-endpoint public-road bypass clear of railroad right-of-way was verified.",
+  "removed": [],
+  "added": [],
+  "risks": [],
+  "conf": "",
+  "map": "img/rr_S1U-01.jpg",
+  "review_point": [40.2246, -83.3366],
+  "notes": "<p><strong>What the overlay shows.</strong> The former line intersects USDOT rail arcs 418769 (other CSX track, approx. 8,702 ft along the sketch) and 402551 (CSX Scottslawn Secondary main track, approx. 16,124 ft). About 6,576 ft of the sketch is within 100 ft of mapped rail lines. That distance is a desktop proximity screen. Recorded rights and surveyed boundaries govern the property limits.</p><p><strong>Public-road check.</strong> The actual road route follows Scottslawn Road to the Industrial Parkway intersection and then Industrial Parkway/Columbus Avenue (CR 1). ODOT road geometry and the FRA record put CR 1 through CSX at the public at-grade crossing 513832K. Delaware Avenue also crosses CSX at 513830W on the base alignment. The Watkins and Five Points tie-ins are on opposite sides of the mapped main track. No replacement is carried under the no-railroad-ROW constraint. Keep the Marysville rail tie-in on hold pending a public corridor and tie-in that can be verified clear of railroad property.</p><p><a href=\"https://safetydata.fra.dot.gov/OfficeofSafety/publicsite/crossing/XingRangeResults.aspx?Start=233741&amp;numrow=20\" target=\"_blank\" rel=\"noopener\">FRA crossings 513832K and 513830W</a> · <a href=\"https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0/query?where=FRAARCID%20IN%20%28418769%2C402551%29&amp;outFields=FRAARCID%2CRROWNER1%2CSUBDIV%2CTRACKS%2CNET&amp;f=pjson\" target=\"_blank\" rel=\"noopener\">USDOT rail arc records</a> · <a href=\"https://tims.dot.state.oh.us/ags/rest/services/Roadway_Information/Road_Inventory/FeatureServer/0\" target=\"_blank\" rel=\"noopener\">ODOT road inventory</a> · <a href=\"https://www7.co.union.oh.us/unioncountyohio/rest/services/Roads/MapServer/0\" target=\"_blank\" rel=\"noopener\">Union County road right-of-way lines</a> · <a href=\"https://www.unioncountyohio.gov/railroad-valuation-maps\" target=\"_blank\" rel=\"noopener\">Union County historical railroad valuation maps</a></p>"
+}
