@@ -15,9 +15,43 @@ window.waterCount = segment => WATER_CROSSINGS.filter(
   crossing => !segment || crossing.segment === segment
 ).length;
 
+window.WATER_SITE_CLASSES = {
+  open: { label: 'Open water / channel', symbol: 'W', color: '#0e7490' },
+  buried: { label: 'Buried drainage', symbol: 'D', color: '#945113' },
+  gis: { label: 'GIS hit only', symbol: '?', color: '#515a6a' },
+};
+
+window.waterSiteBadge = function(crossing) {
+  const {classification, confidence} = crossing.review;
+  return `<span class="water-site-badge ${classification}">${WATER_SITE_CLASSES[classification].label} · ${esc(confidence)}</span>`;
+};
+
+window.waterSiteSymbol = type =>
+  `<span class="water-marker water-site-${type}" aria-hidden="true">${WATER_SITE_CLASSES[type].symbol}</span>`;
+
+window.waterSiteReview = function(crossing) {
+  const review = crossing.review;
+  const links = review.proof.map(([label, url]) =>
+    `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`
+  );
+  return `<section class="water-site-review">
+    ${waterSiteBadge(crossing)}
+    <p>${esc(review.finding)}</p>
+    <p><strong>Design check</strong> ${esc(review.next_check)}</p>
+    <details class="water-proof"><summary>View aerial and source records</summary>
+      <figure><a href="${esc(review.image)}" target="_blank" rel="noopener noreferrer" class="water-audit-image">
+        <img src="${esc(review.image)}" loading="lazy" width="540" height="540" alt="USGS aerial centered on ${esc(crossing.id)}">
+        </a><figcaption>Center ring marks the GIS pin. USGS / USDA NAIP, 200 m across.${review.imagery_catalog_dates
+          ? ' Collection dates in the source catalog at the pin include ' + esc(review.imagery_catalog_dates) + '.'
+          : ''} Imagery retrieved November 24, 2026.</figcaption></figure>
+      <p class="water-links">${links.join(' · ')}</p>
+    </details>
+  </section>`;
+};
+
 window.waterDecision = function(crossing) {
   const fields = [
-    ['Working method', crossing.method],
+    ['Concept method pending site checks', crossing.method],
     ['What is blocking it', crossing.blocker],
     ['Who approves it', crossing.lead],
     ['Approvals that depend on the footprint', crossing.conditional],

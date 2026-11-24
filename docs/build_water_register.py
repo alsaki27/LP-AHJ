@@ -47,6 +47,11 @@ def evidence_key(feature, station):
 def build():
     with (ROOT / 'water_crossing_point_evidence.csv').open(encoding='utf-8-sig', newline='') as stream:
         evidence = {evidence_key(row['feature'], row['station_ft']): row for row in csv.DictReader(stream)}
+    with (ROOT / 'water_pin_audit.csv').open(encoding='utf-8-sig', newline='') as stream:
+        review_rows = list(csv.DictReader(stream))
+    reviews = {row['id']: row for row in review_rows}
+    if len(reviews) != len(review_rows):
+        raise ValueError('Pin review IDs must be unique')
 
     crossings = []
     for line in (ROOT / 'water_decisions.txt').read_text(encoding='utf-8').splitlines():
@@ -55,6 +60,31 @@ def build():
         (identifier, feature, station, name, priority, method, blocker, lead,
          conditional, submit, fallback, sources) = line.split('|')
         point = evidence.pop(evidence_key(feature, station))
+        review = reviews.pop(identifier)
+        image = f'img/water-pin-audit/{identifier}.jpg'
+        if (review['classification'] not in {'open', 'buried', 'gis'}
+                or review['confidence'] not in {'High', 'Medium', 'Unverified'}
+                or (review['classification'] == 'gis') != (review['confidence'] == 'Unverified')
+                or float(review['latitude']) != float(point['latitude'])
+                or float(review['longitude']) != float(point['longitude'])
+                or review['flowline_oid'] != point['layer_objectid']
+                or not all(review[field] for field in ('finding', 'next_check', 'imagery_url', 'flowline_url'))
+                or not (ROOT.parent / image).is_file()):
+            raise ValueError(f'Incomplete physical review for {identifier}')
+        proof = [('Official flowline ' + point['layer_objectid'], review['flowline_url'])]
+        for number in (1, 2):
+            if review[f'source_{number}_url']:
+                proof.append((review[f'source_{number}_label'], review[f'source_{number}_url']))
+        proof.append(('Original USDA NAIP aerial', review['imagery_url']))
+        if review['alternate_imagery_url']:
+            proof.append(('Ohio statewide aerial', review['alternate_imagery_url']))
+        if review['imagery_catalog_url']:
+            proof.append(('USGS imagery catalog at pin', review['imagery_catalog_url']))
+        if review['classification'] == 'gis' and review['structure_search_url']:
+            proof.extend([
+                ('ODOT nearby bridge inventory query', review['structure_search_url']),
+                ('ODOT nearby conduit inventory query', review['conduit_search_url']),
+            ])
         crossings.append({
             'id': identifier, 'segment': point['segment'], 'feature': feature,
             'station': float(station), 'name': name, 'priority': priority,
@@ -62,12 +92,19 @@ def build():
             'conditional': conditional, 'submit': submit, 'fallback': fallback,
             'lat': float(point['latitude']), 'lon': float(point['longitude']),
             'evidence': point,
+            'review': {
+                'classification': review['classification'], 'confidence': review['confidence'],
+                'finding': review['finding'], 'next_check': review['next_check'],
+                'image': image, 'imagery_catalog_dates': review['imagery_catalog_dates'], 'proof': proof,
+            },
             'sources': [SOURCE_LINKS[key] for key in sources.split(',')] + [
                 ('Official flowline layer', point['source_layer'])
             ],
         })
     if evidence:
         raise ValueError(f'Unmatched mapped points: {sorted(evidence)}')
+    if reviews:
+        raise ValueError(f'Unmatched physical reviews: {sorted(reviews)}')
     if len({row['id'] for row in crossings}) != len(crossings):
         raise ValueError('Crossing IDs must be unique')
     (ROOT / 'water.js').write_text(

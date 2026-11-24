@@ -14,13 +14,16 @@
 <main class="page water-page">
   <header class="water-header">
     <h1>Water crossing decisions</h1>
-    <p>Working methods and approval gates for all mapped route-to-water intersections.</p>
-    <p class="note">Reviewed November 24, 2026. Stations are feet from the start of each KMZ feature. Final approval pathways depend on the surveyed work, both approaches and access limits.</p>
+    <p>Physical setting, pin-centered evidence and approval gates for all 36 mapped intersections.</p>
+    <p class="note">Reviewed November 24, 2026. Open channel includes intermittent ditches and streams. Buried drainage includes a culvert or storm sewer that controls the road crossing. GIS hit only means pipe or open channel remains unverified at the route. Survey and the full work footprint govern design and permits.</p>
+    <div id="water-audit-index"></div>
   </header>
   <div id="water-scopes" class="scopes water-scopes" role="group" aria-label="Filter by segment"></div>
   <div class="tools water-tools">
     <label for="water-search">Find crossings</label>
     <input type="search" id="water-search" placeholder="Name, station, structure or authority">
+    <label for="water-type">Physical setting</label>
+    <select id="water-type"><option value="">All settings</option></select>
     <button id="water-export" type="button">Export visible CSV</button>
     <button id="water-print" type="button">Print / save PDF</button>
     <span id="water-result" class="note" role="status"></span>
