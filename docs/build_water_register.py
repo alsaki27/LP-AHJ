@@ -52,6 +52,11 @@ def build():
     reviews = {row['id']: row for row in review_rows}
     if len(reviews) != len(review_rows):
         raise ValueError('Pin review IDs must be unique')
+    with (ROOT / 'water_drainage_followup.csv').open(encoding='utf-8-sig', newline='') as stream:
+        followup_rows = list(csv.DictReader(stream))
+    followups = {row['id']: row for row in followup_rows}
+    if len(followups) != len(followup_rows):
+        raise ValueError('Drainage follow-up IDs must be unique')
 
     crossings = []
     for line in (ROOT / 'water_decisions.txt').read_text(encoding='utf-8').splitlines():
@@ -62,7 +67,7 @@ def build():
         point = evidence.pop(evidence_key(feature, station))
         review = reviews.pop(identifier)
         image = f'img/water-pin-audit/{identifier}.jpg'
-        if (review['classification'] not in {'open', 'buried', 'gis'}
+        if (review['classification'] not in {'open', 'buried', 'gis', 'retired'}
                 or review['confidence'] not in {'High', 'Medium', 'Unverified'}
                 or (review['classification'] == 'gis') != (review['confidence'] == 'Unverified')
                 or float(review['latitude']) != float(point['latitude'])
@@ -80,11 +85,23 @@ def build():
             proof.append(('Ohio statewide aerial', review['alternate_imagery_url']))
         if review['imagery_catalog_url']:
             proof.append(('USGS imagery catalog at pin', review['imagery_catalog_url']))
-        if review['classification'] == 'gis' and review['structure_search_url']:
+        if review['classification'] in {'gis', 'retired'} and review['structure_search_url']:
             proof.extend([
                 ('ODOT nearby bridge inventory query', review['structure_search_url']),
                 ('ODOT nearby conduit inventory query', review['conduit_search_url']),
             ])
+        followup = followups.pop(identifier, None)
+        if followup:
+            exhibit = followup['exhibit']
+            if followup['classification'] != review['classification'] or not (ROOT.parent / exhibit).is_file():
+                raise ValueError(f'Incomplete drainage follow-up for {identifier}')
+            proof.extend((followup[f'record_{n}_label'], followup[f'record_{n}_url'])
+                         for n in range(1, 6) if followup[f'record_{n}_url'])
+            tie = None
+            if followup['asset_latitude']:
+                tie = dict(lat=float(followup['asset_latitude']), lon=float(followup['asset_longitude']),
+                           station=float(followup['asset_station_ft']))
+            followup = {key: followup[key] for key in ('decision', 'record_search', 'exhibit', 'caption')} | {'tie': tie}
         crossings.append({
             'id': identifier, 'segment': point['segment'], 'feature': feature,
             'station': float(station), 'name': name, 'priority': priority,
@@ -95,7 +112,9 @@ def build():
             'review': {
                 'classification': review['classification'], 'confidence': review['confidence'],
                 'finding': review['finding'], 'next_check': review['next_check'],
-                'image': image, 'imagery_catalog_dates': review['imagery_catalog_dates'], 'proof': proof,
+                'image': image, 'imagery_catalog_dates': review['imagery_catalog_dates'],
+                'proof': list(dict.fromkeys(proof)),
+                'followup': followup,
             },
             'sources': [SOURCE_LINKS[key] for key in sources.split(',')] + [
                 ('Official flowline layer', point['source_layer'])
@@ -105,6 +124,8 @@ def build():
         raise ValueError(f'Unmatched mapped points: {sorted(evidence)}')
     if reviews:
         raise ValueError(f'Unmatched physical reviews: {sorted(reviews)}')
+    if followups:
+        raise ValueError(f'Unmatched drainage follow-ups: {sorted(followups)}')
     if len({row['id'] for row in crossings}) != len(crossings):
         raise ValueError('Crossing IDs must be unique')
     (ROOT / 'water.js').write_text(

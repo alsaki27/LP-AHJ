@@ -23,11 +23,13 @@
 .water-marker { background: #0e7490; color: #fff; border: 2px solid #fff; border-radius: 50%; width: 19px; height: 19px; box-shadow: 0 0 0 1px #0e5267; display: grid; place-items: center; font: bold 10px/1 system-ui, sans-serif; }
 .water-site-buried { background: #945113; box-shadow: 0 0 0 1px #69370d; }
 .water-site-gis { background: #515a6a; box-shadow: 0 0 0 1px #303745; }
+.water-site-retired { background: #64748b; box-shadow: 0 0 0 1px #475569; }
 .water-site-review { margin: 12px 0; padding: 10px 12px; background: #f3f7fa; border: 1px solid #ccd7e2; border-radius: 6px; }
 .water-site-review p { margin: 6px 0; }
 .water-site-badge { display: inline-block; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 7px; color: #073e52; background: #dceef6; }
 .water-site-badge.buried { color:#673809; background:#f8ebd8; }
 .water-site-badge.gis { color:#303745; background:#e5e8ef; }
+.water-site-badge.retired { color:#374151; background:#e8edf2; }
 .water-proof summary { font-weight: 600; }
 .water-proof figure { max-width: 540px; margin: 10px 0; }
 .water-proof img { width: 100%; height: auto; display: block; }

@@ -18,8 +18,11 @@ window.waterCount = segment => WATER_CROSSINGS.filter(
 window.WATER_SITE_CLASSES = {
   open: { label: 'Open water / channel', symbol: 'W', color: '#0e7490' },
   buried: { label: 'Buried drainage', symbol: 'D', color: '#945113' },
-  gis: { label: 'GIS hit only', symbol: '?', color: '#515a6a' },
+  gis: { label: 'Still unresolved', symbol: '?', color: '#515a6a' },
+  retired: { label: 'Dropped from crossing scope', symbol: '×', color: '#64748b' },
 };
+
+window.waterMapPosition = crossing => crossing.review.followup?.tie || crossing;
 
 window.waterSiteBadge = function(crossing) {
   const {classification, confidence} = crossing.review;
@@ -31,14 +34,21 @@ window.waterSiteSymbol = type =>
 
 window.waterSiteReview = function(crossing) {
   const review = crossing.review;
+  const followup = review.followup;
   const links = review.proof.map(([label, url]) =>
     `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`
   );
   return `<section class="water-site-review">
     ${waterSiteBadge(crossing)}
     <p>${esc(review.finding)}</p>
+    ${followup ? `<p><strong>Bid decision</strong> ${esc(followup.decision)}</p>
+      ${followup.tie ? `<p><strong>Mapped asset tie</strong> Approx. ${waterStation(followup.tie.station)} ft on ${esc(crossing.feature)}.</p>` : ''}` : ''}
     <p><strong>Design check</strong> ${esc(review.next_check)}</p>
     <details class="water-proof"><summary>View aerial and source records</summary>
+      ${followup ? `<p><strong>Records checked</strong> ${esc(followup.record_search)}</p>
+        <figure><a href="${esc(followup.exhibit)}" target="_blank" rel="noopener noreferrer">
+          <img src="${esc(followup.exhibit)}" loading="lazy" alt="Drainage records and route overlay for ${esc(crossing.id)}">
+        </a><figcaption>${esc(followup.caption)}</figcaption></figure>` : ''}
       <figure><a href="${esc(review.image)}" target="_blank" rel="noopener noreferrer" class="water-audit-image">
         <img src="${esc(review.image)}" loading="lazy" width="540" height="540" alt="USGS aerial centered on ${esc(crossing.id)}">
         </a><figcaption>Center ring marks the GIS pin. USGS / USDA NAIP, 200 m across.${review.imagery_catalog_dates
@@ -47,6 +57,17 @@ window.waterSiteReview = function(crossing) {
       <p class="water-links">${links.join(' · ')}</p>
     </details>
   </section>`;
+};
+
+window.waterRelatedLeads = function(id) {
+  const related = {
+    'S0-W04': [['L002', 'Separate Gruber Run screening location']],
+    'S1-W10': [['L016', 'ODOT point for SFN 2136341 (location discrepancy)'], ['L015', 'Home Road arch-box SFN 2136333']],
+    'S1-W11': [['L008', 'Duffy crossing on S1-S035-Water']],
+  }[id];
+  return related ? `<p class="water-links">${related.map(([lead, label]) =>
+    `<a href="map.html#risk=${lead}">${label}</a>`
+  ).join(' · ')}</p>` : '';
 };
 
 window.waterDecision = function(crossing) {

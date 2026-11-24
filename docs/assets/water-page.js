@@ -12,7 +12,8 @@ let visible = [];
 const indexed = WATER_CROSSINGS.map(crossing => ({
   crossing,
   searchText: Object.values(crossing).filter(value => typeof value === 'string')
-    .concat(Object.values(crossing.evidence), crossing.review.finding, crossing.review.next_check)
+    .concat(Object.values(crossing.evidence), crossing.review.finding, crossing.review.next_check,
+      crossing.review.followup?.record_search || '')
     .join(' ').toLowerCase(),
 }));
 
@@ -28,19 +29,22 @@ $('#water-audit-index').innerHTML = `<table class="t water-audit-table"><caption
     `<td>${countByType(type, key)}</td>`).join('')}</tr>`).join('')}</tbody>
   <tfoot><tr><th scope="row">Total</th>${siteTypes.map(type=>`<td>${countByType(type)}</td>`).join('')}</tr></tfoot>
   </table>
-  <p><a href="data/water_pin_audit.csv" download>Download the 36-pin audit</a></p>`;
+  <p><a href="data/water_pin_audit.csv" download>Download the 36-pin audit</a> ·
+  <a href="data/water_drainage_followup.csv" download>Download the 10-pin drainage follow-up</a></p>`;
 
 function crossingCard(crossing) {
+  const {lat,lon}=waterMapPosition(crossing);
   return `<article class="water-card" id="${esc(crossing.id)}" tabindex="-1">
     <header><div>
       <div class="note">${esc(crossing.id)} · ${esc(crossing.feature)} · ${waterStation(crossing.station)} ft</div>
       <h3>${esc(crossing.name)}</h3>
     </div><span class="water-priority">${esc(crossing.priority)}</span></header>
     ${waterSiteReview(crossing)}
+    ${waterRelatedLeads(crossing.id)}
     ${waterDecision(crossing)}
     ${waterEvidence(crossing)}
     <p class="water-links"><a href="${waterMapLink(crossing.id)}">View crossing on map</a> ·
-    <a href="${esc(streetViewLink(crossing.lat, crossing.lon))}" target="_blank" rel="noopener noreferrer">Google Street View</a></p>
+    <a href="${esc(streetViewLink(lat, lon))}" target="_blank" rel="noopener noreferrer">Google Street View</a></p>
   </article>`;
 }
 
@@ -90,6 +94,10 @@ exportButton.addEventListener('click', () => {
     physical_setting: WATER_SITE_CLASSES[crossing.review.classification].label,
     confidence: crossing.review.confidence, physical_finding: crossing.review.finding,
     design_check: crossing.review.next_check, aerial_file: crossing.review.image,
+    drainage_bid_decision: crossing.review.followup?.decision || '',
+    asset_station_ft: crossing.review.followup?.tie?.station ?? '',
+    asset_latitude: crossing.review.followup?.tie?.lat ?? '',
+    asset_longitude: crossing.review.followup?.tie?.lon ?? '',
     physical_sources: crossing.review.proof.map(([, url]) => url),
     working_method: crossing.method, blocker: crossing.blocker, approval_lead: crossing.lead,
     conditional_approvals: crossing.conditional, submission: crossing.submit,

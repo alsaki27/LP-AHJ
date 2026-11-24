@@ -64,7 +64,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-88.00291791%2C+%22y%22%3A+41.99238888%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -154,7 +155,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-88.00095631%2C+%22y%22%3A+42.01211868%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -240,7 +242,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-87.96420817%2C+%22y%22%3A+41.99566546%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -326,7 +329,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-82.73696801%2C+%22y%22%3A+40.07864939%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -412,7 +416,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-82.77829792%2C+%22y%22%3A+40.07956108%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -498,7 +503,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-82.78426909%2C+%22y%22%3A+40.07983666%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -526,11 +532,11 @@ window.WATER_CROSSINGS = [
     "station": 1554.6,
     "name": "Rose Run near Dublin–Granville Road",
     "priority": "Project coordination",
-    "method": "Trace the active drainage and confirm new grading before including a drainage-specific bore.",
-    "blocker": "The flowline is mapped but the current channel or pipe alignment and Rose Run Phase Two construction/restoration limits may differ from the source GIS.",
+    "method": "Keep this pin on hold. Carry the mapped Rose Run channel farther east as a separate route check and budget a drainage locate at the original road frontage.",
+    "blocker": "New Albany’s stormwater strategy maps Rose Run and discusses a possible Ganton basin and flood-control culvert. Those are concepts. Franklin County creek 2684 crosses the same bore about 1,062 ft east of this pin, at approximately 492.8 ft. Neither source confirms a pipe or open channel through the original pin near 7041 E Dublin–Granville Road.",
     "lead": "New Albany Public Service for road occupation. City project engineer and drainage owner confirm final channel, storm and joint-work limitations.",
     "conditional": "Huntington and Ohio EPA when work impacts trigger review. Local floodplain or private access approvals if the new footprint requires them.",
-    "submit": "Overlay exact route station with Phase Two issued plans and final grading. Submit as-built or proposed storm profiles, bore/pit details, restoration tie and staging or shared-work exhibit.",
+    "submit": "New Albany engineering: retrieve the Ganton tract and Dublin–Granville storm profiles and current pond outlet records around parcel 222-000293. Tie any off-site pipe to surveyed ends.",
     "fallback": "If staged work or conduit sharing is refused, wait for as-builts and bore outside the restored project limits. Shift the pits away from the final grading and retain lawful access.",
     "lat": 40.08069869,
     "lon": -82.80288701,
@@ -559,8 +565,8 @@ window.WATER_CROSSINGS = [
     "review": {
       "classification": "gis",
       "confidence": "Unverified",
-      "finding": "The flowline reaches a developed road shoulder. The visible pond sits to the northwest. Neither aerial establishes a surface channel, and the ODOT query did not identify a matched structure. New Albany confirms Rose Run work in the area.",
-      "next_check": "Use New Albany storm plans and subdivision records to trace any pond outlet to the pin before carrying a special crossing item.",
+      "finding": "New Albany’s stormwater strategy maps Rose Run and discusses a possible Ganton basin and flood-control culvert. Those are concepts. Franklin County creek 2684 crosses the same bore about 1,062 ft east of this pin, at approximately 492.8 ft. Neither source confirms a pipe or open channel through the original pin near 7041 E Dublin–Granville Road.",
+      "next_check": "New Albany engineering: retrieve the Ganton tract and Dublin–Granville storm profiles and current pond outlet records around parcel 222-000293. Tie any off-site pipe to surveyed ends.",
       "image": "img/water-pin-audit/S0-W04.jpg",
       "imagery_catalog_dates": "2023-05-21",
       "proof": [
@@ -569,8 +575,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=21928&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "New Albany Rose Run project context",
-          "https://newalbanyohio.org/news/2026/10/rose-run-phase-two-update-s-high-st-lane-closure-through-nov-25/"
+          "New Albany drainage strategy, pp. 26–27",
+          "https://newalbanyohio.org/wp-content/uploads/2016/04/VillageCenterStormwaterMitigationStrategy-1.pdf#page=26"
+        ],
+        [
+          "Franklin County creek OID 2684 and ditch 156",
+          "https://gis.franklincountyohio.gov/hosting/rest/services/BaseMap/Reference_Data/MapServer/4/query?objectIds=2684%2C156&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
           "Original USDA NAIP aerial",
@@ -591,8 +601,23 @@ window.WATER_CROSSINGS = [
         [
           "ODOT nearby conduit inventory query",
           "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-82.80464809%2C40.07935122%2C-82.80112593%2C40.08204616&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "New Albany Market Street / Village Center easement packet",
+          "https://newalbanyohio.org/wp-content/uploads/2020/03/Proposed-Legislation-4-4-23-Rev-R-19-R-20-and-O-59.pdf"
+        ],
+        [
+          "New Albany engineering plan and ROW intake",
+          "https://newalbanyohio.org/right-of-way/"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Keep this pin on hold. Carry the mapped Rose Run channel farther east as a separate route check and budget a drainage locate at the original road frontage.",
+        "record_search": "City Village Center Stormwater Mitigation Strategy pp. 26–27; Franklin County creek OID 2684 and ditch OID 156; county creek geometry overlaid with the route. Current drainage as-built at the original pin unavailable in the public files reviewed.",
+        "exhibit": "img/water-drainage-followup/S0-W04.jpg",
+        "caption": "The crop shows the original pin. The separate Franklin County crossing at approximately 492.8 ft is east of the crop.",
+        "tie": null
+      }
     },
     "sources": [
       [
@@ -678,7 +703,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-82.83523267%2C+%22y%22%3A+40.08005537%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -764,7 +790,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-82.84349983%2C+%22y%22%3A+40.07925514%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -788,11 +815,11 @@ window.WATER_CROSSINGS = [
     "station": 18139.2,
     "name": "Morse Road unnamed drainage east of Big Walnut",
     "priority": "Asset and ROW",
-    "method": "Carry a field and record trace. Add a separate trenchless crossing if it identifies a pipe or channel conflict.",
-    "blocker": "No nearby inventory structure in the current 600-ft check. Need to locate the storm outlet or buried drainage and establish a dry receiving pit.",
+    "method": "Keep a drainage investigation in the road-bore scope. Hold a separate crossing quantity until a road barrel, storm connection or channel is located.",
+    "blocker": "Franklin County maps several short wooded drainage reaches near 4334 Morse Road. The nearest is about 107 ft from the pin and 98 ft from the bore alignment. The leaf-off aerial shows a low corridor south of the road. Neither county mapping nor the ODOT inventories connect it through the road.",
     "lead": "Columbus Department of Public Service for street ROW and Columbus Water & Power/drainage owner for affected assets.",
     "conditional": "Local floodplain administrator and Huntington/Ohio EPA if delineated impacts warrant. Any non-ROW pit requires rights.",
-    "submit": "Storm as-built tie, invert/utility survey, plan/profile, conduit method, dry access and city pavement restoration exhibit.",
+    "submit": "Columbus Water & Power MapRoom and Franklin County Engineer: request the storm trunk, inlet/outfall, and roadway plans near 4334 Morse Road, including the south wooded low and the north subdivision frontage. Locate both ends in field.",
     "fallback": "If the chosen pit hits a storm trunk or outlet, relocate it along permitted Morse frontage or shift to the opposite side after checking utility and traffic impacts.",
     "lat": 40.05629125,
     "lon": -82.88296779,
@@ -821,8 +848,8 @@ window.WATER_CROSSINGS = [
     "review": {
       "classification": "gis",
       "confidence": "Unverified",
-      "finding": "The mapped line meets wooded strips along Morse Road. The available leaf-off and summer imagery does not establish a continuous crossing or show a headwall. The ODOT search found no matched asset.",
-      "next_check": "Trace the low ground and road inlets. Obtain the applicable Morse Road storm plan and stream mapping before carrying a special crossing.",
+      "finding": "Franklin County maps several short wooded drainage reaches near 4334 Morse Road. The nearest is about 107 ft from the pin and 98 ft from the bore alignment. The leaf-off aerial shows a low corridor south of the road. Neither county mapping nor the ODOT inventories connect it through the road.",
+      "next_check": "Columbus Water & Power MapRoom and Franklin County Engineer: request the storm trunk, inlet/outfall, and roadway plans near 4334 Morse Road, including the south wooded low and the north subdivision frontage. Locate both ends in field.",
       "image": "img/water-pin-audit/S0-W07.jpg",
       "imagery_catalog_dates": "2023-05-21",
       "proof": [
@@ -831,7 +858,11 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=21955&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "Franklin SWCD stream verification",
+          "Franklin County creeks around Morse Road pin",
+          "https://gis.franklincountyohio.gov/hosting/rest/services/BaseMap/Reference_Data/MapServer/4/query?where=1%3D1&geometry=-82.88508032%2C40.05467429%2C-82.88085526%2C40.05790821&geometryType=esriGeometryEnvelope&inSR=4326&outSR=4326&outFields=%2A&returnGeometry=true&returnExceededLimitFeatures=true&f=json"
+        ],
+        [
+          "Franklin SWCD Stream Resource Geodatabase",
           "https://www.franklinswcd.org/stream-verification-and-stream-resource-geodatabase"
         ],
         [
@@ -853,8 +884,19 @@ window.WATER_CROSSINGS = [
         [
           "ODOT nearby conduit inventory query",
           "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-82.88472824%2C40.05494378%2C-82.88120734%2C40.05763872&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "Columbus stormwater record mapping",
+          "https://www.columbus.gov/Services/Columbus-Water-Power/Information-for-Customers/Water-Power-Contractors/Stormwater-Drainage-Manual"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Keep a drainage investigation in the road-bore scope. Hold a separate crossing quantity until a road barrel, storm connection or channel is located.",
+        "record_search": "Franklin County Creeks & Streams, query around the pin; Franklin SWCD Stream Resource Geodatabase availability; ODOT bridge and conduit searches. No matched storm profile or as-built was retrieved.",
+        "exhibit": "img/water-drainage-followup/S0-W07.jpg",
+        "caption": "Several verified mapped drainage reaches are near the corridor. None of the county lines returned intersects the proposed alignment at the pin.",
+        "tie": null
+      }
     },
     "sources": [
       [
@@ -932,7 +974,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-82.88852146%2C+%22y%22%3A+40.05657282%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1014,7 +1057,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-82.92442546%2C+%22y%22%3A+40.05836173%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1096,7 +1140,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-82.92836056%2C+%22y%22%3A+40.0585113%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1120,11 +1165,11 @@ window.WATER_CROSSINGS = [
     "station": 2668.6,
     "name": "Sancus Boulevard drainage OID 21911",
     "priority": "Project coordination",
-    "method": "Carry the ordinary road bore pending the storm-plan overlay. Adjust angle and clearance if the overlay confirms a conflict.",
-    "blocker": "Existing hit is only about 49° to the mapped channel. Sancus project grading, storm plans and future easements can move the useful work envelope.",
+    "method": "Carry existing storm sewer clearance in the roadway bore estimate. Hold a stand-alone water crossing until the junction network is traced.",
+    "blocker": "Columbus drawing 3834-E shows 42-in storm pipe segments approaching Worthington Woods Boulevard along Sancus, and the variance submittal describes the existing storm system. The exhibit stops around the junction and does not resolve the diagonal GIS line through the signalized intersection or the full cross-street storm layout.",
     "lead": "Columbus Public Service and Sancus capital project team for city ROW and future drainage fit.",
     "conditional": "Columbus drainage utility, property interests, local floodplain and Ohio water approvals as impacts require.",
-    "submit": "Overlay capital project plans, survey channel/storm utilities, angle comparison, pit rights and dates, with revised cut/restoration and traffic plan.",
+    "submit": "Request the existing junction storm plan and profiles and the completed Worthington Woods shared-use-path closeout, City project P540002-100112. Compare with 3834-E and 3833-E/PID 115768 and verify the exact pipe offsets and inverts.",
     "fallback": "If the near-normal shift is refused, test an alternate road side or schedule after storm construction. A broad bypass needs its own crossing overlay and approvals.",
     "lat": 40.11887664,
     "lon": -82.99535789,
@@ -1153,8 +1198,8 @@ window.WATER_CROSSINGS = [
     "review": {
       "classification": "gis",
       "confidence": "Unverified",
-      "finding": "Flowline 21911 meets a paved, signalized area on Sancus. Neither aerial establishes a crossing at the pin and no ODOT asset matches. The Columbus corridor project includes storm sewer work.",
-      "next_check": "Get the existing and proposed Columbus storm sheets. Trace inlets and mains to the route and adjust a road bore if a conflict is found.",
+      "finding": "Columbus drawing 3834-E shows 42-in storm pipe segments approaching Worthington Woods Boulevard along Sancus, and the variance submittal describes the existing storm system. The exhibit stops around the junction and does not resolve the diagonal GIS line through the signalized intersection or the full cross-street storm layout.",
+      "next_check": "Request the existing junction storm plan and profiles and the completed Worthington Woods shared-use-path closeout, City project P540002-100112. Compare with 3834-E and 3833-E/PID 115768 and verify the exact pipe offsets and inverts.",
       "image": "img/water-pin-audit/S0-W11.jpg",
       "imagery_catalog_dates": "2023-05-21",
       "proof": [
@@ -1163,12 +1208,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=21911&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "Columbus Sancus Boulevard project context",
-          "https://engage.columbus.gov/sancusboulevardimprovements"
+          "Columbus 3834-E drainage variance, Exhibit A",
+          "https://www.columbus.gov/files/sharedassets/city/v/1/utilities/sewage-drainage/stormwater-variance-request/sancus-blvd-sup-type-ii-variance-request.pdf"
         ],
         [
-          "Columbus stormwater mapping and record requests",
-          "https://www.columbus.gov/Services/Columbus-Water-Power/Information-for-Customers/Water-Power-Contractors/Stormwater-Drainage-Manual"
+          "Worthington Woods storm work, construction authorization",
+          "https://columbus.legistar.com/LegislationDetail.aspx?FullText=1&GUID=A9E229F1-4014-47F1-88CE-0B028CDEFB17&ID=6268710"
         ],
         [
           "Original USDA NAIP aerial",
@@ -1189,8 +1234,23 @@ window.WATER_CROSSINGS = [
         [
           "ODOT nearby conduit inventory query",
           "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-82.99711995%2C40.11752917%2C-82.99359583%2C40.12022411&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "ODOT Sancus PID 115768 environmental approval, pp. 3–4",
+          "https://environet.dot.state.oh.us/public/GetPublicDocument.aspx?formid=17933&filename=Approved+CE.pdf#page=3"
+        ],
+        [
+          "Columbus stormwater record mapping",
+          "https://www.columbus.gov/Services/Columbus-Water-Power/Information-for-Customers/Water-Power-Contractors/Stormwater-Drainage-Manual"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Carry existing storm sewer clearance in the roadway bore estimate. Hold a stand-alone water crossing until the junction network is traced.",
+        "record_search": "November 2024 Columbus drainage variance, 3834-E, Exhibit A; 2023 adjacent path construction authorization; ODOT 2026 environmental approval for PID 115768. No complete record storm plan across the intersection was retrieved.",
+        "exhibit": "img/water-drainage-followup/S0-W11.jpg",
+        "caption": "The cyan diagonal is the original GIS trace. Use the linked storm design exhibit for the mapped roadway pipe.",
+        "tie": null
+      }
     },
     "sources": [
       [
@@ -1214,11 +1274,11 @@ window.WATER_CROSSINGS = [
     "station": 6328.2,
     "name": "Sancus Boulevard pond or outlet drainage OID 24959",
     "priority": "Project coordination",
-    "method": "Trace the drainage and pond outlet before committing to an independent bore or pit restrictions specific to an outlet.",
-    "blocker": "Second Sancus hit. Pond and riverine NWI indicators nearby, FEMA request unavailable. Need ditch/outlet identity, capital project limits and permitted pit access.",
+    "method": "Carry ordinary frontage storm coordination. Retain the outlet as a hold and exclude a separate water-crossing quantity until the pond outlet is traced.",
+    "blocker": "The pin falls by the Cedar Trace frontage near 8047 Sancus Boulevard. Columbus Drawer 3833-E sheets RW.34–35 identify the Cedar Trace parcels and document storm drainage easements and existing pipes farther along the corridor. The public sheets do not establish a pipe linking the east pond through the pin.",
     "lead": "Columbus Public Service and the stormwater/drainage asset controller. Coordinate both Sancus projects for work limits and timing.",
     "conditional": "Local floodplain review after getting effective mapping. Huntington/Ohio EPA if delineated impacts trigger them.",
-    "submit": "Pond/outfall and storm as-built, FIRM, combined Sancus project overlay, maintenance easement, bore/pits and a separate work station exhibit.",
+    "submit": "Request PID 115768 / Drawer 3833-E storm plan and profile at the pin and Cedar Trace civil record plans. Cite Franklin County Instrument 202407230073461 and the 8047 Sancus frontage. Check whether an outlet reaches the west-side bore corridor.",
     "fallback": "If the outlet buffer or easement prevents the current bore, shift the landfall within authorized ROW or coordinate an owner-approved storm-project window. Keep this crossing quantity separate.",
     "lat": 40.12855953,
     "lon": -82.99336231,
@@ -1247,8 +1307,8 @@ window.WATER_CROSSINGS = [
     "review": {
       "classification": "gis",
       "confidence": "Unverified",
-      "finding": "Flowline 24959 reaches Sancus in a developed corridor. A pond is visible behind development east of the road. Its outlet route and any barrel through the street are unverified.",
-      "next_check": "Compare municipal and subdivision storm plans and trace outlet and street inlets. Carry a pond connection only after the plans or inspection tie it to the route.",
+      "finding": "The pin falls by the Cedar Trace frontage near 8047 Sancus Boulevard. Columbus Drawer 3833-E sheets RW.34–35 identify the Cedar Trace parcels and document storm drainage easements and existing pipes farther along the corridor. The public sheets do not establish a pipe linking the east pond through the pin.",
+      "next_check": "Request PID 115768 / Drawer 3833-E storm plan and profile at the pin and Cedar Trace civil record plans. Cite Franklin County Instrument 202407230073461 and the 8047 Sancus frontage. Check whether an outlet reaches the west-side bore corridor.",
       "image": "img/water-pin-audit/S0-W12.jpg",
       "imagery_catalog_dates": "2023-05-21",
       "proof": [
@@ -1257,12 +1317,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=24959&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "Columbus Sancus Boulevard project context",
-          "https://engage.columbus.gov/sancusboulevardimprovements"
+          "Columbus 3833-E right-of-way topo sheets RW.34–35",
+          "https://columbus.legistar.com/View.ashx?M=F&ID=16135934&GUID=E61AD23F-8B78-429F-9917-F7A802A65CEC#page=2"
         ],
         [
-          "Columbus stormwater mapping and record requests",
-          "https://www.columbus.gov/Services/Columbus-Water-Power/Information-for-Customers/Water-Power-Contractors/Stormwater-Drainage-Manual"
+          "ODOT Sancus PID 115768 environmental approval, pp. 3–4",
+          "https://environet.dot.state.oh.us/public/GetPublicDocument.aspx?formid=17933&filename=Approved+CE.pdf#page=3"
         ],
         [
           "Original USDA NAIP aerial",
@@ -1283,8 +1343,19 @@ window.WATER_CROSSINGS = [
         [
           "ODOT nearby conduit inventory query",
           "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-82.99512463%2C40.12721206%2C-82.99159999%2C40.12990700&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "Columbus stormwater record mapping",
+          "https://www.columbus.gov/Services/Columbus-Water-Power/Information-for-Customers/Water-Power-Contractors/Stormwater-Drainage-Manual"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Carry ordinary frontage storm coordination. Retain the outlet as a hold and exclude a separate water-crossing quantity until the pond outlet is traced.",
+        "record_search": "Columbus public parcel 39 marked plans, sheets RW.34–35; ODOT environmental approval, PID 115768. The city drawing references stormwater easements and shows existing RCP farther north. The Cedar Trace pond-outlet as-built was not found in the public packet.",
+        "exhibit": "img/water-drainage-followup/S0-W12.jpg",
+        "caption": "The aerial separates the east pond from the bore. Trace the outlet before assigning it to the original cyan line.",
+        "tie": null
+      }
     },
     "sources": [
       [
@@ -1308,11 +1379,11 @@ window.WATER_CROSSINGS = [
     "station": 2693.0,
     "name": "Lazelle Road drainage near the county line",
     "priority": "Asset and ROW",
-    "method": "Locate the ditch, pipe or storm connection before using the mapped angle to realign the bore.",
-    "blocker": "About 46° on the mapped perennial line, near a road-control transition and mapped pond. FEMA response is unavailable. Ownership and outlet/pit positions remain open.",
+    "method": "Carry a north-verge drainage conflict at approx. 2,752.4 ft. Tie it to the current storm system before pricing a separate road barrel or finalizing the bore.",
+    "blocker": "Franklin County creek 104 follows the wooded north approach and intersects the proposed bore on the Lazelle north verge about 59 ft west of the original pin. The county-mapped channel and visible low ground identify a real approach-drainage conflict. A through-road culvert or south-side outlet has not been established.",
     "lead": "Columbus Public Service starts road control check. Delaware County/Orange and actual drainage owner confirm applicable road segments and permit roles.",
     "conditional": "Local floodplain and Huntington/Ohio EPA as triggered. Access right holder if there is a frontage easement or private work.",
-    "submit": "Road maintenance boundary and parcel sheets, surveyed outlet/channel and utilities, FIRM, both proposed pit locations and revised profile.",
+    "submit": "Retrieve Lazelle Phase A PID 95606, CIP 530161-100145, existing and record drainage sheets at the High Street end. Survey the defined north approach, inlet and any pipe that continues under the road or into the detention system.",
     "fallback": "If jurisdiction or pond work blocks the chosen side, shift to a surveyed adjacent public corridor away from the outlet, or secure a documented frontage easement.",
     "lat": 40.13675263,
     "lon": -83.0154464,
@@ -1339,10 +1410,10 @@ window.WATER_CROSSINGS = [
       "source_layer": "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0"
     },
     "review": {
-      "classification": "gis",
-      "confidence": "Unverified",
-      "finding": "The flowline reaches Lazelle Road at a wooded edge and continues into developed lots south of the road. A swale is possible. No same-site barrel or defined surface passage was found in the images or inventory.",
-      "next_check": "Check road and subdivision grading sheets and trace the ditch or storm pipe on both sides. Screen the nearby wetland against the final work limits.",
+      "classification": "open",
+      "confidence": "Medium",
+      "finding": "Franklin County creek 104 follows the wooded north approach and intersects the proposed bore on the Lazelle north verge about 59 ft west of the original pin. The county-mapped channel and visible low ground identify a real approach-drainage conflict. A through-road culvert or south-side outlet has not been established.",
+      "next_check": "Retrieve Lazelle Phase A PID 95606, CIP 530161-100145, existing and record drainage sheets at the High Street end. Survey the defined north approach, inlet and any pipe that continues under the road or into the detention system.",
       "image": "img/water-pin-audit/S0-W13.jpg",
       "imagery_catalog_dates": "2023-05-21",
       "proof": [
@@ -1351,12 +1422,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=22645&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "Franklin SWCD stream verification",
-          "https://www.franklinswcd.org/stream-verification-and-stream-resource-geodatabase"
+          "Franklin County creek OID 104",
+          "https://gis.franklincountyohio.gov/hosting/rest/services/BaseMap/Reference_Data/MapServer/4/query?objectIds=104&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "Columbus stormwater mapping and record requests",
-          "https://www.columbus.gov/Services/Columbus-Water-Power/Information-for-Customers/Water-Power-Contractors/Stormwater-Drainage-Manual"
+          "Harwood recorded plat PB 18 pg. 133",
+          "https://files.delco-gis.org/plats/18133.pdf"
         ],
         [
           "Original USDA NAIP aerial",
@@ -1371,14 +1442,29 @@ window.WATER_CROSSINGS = [
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.0154464%2C+%22y%22%3A+40.13675263%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ],
         [
-          "ODOT nearby bridge inventory query",
-          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Bridge_Inventory/MapServer/0/query?where=1%3D1&geometry=-83.01720893%2C40.13540516%2C-83.01368387%2C40.13810010&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+          "Columbus Lazelle Phase A and B bid record",
+          "https://www.bidexpress.com/businesses/8358/home?page=26"
         ],
         [
-          "ODOT nearby conduit inventory query",
-          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-83.01720893%2C40.13540516%2C-83.01368387%2C40.13810010&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+          "Lazelle Phase A–C ordinance and project limits",
+          "https://columbus.legistar.com/LegislationDetail.aspx?FullText=1&GUID=8ED4B5AB-9A72-4C9D-BDBB-93C7FB3C6BED&ID=3192640"
+        ],
+        [
+          "Columbus stormwater record mapping",
+          "https://www.columbus.gov/Services/Columbus-Water-Power/Information-for-Customers/Water-Power-Contractors/Stormwater-Drainage-Manual"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Carry a north-verge drainage conflict at approx. 2,752.4 ft. Tie it to the current storm system before pricing a separate road barrel or finalizing the bore.",
+        "record_search": "Franklin County creek OID 104; Delaware County Harwood recorded plat PB 18 pg. 133; Columbus Phase A bid record for High to Olenbrook, which includes storm sewers and a detention basin. Phase B plans east of Olenbrook do not cover this pin.",
+        "exhibit": "img/water-drainage-followup/S0-W13.jpg",
+        "caption": "The yellow dot is the county channel tie on the bore. The ring is the original GIS pin. The road barrel is unresolved.",
+        "tie": {
+          "lat": 40.13675771,
+          "lon": -83.01565888,
+          "station": 2752.4
+        }
+      }
     },
     "sources": [
       [
@@ -1401,13 +1487,13 @@ window.WATER_CROSSINGS = [
     "feature": "S0-S025-Bore",
     "station": 10909.5,
     "name": "US-23 corridor unnamed intermittent drainage",
-    "priority": "Asset and ROW",
-    "method": "Confirm state ROW and trace US 23 frontage drainage before carrying a drainage-specific crossing.",
-    "blocker": "The route sample has no road assignment. Need to locate the pipe/ditch and prove state ROW or off-road title, access and pit positions. FEMA lookup unavailable.",
+    "priority": "Removed from bid count",
+    "method": "Drop this pin as a stand-alone water-crossing bid item. Keep normal ODOT frontage utility clearance and verify any site or highway pipe within the actual construction limits.",
+    "blocker": "Delaware County project 0031 maps actual storm tiles and headwalls east of US 23. The nearer mapped tiles are about 229 and 252 ft from the bore alignment. The inventoried SR 750 culvert is a separate asset near the junction. The reviewed records and aerial do not support an independent crossing at the original west-side frontage pin.",
     "lead": "ODOT D6 Utility Coordinator and drainage staff if the work occupies state ROW or drainage. Actual property owner or local road controller if outside.",
     "conditional": "Local floodplain and Ohio water review from work limits. Written property instrument where required for state telecom occupancy.",
-    "submit": "State ROW and access-control sheets, alternative private rights exhibits, drainage pipe/ditch/utility profile and pit locations. Add parcel and FIRM verification.",
-    "fallback": "If state occupancy is refused, shift into an authorized frontage or seek a permitted private corridor. US23-B still hits OID 22608, so it needs a crossing plan too.",
+    "submit": "ODOT District 6: retrieve existing/record drainage sheets for PID 110797 / contract 224008 at DEL-US23 near SLM 1.47, plus record locations of frontage inlets. Delaware SWCD holds drainage maintenance project 0031 records.",
+    "fallback": "Reopen the screening item if record drawings or field survey identify a separate conflict in the work footprint.",
     "lat": 40.15799426,
     "lon": -83.01888098,
     "evidence": {
@@ -1433,10 +1519,10 @@ window.WATER_CROSSINGS = [
       "source_layer": "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0"
     },
     "review": {
-      "classification": "gis",
-      "confidence": "Unverified",
-      "finding": "The hit is at US 23 frontage beside development and a grass strip. The nearest candidate ODOT conduit is on SR 750 about 354 ft away. Neither aerial ties that conduit or an open channel to this pin.",
-      "next_check": "Get ODOT US 23 drainage and ROW plans and follow the ditch/inlets through the frontage. Verify the SR 750 conduit separately if work reaches it.",
+      "classification": "retired",
+      "confidence": "Medium",
+      "finding": "Delaware County project 0031 maps actual storm tiles and headwalls east of US 23. The nearer mapped tiles are about 229 and 252 ft from the bore alignment. The inventoried SR 750 culvert is a separate asset near the junction. The reviewed records and aerial do not support an independent crossing at the original west-side frontage pin.",
+      "next_check": "ODOT District 6: retrieve existing/record drainage sheets for PID 110797 / contract 224008 at DEL-US23 near SLM 1.47, plus record locations of frontage inlets. Delaware SWCD holds drainage maintenance project 0031 records.",
       "image": "img/water-pin-audit/S0-W14.jpg",
       "imagery_catalog_dates": "2023-05-21",
       "proof": [
@@ -1445,12 +1531,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=22608&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "ODOT conduit 1875214",
-          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=CULVERT_FILE_NUMBER%3D1875214&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+          "Delaware SWCD US 23 tiles 2931 and 2932",
+          "https://services2.arcgis.com/ziXVKVy3BiopMCCU/arcgis/rest/services/Storm_Tile_view/FeatureServer/5/query?objectIds=2931%2C2932&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "ODOT utility occupancy and district intake",
-          "https://www.transportation.ohio.gov/business/permits/row-permits"
+          "Delaware SWCD headwall 0031-04",
+          "https://services2.arcgis.com/ziXVKVy3BiopMCCU/arcgis/rest/services/Point_Features_view/FeatureServer/1/query?objectIds=921&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
           "Original USDA NAIP aerial",
@@ -1471,8 +1557,27 @@ window.WATER_CROSSINGS = [
         [
           "ODOT nearby conduit inventory query",
           "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-83.02064406%2C40.15664679%2C-83.01711790%2C40.15934173&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "ODOT plan-vault index PID 110797, contract 224008",
+          "https://collectorweb.dot.state.oh.us/arcgis/rest/services/CADD_PlanVault/CADD_PlanVault_Prod/FeatureServer/0/query?objectIds=24723&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "US 23 Powell Retail Center recorded plat C2427",
+          "https://files.delco-gis.org/plats/C2427.pdf"
+        ],
+        [
+          "ODOT district permit intake",
+          "https://www.transportation.ohio.gov/business/permits/row-permits"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Drop this pin as a stand-alone water-crossing bid item. Keep normal ODOT frontage utility clearance and verify any site or highway pipe within the actual construction limits.",
+        "record_search": "Delaware SWCD tiles 2931/2932 and headwall 0031-04; US 23 Powell Retail Center recorded plat C2427; ODOT project index PID 110797. The state archive returns the project index and internal plan path. The accepted roadway drainage as-built was not retrievable in the public index reviewed.",
+        "exhibit": "img/water-drainage-followup/S0-W14.jpg",
+        "caption": "County-recorded storm facilities are east of the route. The cyan interpolation extends through the roadway and west-side shopping frontage.",
+        "tie": null
+      }
     },
     "sources": [
       [
@@ -1550,7 +1655,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.02084656%2C+%22y%22%3A+40.1696005%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1636,7 +1742,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.05245199%2C+%22y%22%3A+40.19416461%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1722,7 +1829,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.06135313%2C+%22y%22%3A+40.19451286%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1800,7 +1908,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.07731301%2C+%22y%22%3A+40.19275204%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1878,7 +1987,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.07799773%2C+%22y%22%3A+40.17998818%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1956,7 +2066,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.07910023%2C+%22y%22%3A+40.17922551%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -1980,11 +2091,11 @@ window.WATER_CROSSINGS = [
     "station": 6321.6,
     "name": "Unnamed Sawmill Parkway drainage OID 22561",
     "priority": "Asset and ROW",
-    "method": "Use road and subdivision drainage records to establish a crossing before pricing a separate bore or changing the angle.",
-    "blocker": "About 30° to the mapped line. Need storm trunk, pond outlet and wet limit position plus ROW control. FEMA lookup unavailable.",
+    "method": "Keep a record and field hold for road drainage. Carry ordinary storm and easement clearance until a cross-road pipe or channel is found.",
+    "blocker": "Recorded Sawmill Parkway dedication C2636, sheet 2, shows drainage/utility easements near Woodcutter Drive. The Powell civil site drawing shows designed storm piping within the Home Road development site. Neither record gives a cross-Sawmill barrel tied to the proposed bore at the original pin near 7693 Sawmill.",
     "lead": "Powell Engineering for in-city permit and provider requirements. Delaware County for boundary/county segments as the actual footprint dictates.",
     "conditional": "Drainage owner, local floodplain, Ohio water agencies if regulated work is triggered. Golf property approval only if work affects it.",
-    "submit": "Storm as-built and pond outlet survey, compare skews and pit areas, verify registration/ROW documents and any separate cart-path structure interference.",
+    "submit": "Delaware County Engineer and Powell Engineering: request the Sawmill Parkway CR-609 roadway drainage plan and profile, and approved Villas at Woodcutter storm plans at the 7693 frontage. Use recorded plat C2636 and condo C3423 as index references.",
     "fallback": "If the shorter skew shift crosses an outlet or requires unavailable rights, use the existing side with a longer clear bore or move staging to another approved part of Sawmill.",
     "lat": 40.19104101,
     "lon": -83.09555509,
@@ -2013,8 +2124,8 @@ window.WATER_CROSSINGS = [
     "review": {
       "classification": "gis",
       "confidence": "Unverified",
-      "finding": "Flowline 22561 crosses the Sawmill Parkway corridor beside a neighborhood access and tree strip. The images show no identifiable inlet/outlet pair or visible open passage and the inventory has no matched structure.",
-      "next_check": "Obtain Sawmill road and subdivision drainage sheets and trace the low path through approved plans and a field walk.",
+      "finding": "Recorded Sawmill Parkway dedication C2636, sheet 2, shows drainage/utility easements near Woodcutter Drive. The Powell civil site drawing shows designed storm piping within the Home Road development site. Neither record gives a cross-Sawmill barrel tied to the proposed bore at the original pin near 7693 Sawmill.",
+      "next_check": "Delaware County Engineer and Powell Engineering: request the Sawmill Parkway CR-609 roadway drainage plan and profile, and approved Villas at Woodcutter storm plans at the 7693 frontage. Use recorded plat C2636 and condo C3423 as index references.",
       "image": "img/water-pin-audit/S1-W06.jpg",
       "imagery_catalog_dates": "2023-07-30",
       "proof": [
@@ -2023,8 +2134,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=22561&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "Delaware County road and drainage permit intake",
-          "https://engineer.co.delaware.oh.us/permits/"
+          "Sawmill Parkway recorded dedication C2636, sheet 2",
+          "https://files.delco-gis.org/plats/C2636.pdf#page=2"
+        ],
+        [
+          "Villas at Woodcutter recorded plat C3423",
+          "https://files.delco-gis.org/plats/C3423.pdf"
         ],
         [
           "Original USDA NAIP aerial",
@@ -2045,8 +2160,23 @@ window.WATER_CROSSINGS = [
         [
           "ODOT nearby conduit inventory query",
           "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-83.09731903%2C40.18969354%2C-83.09379115%2C40.19238848&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "Powell public packet, nearby civil sheet C1.2",
+          "https://d3n9y02raazwpg.cloudfront.net/cityofpowell/c35880f8-d7e5-11ee-98bb-0050569183fa-ad0e655c-cf99-43ff-ae55-03e4df85849a-1749241105.pdf#page=18"
+        ],
+        [
+          "Delaware County Engineer design and records",
+          "https://engineer.co.delaware.oh.us/design/"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Keep a record and field hold for road drainage. Carry ordinary storm and easement clearance until a cross-road pipe or channel is found.",
+        "record_search": "Sawmill Parkway recorded dedication C2636 pp. 2–3; Villas at Woodcutter plat C3423; Powell Kroger site plan C1.2 as separate-development context; Delaware SWCD storm tile, inlet and ditch queries. A roadway drainage as-built was not found in public files.",
+        "exhibit": "img/water-drainage-followup/S1-W06.jpg",
+        "caption": "The cyan line crosses road and frontage. The recorded plat establishes easements; the linked civil plan covers storm works on the separate development site.",
+        "tie": null
+      }
     },
     "sources": [
       [
@@ -2070,11 +2200,11 @@ window.WATER_CROSSINGS = [
     "station": 15696.7,
     "name": "Unnamed Home Road drainage OID 22560",
     "priority": "Asset and ROW",
-    "method": "Trace the pond outlet and road drainage first. Determine whether the road bore needs a drainage-specific profile.",
-    "blocker": "About 33° to the mapped drainage with pond/riverine screening. Need actual outlet, banks, trail/cart path limits and dry pits. FEMA lookup unavailable.",
+    "method": "Carry a buried drainage conflict at the mapped asset tie. Use one crossing allowance for the documented pipe conflict and add other lines only if survey shows a distinct conflict.",
+    "blocker": "Delaware SWCD storm tile 2162, Scioto Meadows South project 2002, intersects the bore approximately 73 ft east of the GIS pin at 15,623.8 ft. The inventory marks this specific tile outside county maintenance. Related tile 6411 and structure 2002-02 are nearby. The recorded partial drainage-easement release has to be checked against the pipe and current rights.",
     "lead": "Delaware County Engineer for Home Road. Get pond/drainage and cart-path clearance from actual owner if work reaches them.",
     "conditional": "Local floodplain office and Huntington/Ohio EPA as actual effects require. Private recreation property consent if applicable.",
-    "submit": "Subdivision and Home Road drainage plans, survey of the outlet and approaches, alternative local profile and traffic/trail/access plan.",
+    "submit": "Request project 2002 record plan and invert profile from Delaware SWCD and the developer or HOA. Survey the three mapped lines, headwall and property limits. Check the release exhibit and current maintenance assignment with the title record.",
     "fallback": "If a direct crossing cannot be approved with dry pits, move the tie-in along Home Road to a narrower surveyed drainage section and rescreen ROW and work access.",
     "lat": 40.19682676,
     "lon": -83.12343107,
@@ -2101,10 +2231,10 @@ window.WATER_CROSSINGS = [
       "source_layer": "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0"
     },
     "review": {
-      "classification": "gis",
-      "confidence": "Unverified",
-      "finding": "Home Road separates visible pond and drainage features around a developing subdivision. Summer and Ohio leaf-off imagery differ in grading. Neither establishes a continuous ditch or pipe through the pin.",
-      "next_check": "Get the approved grading, storm plan and closeout records for the development. Confirm the pond outlet and road crossing before locating pits.",
+      "classification": "buried",
+      "confidence": "Medium",
+      "finding": "Delaware SWCD storm tile 2162, Scioto Meadows South project 2002, intersects the bore approximately 73 ft east of the GIS pin at 15,623.8 ft. The inventory marks this specific tile outside county maintenance. Related tile 6411 and structure 2002-02 are nearby. The recorded partial drainage-easement release has to be checked against the pipe and current rights.",
+      "next_check": "Request project 2002 record plan and invert profile from Delaware SWCD and the developer or HOA. Survey the three mapped lines, headwall and property limits. Check the release exhibit and current maintenance assignment with the title record.",
       "image": "img/water-pin-audit/S1-W07.jpg",
       "imagery_catalog_dates": "2023-05-18, 2023-07-30",
       "proof": [
@@ -2113,8 +2243,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=22560&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "Delaware County road and drainage permit intake",
-          "https://engineer.co.delaware.oh.us/permits/"
+          "Delaware SWCD drainage pipes OID 2161 and 2162",
+          "https://services2.arcgis.com/ziXVKVy3BiopMCCU/arcgis/rest/services/Storm_Tile_not_maintained_view/FeatureServer/6/query?objectIds=2161%2C2162&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "Delaware SWCD maintained line 2002-05",
+          "https://services2.arcgis.com/ziXVKVy3BiopMCCU/arcgis/rest/services/Storm_Tile_view/FeatureServer/5/query?objectIds=6411&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
           "Original USDA NAIP aerial",
@@ -2129,14 +2263,29 @@ window.WATER_CROSSINGS = [
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.12343107%2C+%22y%22%3A+40.19682676%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ],
         [
-          "ODOT nearby bridge inventory query",
-          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Bridge_Inventory/MapServer/0/query?where=1%3D1&geometry=-83.12519516%2C40.19547929%2C-83.12166698%2C40.19817423&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+          "Recorded partial drainage easement release, Exhibit A",
+          "https://files.delco-gis.org/misc_records/202300006560.pdf#page=5"
         ],
         [
-          "ODOT nearby conduit inventory query",
-          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-83.12519516%2C40.19547929%2C-83.12166698%2C40.19817423&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+          "County Scioto Meadows South petition, 2020",
+          "https://co.delaware.oh.us/wp-content/uploads/2020/02/20-02-03-Journal.pdf#page=9"
+        ],
+        [
+          "Delaware SWCD drainage maintenance custodian",
+          "https://soilandwater.co.delaware.oh.us/drainage-maintenance/"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Carry a buried drainage conflict at the mapped asset tie. Use one crossing allowance for the documented pipe conflict and add other lines only if survey shows a distinct conflict.",
+        "record_search": "Delaware SWCD tiles OID 2162, 2161 and 6411; County 2020 maintenance petition and 2023 assessment list; recorded release 202300006560, Exhibit A. The asset geometry supports the route tie. Pipe dimensions and design elevations remain unverified.",
+        "exhibit": "img/water-drainage-followup/S1-W07.jpg",
+        "caption": "The yellow dot marks the tie with the orange non-maintained tile. The ring marks the original GIS pin. County-maintained lines are yellow.",
+        "tie": {
+          "lat": 40.19682118,
+          "lon": -83.12317017,
+          "station": 15623.8
+        }
+      }
     },
     "sources": [
       [
@@ -2218,7 +2367,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.13946656%2C+%22y%22%3A+40.19676272%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -2304,7 +2454,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.15677345%2C+%22y%22%3A+40.19540865%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -2327,13 +2478,13 @@ window.WATER_CROSSINGS = [
     "feature": "S1-S034-Bore",
     "station": 6319.4,
     "name": "Concord Road unnamed drainage OID 22551",
-    "priority": "Asset and ROW",
-    "method": "Tie the route to the current Home/Concord drainage as-builts before including a separate bore at this pin.",
-    "blocker": "SFN 2136333 and 2136341 are roughly 278 and 284 ft away. Need to trace outlets and avoid attributing the line to either structure without survey.",
+    "priority": "Removed from bid count",
+    "method": "Drop the separate GIS-pin crossing bid item. Carry the known Concord arch-box end, west-arm culvert and approach drainage in the roundabout clearance review.",
+    "blocker": "The DEL-CR124-02.6 schematic places the 24-by-8-ft, 96-ft-long Concord arch-box immediately north of the roundabout and shows a separate west-arm structure. ODOT lists the Concord asset as SFN 2136341, but its inventory point plots southeast of the roundabout. Use the county schematic for the approach and carry the installed box as a clearance item. The drawing shows no separate barrel at the original pin.",
     "lead": "Delaware County Engineer for structures/utility and Concord Township for its applicable ROW work path. Identify drainage controller from plans.",
     "conditional": "Local floodplain and Ohio water review as footprint triggers. Land consent if proposed alignment leaves verified corridor.",
-    "submit": "Both bridge/culvert plans and field connectivity, exact route and structure station tie, pits, separate ditch effects, ROW and drainage restoration.",
-    "fallback": "If neither structure clearance profile works, shift locally to a surveyed branch crossing with lawful access. Preserve each distinct structure check after realignment.",
+    "submit": "Request DEL-CR124-02.6 final as-builts, including both arch-box ends, wingwalls and approach storm lines. Survey the east end of SFN 2136341 against the bore and legal pits. Resolve the inventory location discrepancy before using it in design.",
+    "fallback": "Reopen the screening item if record drawings or field survey identify a separate conflict in the work footprint.",
     "lat": 40.19643704,
     "lon": -83.16438955,
     "evidence": {
@@ -2359,10 +2510,10 @@ window.WATER_CROSSINGS = [
       "source_layer": "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0"
     },
     "review": {
-      "classification": "gis",
-      "confidence": "Unverified",
-      "finding": "The pin is on the Concord approach north of the Home Road roundabout. The county describes culvert work around the junction. ODOT candidates 2136333 and 2136341 are about 278 and 284 ft from the pin. The aerial does not tie the mapped line to either asset.",
-      "next_check": "Request Home/Concord closeout plans and profiles of the current north and west arms. Check actual pipe extent against the alignment.",
+      "classification": "retired",
+      "confidence": "Medium",
+      "finding": "The DEL-CR124-02.6 schematic places the 24-by-8-ft, 96-ft-long Concord arch-box immediately north of the roundabout and shows a separate west-arm structure. ODOT lists the Concord asset as SFN 2136341, but its inventory point plots southeast of the roundabout. Use the county schematic for the approach and carry the installed box as a clearance item. The drawing shows no separate barrel at the original pin.",
+      "next_check": "Request DEL-CR124-02.6 final as-builts, including both arch-box ends, wingwalls and approach storm lines. Survey the east end of SFN 2136341 against the bore and legal pits. Resolve the inventory location discrepancy before using it in design.",
       "image": "img/water-pin-audit/S1-W10.jpg",
       "imagery_catalog_dates": "2023-05-18",
       "proof": [
@@ -2371,12 +2522,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=22551&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "Delaware County Home/Concord culvert project",
-          "https://engineer.co.delaware.oh.us/projects/home-concord/"
+          "Delaware County Home/Concord project schematic",
+          "https://engineer.co.delaware.oh.us/wp-content/uploads/sites/12/2018/05/EXHIBIT_PROPOSED2_0002.jpg"
         ],
         [
-          "ODOT nearby structures 2136333, 2136341",
-          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Bridge_Inventory/MapServer/0/query?where=SFN+IN+%28%272136333%27%2C%272136341%27%29&outFields=SFN%2CSTR_LOC_CARRIED%2CINVENT_FEAT%2CMAIN_STR_TYPE_CD%2CCULVERT_LEN%2CMAINT_RESP_CD&returnGeometry=true&outSR=4326&f=pjson"
+          "Installed arch-box case history in ODOT technical file",
+          "https://dam.assets.ohio.gov/image/upload/transportation.ohio.gov/geotechnical/prws/Approval-Pretek-Anchor.pdf"
         ],
         [
           "Original USDA NAIP aerial",
@@ -2397,8 +2548,27 @@ window.WATER_CROSSINGS = [
         [
           "ODOT nearby conduit inventory query",
           "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-83.16615363%2C40.19508957%2C-83.16262547%2C40.19778451&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "ODOT Concord and Home structure inventory",
+          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Bridge_Inventory/MapServer/0/query?where=SFN+IN+%28%272136341%27%2C%272136333%27%29&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "Delaware County Home/Concord bid resolution 11-1361",
+          "https://co.delaware.oh.us/wp-content/uploads/commissioners/journal/2011/11_28_11.pdf"
+        ],
+        [
+          "Delaware County Engineer design and records",
+          "https://engineer.co.delaware.oh.us/design/"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Drop the separate GIS-pin crossing bid item. Carry the known Concord arch-box end, west-arm culvert and approach drainage in the roundabout clearance review.",
+        "record_search": "Delaware County project schematic and bid resolution 11-1361; ODOT bridge inventory SFNs 2136341 and 2136333; 2012 installed arch-box case history in ODOT’s Pretek technical file. No signed record plan found in the public project files.",
+        "exhibit": "img/water-drainage-followup/S1-W10.jpg",
+        "caption": "Yellow marks are ODOT inventory point locations. Use the linked county schematic to see the planned north-arm arch-box and connecting channel.",
+        "tie": null
+      }
     },
     "sources": [
       [
@@ -2421,13 +2591,13 @@ window.WATER_CROSSINGS = [
     "feature": "S1-S036-Bore",
     "station": 187.8,
     "name": "Concord Road mapped drainage near Duffy Road",
-    "priority": "Asset and ROW",
-    "method": "Trace the Concord ditch and nearby Duffy structure before assigning a separate crossing allowance to this pin.",
-    "blocker": "Flowline 22545 intersects S036. The short S035 feature does not intersect it and SFN 2133709 is about 269 ft away. Hinkle Ditch is a separate structure lead. FEMA point unavailable.",
+    "priority": "Removed from bid count",
+    "method": "Drop this pin as a separate bid item. Carry the Duffy structure and ditch on S1-S035-Water and include the frontage ditch in standard bore survey.",
+    "blocker": "The Brookside recorded plat shows a meandering ditch and 20-ft maintenance easement south of Duffy Road. ODOT SFN 2133709 is about 269 ft south of this pin and only about 16 ft from the separate S1-S035-Water alignment. The available records support the Duffy crossing and leave the on-road GIS trace north of Duffy unsupported as a separate crossing.",
     "lead": "Delaware County Engineer structures/utility and Concord Township where township permits apply.",
     "conditional": "Local floodplain administrator after viewing effective map. Huntington and Ohio EPA as actual impacts warrant.",
-    "submit": "Survey S035 and S036 together with SFNs 2133709 and 2135280, flow paths, asset limit, country-road ROW and culvert clearances; show proposed pits separately.",
-    "fallback": "If the current bore area is denied for outlet or foundation conflict, move to a clear near-normal crossing in verified corridor. Combine S035/S036 work only if field plans prove the same work envelope.",
+    "submit": "Obtain the SFN 2133709 record drawing and Brookside drainage limits. Survey the Duffy ditch and the unverified low path at 7605 Concord before clearing final work limits.",
+    "fallback": "Reopen the screening item if record drawings or field survey identify a separate conflict in the work footprint.",
     "lat": 40.20194347,
     "lon": -83.16526942,
     "evidence": {
@@ -2453,10 +2623,10 @@ window.WATER_CROSSINGS = [
       "source_layer": "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0"
     },
     "review": {
-      "classification": "gis",
-      "confidence": "Unverified",
-      "finding": "The line reaches Concord Road along a wooded low area near Duffy. Inventory bridge 2133709 is about 269 ft south of the pin at the Duffy crossing. Neither image establishes a connection to that bridge or a distinct crossing here.",
-      "next_check": "Walk the road ditch and trace any driveway or roadway pipe to the Duffy drainage. Establish whether a separate crossing is needed.",
+      "classification": "retired",
+      "confidence": "Medium",
+      "finding": "The Brookside recorded plat shows a meandering ditch and 20-ft maintenance easement south of Duffy Road. ODOT SFN 2133709 is about 269 ft south of this pin and only about 16 ft from the separate S1-S035-Water alignment. The available records support the Duffy crossing and leave the on-road GIS trace north of Duffy unsupported as a separate crossing.",
+      "next_check": "Obtain the SFN 2133709 record drawing and Brookside drainage limits. Survey the Duffy ditch and the unverified low path at 7605 Concord before clearing final work limits.",
       "image": "img/water-pin-audit/S1-W11.jpg",
       "imagery_catalog_dates": "2023-05-18",
       "proof": [
@@ -2465,12 +2635,12 @@ window.WATER_CROSSINGS = [
           "https://tims.dot.state.oh.us/ags/rest/services/MapViewers/Hydraulic_Engineering_Stream_Order/MapServer/0/query?objectIds=22545&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
         ],
         [
-          "ODOT structure 2133709",
-          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Bridge_Inventory/MapServer/0/query?where=SFN+IN+%28%272133709%27%29&outFields=SFN%2CSTR_LOC_CARRIED%2CINVENT_FEAT%2CMAIN_STR_TYPE_CD%2CCULVERT_LEN%2CMAINT_RESP_CD&returnGeometry=true&outSR=4326&f=pjson"
+          "Brookside recorded plat PB 11 pg. 119",
+          "https://files.delco-gis.org/plats/11119.pdf"
         ],
         [
-          "Delaware County road and drainage permit intake",
-          "https://engineer.co.delaware.oh.us/permits/"
+          "County survey RO-1421-054",
+          "https://files.delco-gis.org/survey/RO-1421-054.pdf"
         ],
         [
           "Original USDA NAIP aerial",
@@ -2491,8 +2661,23 @@ window.WATER_CROSSINGS = [
         [
           "ODOT nearby conduit inventory query",
           "https://tims.dot.state.oh.us/ags/rest/services/Assets/Conduit_Inventory/MapServer/0/query?where=1%3D1&geometry=-83.16703364%2C40.20059600%2C-83.16350520%2C40.20329094&geometryType=esriGeometryEnvelope&inSR=4326&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "ODOT Concord/Duffy bridge SFN 2133709",
+          "https://tims.dot.state.oh.us/ags/rest/services/Assets/Bridge_Inventory/MapServer/0/query?where=SFN%3D%272133709%27&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson"
+        ],
+        [
+          "Delaware County Engineer design and records",
+          "https://engineer.co.delaware.oh.us/design/"
         ]
-      ]
+      ],
+      "followup": {
+        "decision": "Drop this pin as a separate bid item. Carry the Duffy structure and ditch on S1-S035-Water and include the frontage ditch in standard bore survey.",
+        "record_search": "Brookside recorded plat PB 11 pg. 119; county survey RO-1421-054; ODOT bridge record 2133709; original route-feature comparison. The plat documents the ditch south of Duffy and does not inventory any later pipe at 7605 Concord.",
+        "exhibit": "img/water-drainage-followup/S1-W11.jpg",
+        "caption": "Yellow marks the separate Duffy structure south of the pin. Review the linked plat for the recorded ditch and 20-ft easement.",
+        "tie": null
+      }
     },
     "sources": [
       [
@@ -2578,7 +2763,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.20777554%2C+%22y%22%3A+40.21316693%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -2660,7 +2846,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.24752819%2C+%22y%22%3A+40.21235481%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -2742,7 +2929,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.2640484%2C+%22y%22%3A+40.21227234%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -2824,7 +3012,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.30188401%2C+%22y%22%3A+40.21593461%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -2910,7 +3099,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.31106586%2C+%22y%22%3A+40.23286361%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -2996,7 +3186,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.31424043%2C+%22y%22%3A+40.23265181%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
@@ -3074,7 +3265,8 @@ window.WATER_CROSSINGS = [
           "USGS imagery catalog at pin",
           "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/identify?geometry=%7B%22x%22%3A+-83.33519708%2C+%22y%22%3A+40.23404977%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&returnCatalogItems=true&maxItemCount=6&f=pjson"
         ]
-      ]
+      ],
+      "followup": null
     },
     "sources": [
       [
