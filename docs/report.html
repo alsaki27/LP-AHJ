@@ -9,12 +9,12 @@
 <p id="water-summary" class="note"></p>
 
 <h2>1. Who issues the permit: footage by jurisdiction</h2>
-<p class="note">Permit-issuing authority assigned to each foot of route (state DOT districts, county engineers, cities, townships). Click a header to sort. "Contacts" opens the requirements page.</p>
+<p class="note">Candidate permit authorities from sampled roads (state DOT districts, county engineers, cities and townships). Confirm the issuer for the actual work limits. Click a header to sort.</p>
 <div class="tools"><select id="segsel"><option value="">All segments</option><option>Segment0</option><option>Segment1</option><option>Spurs</option></select><input type="search" id="jq" placeholder="filter jurisdictions"><button id="jcsv">CSV</button></div>
 <div class="scroll"><table class="t" id="jt"><thead><tr><th>Segment</th><th>Permit-issuing authority (lead)</th><th>Footage (ft)</th><th>% of segment</th><th></th><th>Risk flags</th><th></th></tr></thead><tbody></tbody></table></div>
 
 <h2>2. Footage by authority class</h2><div id="cls"></div>
-<h2>3. Land / right-of-way category (parcel-based)</h2><p class="note">Where the drawn route sits relative to mapped ROW and tax parcels. "Private parcel" is the off-ROW exposure that parcel-based footage exposes.</p><div id="land"></div>
+<h2>3. Land / right-of-way category (parcel-based)</h2><p class="note">Mapped ROW, presumed ROW and unparceled frontage are shown separately. Tax parcel classification is a screening lead. Recorded instruments and surveyed work limits establish the actual rights.</p><div id="land"></div>
 <h2>4. Boundaries: county, municipality and DOT district</h2>
 <div class="tools"><select id="bsel"><option value="County">By county</option><option value="Municipality">By municipality</option><option value="ODOT district">By DOT district</option><option value="Township">By township</option></select></div>
 <div class="scroll" style="max-height:420px"><table class="t" id="bt"><thead><tr><th>Segment</th><th id="bth">County</th><th>Footage (ft)</th><th></th></tr></thead><tbody></tbody></table></div>
@@ -23,7 +23,7 @@
 <h2>6. State DOT occupancy and crossings</h2><div class="scroll"><table class="t" id="dt"><thead></thead><tbody></tbody></table></div>
 <h2>7. Railroad crossings</h2><div class="scroll"><table class="t" id="rt"><thead></thead><tbody></tbody></table></div>
 <h2>8. County-numbered roads inside cities: who maintains / permits</h2><div class="scroll"><table class="t" id="mt"><thead></thead><tbody></tbody></table></div>
-<h2>9. Risk register</h2><p class="note">Only items backed by a documented source are listed. Routine single perpendicular crossings of state routes, sub-50 ft parcel offsets and unconfirmed water features are not risks and are excluded (see section 10).</p>
+<h2>9. Risk register</h2><p class="note">Documented observations and screening estimates. Section 10 lists separate unresolved locations and structures.</p>
 <div class="tools"><select id="rsev"><option value="">All severities</option><option>Critical</option><option>High</option><option>Medium</option></select><select id="rtype"></select><input type="search" id="rq" placeholder="filter risks"><button id="rcsv">CSV</button><span class="note" id="rcnt"></span></div>
 <div class="scroll"><table class="t" id="rr"><thead><tr><th>ID</th><th>Severity</th><th>Type</th><th>Segment</th><th>Where</th><th>Risk</th><th>Agencies</th><th>Action</th><th></th></tr></thead><tbody></tbody></table></div>
 <h2 id="screening-leads">10. Unresolved sites and structure leads</h2><p class="note">These are separate checks for unresolved water locations and nearby structures. See the <a href="water.html">water crossing register</a> for the mapped intersections and their decisions.</p><div class="scroll"><table class="t" id="lt"><thead><tr><th>ID</th><th>Segment</th><th>Feature</th><th>Lead</th><th>What remains unverified</th><th>Close-out</th></tr></thead><tbody></tbody></table></div>
@@ -36,7 +36,7 @@ $('#water-summary').innerHTML=`<a href="water.html">Water crossing register</a> 
 const segTot=R.seg_ft;const tot=Object.values(segTot).reduce((a,b)=>a+b,0);
 const sc=s=>LP.risks.filter(r=>r.sev===s).length;
 $('#kpis').innerHTML=[['Route length',fmt(tot)+' ft'],['Segment 0',fmt(segTot.Segment0)+' ft'],['Segment 1',fmt(segTot.Segment1)+' ft'],['Chicago spurs',fmt(segTot.Spurs)+' ft'],
- ['Critical risks',sc('Critical')],['High risks',sc('High')],['Medium risks',sc('Medium')],['Reroute options',LP.reroutes.filter(r=>r.status!=='withdrawn').length]].map(([l,v])=>`<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join('');
+ ['Critical risks',sc('Critical')],['High risks',sc('High')],['Medium risks',sc('Medium')],['Reroute options',LP.reroutes.filter(r=>!rerouteStatus(r)).length]].map(([l,v])=>`<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join('');
 // 1 jurisdictions
 const bar=(v,m)=>`<div class="bar" style="width:${Math.max(1,v/m*160)}px"></div>`;
 function riskCount(i){const k=i.issuer.split(' – ')[0].split(' (')[0].trim().toLowerCase();return k.length>6&&!k.startsWith('no public')?LP.risks.filter(r=>r.seg===i.seg&&r.agencies.toLowerCase().includes(k)).length:0}
@@ -49,7 +49,11 @@ function matrix(el,rows,key){const keys=[...new Set(rows.map(r=>r[key]))];const 
  const tt=keys.map(k=>segs.reduce((a,s)=>a+((rows.find(r=>r.seg===s&&r[key]===k)||{}).ft||0),0));const T=tt.reduce((a,b)=>a+b,0);
  keys.forEach((k,i)=>{h+=`<tr><td>${esc(k)}</td>${segs.map(s=>`<td class="num">${fmt((rows.find(r=>r.seg===s&&r[key]===k)||{}).ft||0)}</td>`).join('')}<td class="num"><b>${fmt(tt[i])}</b></td><td class="num">${(tt[i]/T*100).toFixed(1)}%</td><td>${bar(tt[i],Math.max(...tt))}</td></tr>`});
  h+=`<tr><td><b>Total</b></td>${segs.map(s=>`<td class="num"><b>${fmt(rows.filter(r=>r.seg===s).reduce((a,r)=>a+r.ft,0))}</b></td>`).join('')}<td class="num"><b>${fmt(T)}</b></td><td></td><td></td></tr></tbody></table>`;$(el).innerHTML=h;}
-matrix('#cls',R.by_class,'cls');matrix('#land',R.by_land.map(r=>({...r,cat:r.cat})),'cat');
+matrix('#cls',R.by_class,'cls');
+const landSection=R.parcel_footage.findIndex(row=>row[0]==='Land category (as drawn)');
+const landTotal=R.parcel_footage.findIndex(row=>row[0]==='Total route');
+const landClasses=R.parcel_footage.slice(landSection+1,landTotal);
+matrix('#land',landClasses.flatMap(([cat,...feet])=>['Segment0','Segment1','Spurs'].map((seg,i)=>({seg,cat,ft:feet[i]}))),'cat');
 // 4 boundary
 function drawB(){const k=$('#bsel').value;$('#bth').textContent=k;const m={};R.footage_by_boundary.filter(r=>r.Feature&&/^Segment \d|^Spurs/.test(r.Segment||'')&&(+r['Length (ft)']>0)).forEach(r=>{const key=(r.Segment||'')+'||'+(r[k]||'(none)');m[key]=(m[key]||0)+(+r['Length (ft)']||0)});
  const rows=Object.entries(m).map(([a,v])=>{const [s,n]=a.split('||');return{s,n,v}}).sort((a,b)=>a.s.localeCompare(b.s)||b.v-a.v);const mx=Math.max(...rows.map(r=>r.v));
@@ -84,13 +88,14 @@ function drawR(){const s=$('#rsev').value,t=tsel.value,q=$('#rq').value.toLowerC
 // reroutes
 const A=x=>Array.isArray(x)?x.join('; '):(x||'');
 $('#rrs').innerHTML=LP.reroutes.map(r=>{
- if(r.status==='withdrawn')return `<article class="rrcard" id="${esc(r.id)}">
- <div><img src="${esc(r.map)}" alt="Evidence for withdrawing ${esc(r.id)}" onclick="lightbox(this.src,this.alt)"></div>
- <div><h3>${esc(r.id)}: ${esc(r.title)} <span class="chip st">Withdrawn</span></h3>
- <p>${esc(r.benefit)}</p><details><summary>Withdrawal evidence and sources</summary><div class="notes">${r.notes}</div></details></div></article>`;
+ const status=rerouteStatus(r);
+ if(status)return `<article class="rrcard" id="${esc(r.id)}">
+ <div>${r.map?`<img src="${esc(r.map)}" alt="Review evidence for ${esc(r.id)}" onclick="lightbox(this.src,this.alt)">`:''}</div>
+ <div><h3>${esc(r.id)}: ${esc(r.title)} <span class="chip st">${status}</span></h3>
+ <p>${esc(r.benefit)}</p><details ${r.status==='hold'?'open':''}><summary>Decision and evidence</summary><div class="notes">${r.notes}</div></details></div></article>`;
  const d=r.rfp_ft&&r.alt_ft?r.alt_ft-r.rfp_ft:null;return `<div class="rrcard" id="${esc(r.id)}"><div>${r.map?`<img src="${r.map}" alt="${esc(r.title)}" onclick="lightbox(this.src,this.alt)">`:'<span class="note">(no map)</span>'}</div>
  <div><h3 style="margin:0 0 4px">${esc(r.id)}: ${esc(r.title)} <span class="chip st">${esc(r.seg)}</span> <span class="chip ok">${esc(r.conf)}</span></h3>
- <p class="note">RFP ${r.rfp_ft?fmt(r.rfp_ft):'–'} ft → alternative ${r.alt_ft?fmt(r.alt_ft):'–'} ft ${d!=null?'('+(d>0?'+':'')+fmt(d)+' ft)':''} · <a href="map.html#rr=${r.id}">show on map</a></p>
+ <p class="note">${d!=null?`RFP ${fmt(r.rfp_ft)} ft → alternative ${fmt(r.alt_ft)} ft (${d>0?'+':''}${fmt(d)} ft)`:'Compare footage after confirming common tie-ins.'} · <a href="map.html#rr=${r.id}">show on map</a></p>
  <p><b>Benefit:</b> ${esc(r.benefit)}</p><p><b>Removed:</b> ${esc(A(r.removed))}</p><p><b>Added:</b> ${esc(A(r.added))}</p><p><b>Risks:</b> ${esc(A(r.risks))}</p>${r.notes?`<details><summary><b>Full write-up</b></summary><div class="notes">${r.notes}</div></details>`:''}</div></div>`}).join('');
 $('#lt tbody').innerHTML=LP.leads.filter(l=>!waterByLegacyId.has(l.id)).map(l=>`<tr><td>${l.id}</td><td>${esc(SEGS[l.seg]||l.seg)}</td><td>${esc(l.feature)}</td><td><b>${esc(l.title)}</b></td><td>${esc(l.detail)}</td><td>${esc(l.action)}</td></tr>`).join('');sortable($('#lt'));
 $('#oi').innerHTML=LP.open_items.map(o=>`<tr><td>${esc(o.n)}</td><td>${esc(o.item)}</td><td>${esc(o.who)}</td><td>${esc(o.why)}</td></tr>`).join('');

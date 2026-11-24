@@ -7,6 +7,7 @@ from shapely.ops import transform, unary_union
 from pyproj import Transformer, Geod
 from PIL import Image
 from reroute_updates import apply_reroute_updates
+from audit_updates import apply_audit_updates
 
 W = '/home/claude/work/'; W2 = '/home/claude/work2/'
 REPO = '/home/claude/ext/LP-AHJ/edpa_workup/'
@@ -630,6 +631,7 @@ print('construction',len(CONS),[p['severity'] for p in CONS].count('Critical'))
 data = dict(built='2026-11-24', route_lines=route_lines, route_runs=route_runs, land_runs=land_runs, counties=counties, places=places,
             risks=risks, leads=leads, jdx=JD, reroutes=reroutes, construction=CONS, cons_clear=CCLEAR, cons_gaps=CGAPS, images=IMG, open_items=open_items, report=rep)
 apply_reroute_updates(data)
+apply_audit_updates(data)
 js = 'window.LP=' + json.dumps(data, separators=(',', ':'), ensure_ascii=False) + ';'
 open(OUT + 'data/data.js', 'w', encoding='utf-8').write(js)
 print('data.js MB', len(js) / 1e6, 'risks', len(risks), collections.Counter(r['type'] for r in risks), collections.Counter(r['sev'] for r in risks))

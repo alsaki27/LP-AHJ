@@ -75,8 +75,8 @@ function drawRoute(){L_route.clearLayers();
  legend();}
 // ---- reroutes ----
 const L_rr=L.layerGroup(),L_rfp=L.layerGroup();
-LP.reroutes.filter(r=>r.status!=='withdrawn').forEach(r=>{if(r.c&&r.c.length>1)L.polyline(r.c.map(p=>[p[1],p[0]]),{pane:'rr',color:'#82c91e',weight:5,dashArray:'10 7',opacity:.95}).on('click',()=>openReroute(r.id)).bindTooltip(r.id+' (alternative, conceptual)',{sticky:true}).addTo(L_rr);
- if(r.rfp&&r.rfp.length>1)L.polyline(r.rfp.map(p=>[p[1],p[0]]),{pane:'rr',color:'#fa5252',weight:7,opacity:.45}).bindTooltip(r.id+' – RFP stretch replaced',{sticky:true}).addTo(L_rfp);});
+LP.reroutes.filter(r=>!rerouteStatus(r)).forEach(r=>{if(r.c&&r.c.length>1)L.polyline(r.c.map(p=>[p[1],p[0]]),{pane:'rr',color:'#82c91e',weight:5,dashArray:'10 7',opacity:.95}).on('click',()=>openReroute(r.id)).bindTooltip(r.id+' (alternative, conceptual)',{sticky:true}).addTo(L_rr);
+ if(r.rfp&&r.rfp.length>1)L.polyline(r.rfp.map(p=>[p[1],p[0]]),{pane:'rr',color:'#fa5252',weight:7,opacity:.45}).bindTooltip(r.id+' – base route for comparison',{sticky:true}).addTo(L_rfp);});
 // ---- mapped water crossings ----
 const waterLayers = Object.fromEntries(Object.keys(WATER_SITE_CLASSES).map(type => [type, L.layerGroup()]));
 const waterMarkers=WATER_CROSSINGS.map(crossing=>{
@@ -226,12 +226,13 @@ function openImage(id,fly){const i=LP.images.find(x=>x.id===id);if(fly)map.setVi
  <div class="dc"><div class="thumbs"><img style="width:100%;height:auto" src="${i.img}" alt="${esc(i.id)}"></div><h5>What the image shows</h5><p>${esc(i.obs)}</p>${i.gap?`<h5>Gap / constructability</h5><p>${esc(i.gap)}</p>`:''}<h5>Register status</h5><p>${esc(i.issue)}</p><h5>Follow-up</h5><p>${esc(i.follow)}</p>
  <p class="note">NAIP crop (USGS / USDA FSA). Screening location only; not a surveyed crossing point.</p></div>`);}
 function openReroute(id,fly){const r=LP.reroutes.find(x=>x.id===id);if(!r)return;history.replaceState(null,'','#rr='+id);
- if(r.status==='withdrawn'){
-   panel(`<div class="dh"><button class="x" aria-label="Close reroute review">×</button><span class="chip st">Withdrawn</span>
+ const status=rerouteStatus(r);
+ if(status){
+   panel(`<div class="dh"><button class="x" aria-label="Close reroute review">×</button><span class="chip st">${status}</span>
    <h3>${esc(r.id)}: ${esc(r.title)}</h3></div><div class="dc"><p>${esc(r.benefit)}</p>
-   <div class="thumbs"><img style="width:100%;height:auto" src="${esc(r.map)}" alt="Evidence for withdrawing ${esc(r.id)}"></div>
-   <p><a href="report.html#${encodeURIComponent(r.id)}">Read the withdrawal decision and sources</a></p></div>`);
-   if(fly)map.setView(r.review_point,13.5,{animate:false});
+   ${r.map?`<div class="thumbs"><img style="width:100%;height:auto" src="${esc(r.map)}" alt="Review evidence for ${esc(r.id)}"></div>`:''}
+   <p><a href="report.html#${encodeURIComponent(r.id)}">Read the decision and sources</a></p></div>`);
+   if(fly&&r.review_point)map.setView(r.review_point,13.5,{animate:false});
    return;
  }
  if(fly&&r.c.length>1)map.fitBounds(L.latLngBounds(r.c.map(p=>[p[1],p[0]])).pad(.25));
@@ -239,7 +240,7 @@ function openReroute(id,fly){const r=LP.reroutes.find(x=>x.id===id);if(!r)return
  panel(`<div class="dh"><button class="x">×</button><span class="chip ok">Reroute opportunity</span> <span class="chip st">${esc(r.seg)}</span><h3>${esc(r.id)}: ${esc(r.title)}</h3><div class="note">Conceptual alignment – not surveyed · confidence ${esc(r.conf)}</div></div>
  <div class="dc">${r.focus?`<p><button type="button" id="reroute-focus">${esc(r.focus.label)}</button></p>`:''}
  ${r.map?`<div class="thumbs"><img style="width:100%;height:auto" src="${r.map}" alt="${esc(r.title)}"></div>`:''}
- <h5>Length</h5><p>RFP stretch ${r.rfp_ft?fmt(r.rfp_ft)+' ft':'–'} → alternative ${r.alt_ft?fmt(r.alt_ft)+' ft':'–'} ${d!=null?`(<b>${d>0?'+':''}${fmt(d)} ft</b>)`:''}</p>
+ <h5>Length</h5><p>${d!=null?`RFP stretch ${fmt(r.rfp_ft)} ft → alternative ${fmt(r.alt_ft)} ft (<b>${d>0?'+':''}${fmt(d)} ft</b>)`:'Compare footage after confirming common tie-ins.'}</p>
  <h5>Benefit</h5><p>${esc(r.benefit)}</p><h5>Authorities removed</h5><p>${esc(Array.isArray(r.removed)?r.removed.join('; '):r.removed)}</p><h5>Authorities added</h5><p>${esc(Array.isArray(r.added)?r.added.join('; '):r.added)}</p><h5>Risks / unknowns</h5><p>${esc(Array.isArray(r.risks)?r.risks.join('; '):r.risks)}</p>${r.notes?`<h5>Full write-up (street by street, evidence, sources)</h5><div class="notes">${r.notes}</div>`:''}</div>`);
  if(r.focus)$('#reroute-focus').onclick=()=>map.setView(r.focus.point,16.5,{animate:false});
 }
@@ -250,7 +251,7 @@ const LAYERS=[['Jurisdiction: counties / ODOT & IDOT districts',L_counties,true,
    label + ' (' + WATER_CROSSINGS.filter(crossing=>crossing.review.classification===type).length + ')',
    waterLayers[type], type!=='retired', color
  ]),
- ['Reroute alternatives (conceptual)',L_rr,true,'#82c91e'],['RFP stretches replaced by reroutes (red band)',L_rfp,true,'#fa5252'],['Aerial review crops (85 NAIP)',L_img,false,'#3b4a5c'],['Screening leads: structures and unresolved locations',L_lead,false,'#868e96'],['Planned construction (C)',L_con,true,'#ad4300']];
+ ['Reroute alternatives (conceptual)',L_rr,true,'#82c91e'],['Base route for reroute comparison (red band)',L_rfp,true,'#fa5252'],['Aerial review crops (85 NAIP)',L_img,false,'#3b4a5c'],['Screening leads: structures and unresolved locations',L_lead,false,'#868e96'],['Construction and permit risks (C)',L_con,true,'#ad4300']];
 $('#layers').innerHTML=LAYERS.map((l,i)=>`<div class="row"><input type="checkbox" id="ly${i}" ${l[2]?'checked':''}><span class="sw" style="background:${l[3]}"></span><label for="ly${i}" ${l[1]===waterLayers.retired?'data-water-retired':''}>${l[0]}</label></div>`).join('');
 LAYERS.forEach((l,i)=>{const cb=$('#ly'+i);const f=()=>cb.checked?l[1].addTo(map):map.removeLayer(l[1]);cb.onchange=f;f();});
 function setLayerVisibility(layer,visible){

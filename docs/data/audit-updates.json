@@ -1,0 +1,314 @@
+{
+  "reroutes": {
+    "US23-A": {
+      "status": "hold", "rfp_ft": null, "alt_ft": null, "rfp": [], "c": [], "map": null,
+      "benefit": "Hold this US 23 alternative out of bid comparisons. Its comparison lines use different endpoints.",
+      "notes": "<p>The displayed baseline measured about 19,025 ft while the earlier estimate used 27,358 ft. The ends were about 3,400–3,600 ft apart. Rebuild the comparison from common tie-ins and check the CSX and Norfolk Southern corridors at East Orange, the additional mapped rail hit, drainage and recorded ROW.</p>"
+    },
+    "US23-B": {
+      "status": "hold", "rfp_ft": null, "alt_ft": null, "rfp": [], "c": [], "map": null,
+      "benefit": "Hold this US 23 alternative out of bid comparisons until the tie-ins and rail exposure are reconciled.",
+      "notes": "<p>The displayed baseline measured about 19,025 ft while the earlier estimate used 27,358 ft. The ends were about 3,100–3,600 ft apart. Rebuild both lines from common tie-ins and verify the remaining US 23, railroad, water and parcel exposure.</p>"
+    },
+    "S1U-02": {
+      "status": "hold", "title": "Watkins Road at the Nicol Trust parcel", "rfp_ft": null, "alt_ft": null, "rfp": [], "c": [], "map": null,
+      "benefit": "Keep the private-easement allowance pending recorded Watkins Road limits and an approved fiber work area.",
+      "notes": "<p>The tax parcel straddles the road. The prior exhibit also stitched several separate sections into one comparison line. Use the county road record, recorded instruments and field survey to locate the right of way and confirm utility placement before redrawing this option.</p><p><a href='https://www.unioncountyohio.gov/media/Officials/Engineer/road-bridge/workwithinrwrequirements_2026_04_01.pdf'>Union County utility ROW requirements</a></p>"
+    },
+    "S0-OPP-3": {
+      "rfp_ft": null, "alt_ft": null, "rfp": [], "map": null,
+      "benefit": "Study a short shift south toward Morse Road to avoid mapped park parcels. Survey the tie-ins and road rights before estimating the change in length.",
+      "removed": ["Possible Columbus park-property instrument if all work fits within recorded road ROW"],
+      "added": ["No additional issuer identified at desktop stage. Road, bridge and water reviews remain."],
+      "notes": "<p>The older drawing used different endpoints, about 11–14 ft apart. Hold the mileage comparison until both lines use the same surveyed tie-ins. Check bridge foundations, floodway limits and legal bore-pit and staging access.</p><p><a href='water.html#S0-W09'>Alum Creek crossing evidence and fallback</a></p>"
+    },
+    "S1D-01": {
+      "benefit": "The Home Road overpass concept could shorten the route by about 11,600 ft and avoid the Rutherford loop. Check required service connections and obtain County and CSX direction before choosing it.",
+      "removed": ["Candidate reduction in the Liberty, Rutherford and Sawmill route and permit footprint. Confirm service tie-ins and municipal limits."],
+      "added": ["Delaware County Engineer and CSX review of the grade-separated crossing, plus applicable ROW and construction approvals."],
+      "notes": "<p>The drawing measures about 16,849 ft on the base route and 5,228 ft on the alternative. The drawn endpoints differ by about 9 ft at each tie. Use the same surveyed endpoints for design. Confirm utility accommodation on the overpass and what CSX requires before assuming a railroad approval or fee is avoided.</p><p><a href='https://engineer.co.delaware.oh.us/projects/homeroadcsx/'>Delaware County overpass record</a></p>"
+    },
+    "S1D-02": {
+      "removed": ["A bridge option could reduce in-water disturbance. Columbus property, approach rights and environmental reviews depend on design."],
+      "added": ["Delaware County Structures and Commissioners review, Columbus watershed and property review, and applicable environmental review."],
+      "notes": "<p>Start with the bridge record and attachment review. Confirm capacity, available duct and use rights, both approach work areas, and the agencies that must review the full footprint. Keep an engineered directional bore as a fallback.</p><p><a href='water.html#S1-W08'>Reservoir crossing record and agreement</a></p>"
+    },
+    "S1D-03": {
+      "benefit": "An approximately 248-ft longer alignment follows the realigned Home Road corridor. It could avoid a private field easement if the recorded road rights cover all proposed work.",
+      "removed": ["Potential private easement reduction. Recorded rights still need verification."],
+      "added": ["Delaware County work limits and ODOT District 6 review at US 23, as applicable."],
+      "notes": "<p>Confirm the recorded road instrument on the Home High parcel, the west tie-in, and the effect of future interchange plans before choosing this alignment.</p>"
+    },
+    "S1D-04": {
+      "removed": ["A bridge attachment could reduce in-water disturbance. Confirm scenic-river, federal, state and local review with the final footprint."],
+      "added": ["Delaware County bridge attachment review and ODOT District 6 coordination at SR 315, as applicable."],
+      "notes": "<p>Compare an attachment with a separate directional bore at Home Road. Get bridge plans and confirm channel, foundations, dry pit access and the SR 315 interface. Seek a site-specific Corps and ODNR determination.</p><p><a href='water.html#S1-W01'>Olentangy crossing evidence and fallback</a></p>"
+    }
+  },
+  "risks": {
+    "R020": {
+      "title": "US 23 longitudinal state-road screen",
+      "detail": "The road screen identifies roughly 18,400 ft near US 23. Recorded state ROW and access-control limits, including the proposed pits and staging, still need verification.",
+      "action": "Obtain District 6 direction and controlling ROW plans. Keep the two US 23 alternates on hold for a common-tie comparison and rail review."
+    },
+    "R021": {
+      "title": "I-71 / SR 161 interchange and road-work risk",
+      "detail": "Route sampling flags SR 161 and nearby ramps and structures. Confirm state access-control and structure limits alongside Columbus road work before fixing pits or occupancy.",
+      "action": "Review the district and city work limits. The Morse–Sinclair–Huntley option reduces longitudinal exposure but still crosses the interchange."
+    },
+    "R025": {
+      "title": "US 33 / US 36 interchange at Marysville",
+      "detail": "The road inventory flags US 36, US 33 and several ramps near the route. Candidate lengths come from a road proximity screen and do not establish legal occupancy or the number of controlled-access crossings."
+    },
+    "R026": {
+      "title": "Arlington Heights Road: two IDOT District 1 screening intervals",
+      "detail": "The sampled IDOT road intervals are 7,430–8,360 ft and 8,560–9,230 ft, totaling about 1,600 ft. Bennett Road separates them. Confirm the actual ROW and apply the IDOT District 1 winter requirements to the proposed work."
+    },
+    "R027": {
+      "detail": "Taxes and parcel geometry put part of the reference line on parcels crossing the road. Road and easement records determine the legal width and approved utility area.",
+      "action": "Confirm recorded road and easement limits before pricing private rights or setting pits."
+    },
+    "R029": {
+      "title": "Watkins Road: recorded ROW and utility placement still open",
+      "detail": "The Nicol Trust tax parcel straddles the road. The road centerline and parcel map cannot establish a 60-ft legal width or permissible utility placement.",
+      "action": "Check the county road record, Recorder documents and surveyed work limits. Keep easement exposure in the estimate until the controlling rights are documented."
+    },
+    "R033": {
+      "title": "Pavement-cut restrictions and utility work windows",
+      "detail": "Columbus generally restricts new pavement openings for three years and openings on Special Improved Streets for five. Check the applicable rules and paving dates with each road owner.",
+      "action": "Confirm street-specific restrictions, trenchless options and restoration rules. Ask Licking County and Jersey Township to confirm any seasonal work restriction."
+    },
+    "R034": {
+      "title": "Permit fees and financial security by authority",
+      "detail": "Liberty Township lists security by work type. Powell's tier depends on total provider occupancy in city ROW. Union County publishes different security provisions for qualifying work. Cook County security depends on the applicant and permit.",
+      "action": "Verify applicable quantities, categories, bond provisions and current fees with each issuer before pricing."
+    }
+  },
+  "construction": {
+    "SEG0C-01": {
+      "start": "Early 2027 in the city fact sheet. A later City Council record targets March 1, 2027 for clearing ROW acquisitions.",
+      "end": "Early 2029 estimate, subject to funding and weather",
+      "permit_effect": "New drainage, utilities and traffic staging could restrict installation access. Exact project limits and work windows need city confirmation.",
+      "action": "Confirm current acquisition, utility relocations and staging with the city. Compare a coordinated Sancus work window with a documented bypass.",
+      "source_url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/design-and-construction/fact-sheet-files/design/sancus-blvd-widening-wortington-woods-blvd-to-lazelle-rd.pdf ; https://columbus.legistar.com/LegislationDetail.aspx?GUID=FCB9CF2C-0013-4037-8FDD-52537202FE1E&ID=8207997",
+      "source_date": "Checked November 24, 2026"
+    },
+    "SEG0C-03": {
+      "start": "Schedule table: early 2029. Overview: 2028.",
+      "end": "Late 2030 estimate in the schedule table",
+      "action": "Confirm the current start and work limits with Columbus and ODOT. Compare signals, storm sewer and lane restrictions with the proposed bore and pits.",
+      "source_url": "https://publicinput.com/j17668",
+      "source_date": "Checked November 24, 2026"
+    },
+    "SEG0C-05": {
+      "status": "Standing rule",
+      "permit_effect": "The city generally restricts opening new pavement for three years and hard surfaces on Special Improved Streets for five. Verify the affected street, completion date, and whether required access can fit a no-cut installation.",
+      "source_url": "https://columbus.legistar.com/LegislationDetail.aspx?FullText=1&GUID=3522B4CF-33A3-4278-A9E9-EED1F2325E6E&ID=7480234",
+      "source_date": "Effective July 21, 2025"
+    },
+    "SEG0C-10": {
+      "source_url": "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/design-and-construction/fact-sheet-files/design/hamilton-rd-widening-sr-161-to-central-college-rd.pdf",
+      "start": "Summer 2026 estimate in city fact sheet",
+      "end": "Late 2028 estimate, subject to funding and weather"
+    },
+    "SEG0DEL-04": {
+      "status": "Published planning window",
+      "start": "2027 estimate",
+      "end": "2029 estimate",
+      "what": "County Guide project 17 shows a proposed $18 million Home Road extension bridge over CSX and Norfolk Southern near Evans Farm. This is a separate project from the existing Liberty Township Home Road overpass.",
+      "permit_effect": "Potential conflict for options near the extension. Check project limits and work windows before assigning a route constraint.",
+      "action": "Confirm the current letting, project status and limits with Delaware County. The same project is also listed as SEG1D-05.",
+      "source_url": "https://engineer.co.delaware.oh.us/wp-content/uploads/sites/12/2026/03/2026_RCG_2026.03.30.pdf",
+      "source_date": "March 30, 2026 county guide"
+    },
+    "SEG1D-05": {
+      "status": "Published planning window",
+      "start": "2027 estimate",
+      "end": "2029 estimate",
+      "what": "County Guide project 17 shows a proposed $18 million Home Road extension bridge over CSX and Norfolk Southern near Evans Farm. The Liberty Township overpass is an existing, separate structure.",
+      "permit_effect": "Potential coordination near the extension. Actual fiber work-area overlap needs a plan check.",
+      "action": "Confirm the current letting and limits. This is the same project as SEG0DEL-04.",
+      "source_url": "https://engineer.co.delaware.oh.us/wp-content/uploads/sites/12/2026/03/2026_RCG_2026.03.30.pdf",
+      "source_date": "March 30, 2026 county guide"
+    },
+    "SEG1D-02": {
+      "source_url": "https://cbuswater.com/faqs/",
+      "source_date": "Checked November 24, 2026",
+      "action": "Get Columbus Water & Power's access plans and work limits. Coordinate the separate County Home Road/SR 745 roundabout under SEG1D-08."
+    },
+    "SEG1U-04": {
+      "status": "Planning",
+      "start": "2027 construction target in the city's strategic plan",
+      "end": "Current completion date to confirm",
+      "source_url": "https://marysvilleohio.org/DocumentCenter/View/7125/Strategic-Plan-Updates---October-2025?bidId=",
+      "source_date": "October 2025 City Council work session"
+    },
+    "SPURS-01": {
+      "status": "Construction updates published",
+      "start": "May 1, 2026. Village reports rail casing work May 8 and 15 and water-main work through September 11.",
+      "end": "December 1, 2026 estimated completion. Confirm field status.",
+      "what": "Elk Grove Village reports approximately 8,125 ft of water main and 340 ft of steel casing at four Nicholas Boulevard crossings and one Touhy Avenue crossing.",
+      "permit_effect": "Check active work, restoration and staging with the Village. Installed water-main casing has no established telecom availability or reuse rights.",
+      "action": "Get the current work limits and casing as-builts. Confirm independent fiber bore clearance or written rights and capacity for any proposed reuse.",
+      "source_date": "Village updates through September 11, 2026"
+    },
+    "SPURS-02": {
+      "status": "Published planning window",
+      "start": "2027 in the Village newsletter",
+      "end": "Current completion date to confirm",
+      "road": "Oakton Street, Arlington Heights Road to Shadywood Lane",
+      "station": "Potentially affected Oakton frontage. Confirm station limits from the current plans.",
+      "permit_effect": "Check installation access, pavement timing and the path work limits before carrying a restriction.",
+      "source_url": "https://www.elkgrove.org/home/showpublisheddocument/15492/638949292500030000",
+      "source_date": "Village newsletter, checked November 24, 2026"
+    },
+    "SPURS-09": {
+      "status": "Standing rule"
+    },
+    "SPURS-10": {
+      "status": "Standing rule",
+      "what": "The District 1 utility guide identifies a November 1 to April 15 winter window with restrictions on pavement cuts, observation holes and traveled-way impacts.",
+      "permit_effect": "Check the actual bore, pit and traffic-control footprint against the guide and the issued permit. Obtain district direction on any exception.",
+      "action": "Confirm the applicable work window and notice requirements with IDOT District 1.",
+      "source_url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/doing-business/memorandums-and-letters/permits/district-1-utility-permit-guide.pdf",
+      "source_date": "District 1 guide, checked November 24, 2026"
+    }
+  },
+  "jdx": {
+    "J01": {
+      "bottom_line": "Ohio law requires proof of a lease, easement or license before issuance of a state telecom occupancy permit. Confirm the controlling ODOT policy, Central Office referral and state work limits before assigning any additional review."
+    },
+    "J08": {
+      "bottom_line": "Columbus is a primary Segment 0 permit lead. About 80,400 ft falls within the municipal geography screen. Confirm road, bridge and ODOT interfaces by station. Apply the July 2025 Chapter 903 rules to the actual work.",
+      "fees": {
+        "value": "The July 21, 2025 Chapter 903 rules list a $120 application fee, $250 inspection fee, $90/hour repeat inspection and $60 reissue. Deposits, overtime and other charges depend on the work.",
+        "status": "published",
+        "source_url": "https://columbus.legistar.com/LegislationDetail.aspx?FullText=1&GUID=3522B4CF-33A3-4278-A9E9-EED1F2325E6E&ID=7480234"
+      },
+      "known_conflicts": ["City and District 6 should confirm their respective roles at state routes, bridges and access-controlled approaches. Check permit type and work limits before applying any published review period."],
+      "corrections_to_earlier_matrix": ["The July 2025 Chapter 903 filing supersedes the old fee schedule. Confirm applicable deposits and other project-specific costs with the City."],
+      "confidence_note": "Use the July 2025 filing for fee and pavement provisions. Exact controller, work windows and permit conditions require parcel and road review."
+    },
+    "J18": {
+      "segments": ["Segment 0", "Segment 1"],
+      "corrections_to_earlier_matrix": ["The 16-calendar-day provision in ORC 3781.28(A) concerns the time between notification and commencement. Confirm progressive work, re-marking and maintenance of marks. Use JULIE for Illinois work."],
+      "known_conflicts": ["Confirm the large-project notification and marking plan under ORC 3781.28 for work advancing in phases."]
+    },
+    "J19": {
+      "name": "U.S. Army Corps of Engineers, Huntington District — regulatory review lead",
+      "bottom_line": "Confirm the applicable Corps district and Section 10 and Section 404 triggers at each site. Use the final 2026 nationwide permits and applicable final regional conditions. The time for a complete pre-construction notification under General Condition 32 is subject to exceptions.",
+      "timeline": {
+        "value": "General Condition 32 generally allows 30 calendar days for a completeness determination and 45 calendar days from complete notification for a response, subject to exceptions.",
+        "note": "This is a notification procedure. Verify the required authorization and applicable exceptions before scheduling field work.",
+        "status": "published",
+        "source_url": "https://www.federalregister.gov/documents/2026/01/08/2026-00121/reissuance-and-modification-of-nationwide-permits"
+      },
+      "restrictions": [
+        {"rule": "Site and method review", "detail": "Confirm applicable Section 10 and Section 404 authorization, pre-construction notification, final regional conditions, species and historic resources, and any site-specific work window.", "source_url": "https://www.lrd.usace.army.mil/Missions/Regulatory/Ohio/", "status": "verify"}
+      ],
+      "other_timelines": [
+        {"item": "2026 nationwide permits", "value": "Effective March 15, 2026. Confirm current permit, regional conditions and notification exceptions with the applicable Corps office.", "status": "published", "source_url": "https://www.federalregister.gov/documents/2026/01/08/2026-00121/reissuance-and-modification-of-nationwide-permits"}
+      ],
+      "known_conflicts": ["Confirm the regulatory district and applicable regional conditions at each crossing on the Corps Ohio contacts page."],
+      "corrections_to_earlier_matrix": ["Use final 2026 conditions for site-specific notification, in-water work windows and environmental review."]
+    },
+    "J24": {
+      "fees": {
+        "value": "The 2026 schedule lists $1,000 for provider registration and $5,000/year under ten miles of provider-occupied city ROW or $10,000/year at ten miles or more, subject to exemptions. Construction fees start at $100 plus applicable review. Citywide provider mileage and permit class determine the actual fee.",
+        "status": "published",
+        "source_url": "https://www.cityofpowell.us/files/assets/city/v/1/finance/documents/2026-fee-schedule_to-publish.pdf"
+      }
+    },
+    "J35": {
+      "bottom_line": "Check Forest Preserve land and access only where the designed work footprint intersects preserve property. Affected property rights and any board approval require written confirmation.",
+      "route_exposure": "The Chicago land screen includes about 38,895 ft mapped ROW, 9,785 ft private-classified and 445 ft unparceled. These are desktop categories. Check preserve boundaries, recorded rights and staging at individual sites.",
+      "known_conflicts": ["Check recorded preserve boundaries and the full proposed work footprint before confirming whether a license or approval applies."],
+      "corrections_to_earlier_matrix": ["Mapped, privately classified and unparceled frontage are reported separately in the engineering report."],
+      "confidence_note": "The land classes are screening estimates. The survey and recorded property documents control."
+    },
+    "J36": {
+      "timeline": {
+        "value": "Elk Grove Village Code §8-7-9-5 sets different notice, response and review provisions based on the applicant and authorization.",
+        "status": "published",
+        "source_url": "https://codelibrary.amlegal.com/codes/elkgrovevillageil/latest/elkgrovevillage_il/0-0-0-6858"
+      },
+      "fees": {
+        "value": "Elk Grove Village Code §8-7-9-4 lists a $1,500 application fee, subject to exceptions. The electric utility manual's longitudinal duct-package charge requires Village confirmation for telecom. Confirm the applicant classification and any agreement before carrying a fee.",
+        "status": "published",
+        "source_url": "https://codelibrary.amlegal.com/codes/elkgrovevillageil/latest/elkgrovevillage_il/0-0-0-6645"
+      }
+    },
+    "J38": {
+      "bottom_line": "Chicago Junction Railway operates the Centex industrial park and leases it from UP. Coordinate CJR access, locates and field protection separately from UP property authorization.",
+      "route_exposure": "Six mapped rail intersections. FRA road crossing IDs are locators. Confirm legal ROW, track profile, construction limits and applicable agreements at each site."
+    },
+    "J39": {
+      "bottom_line": "UP is the property-rights lead for the Centex industrial park and CJR is the operator. UP publishes about 30–45 days for agreement processing. Verify title and signatory at each site and arrange field access separately.",
+      "route_exposure": "The original route maps to six rail intersections. Confirm current railroad property limits, grade and crossing or encroachment treatment before pricing."
+    },
+    "J40": {
+      "bottom_line": "Apply the published Illinois statewide and regional floodway criteria to the selected method and actual work footprint. Salt Creek is an open-channel case. Two Chicago drainage locations are tracked separately.",
+      "restrictions": [
+        {"rule": "Statewide Permit 8 and regional applicability", "detail": "Read the directional-bore clause separately from the restrictions for other installation methods. Confirm Part 3708, any Regional Permit 3 conditions, and local floodplain review for the actual work area.", "source_url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/waterresources/documents/resmanstatewidepermit8.pdf", "status": "verify"}
+      ],
+      "known_conflicts": ["Confirm Statewide Permit 8 and any Regional Permit 3 requirements against method, floodway limits and local regulations."],
+      "corrections_to_earlier_matrix": ["Use the Illinois statewide and regional criteria applicable to the actual footprint and method."]
+    },
+    "J46": {
+      "route_exposure": "Salt Creek and the Chicago drainage locations need a footprint and local floodplain check. Official geographic overlay puts approximately 47,435 ft in Cook County, while the Elk Grove road-issuer screen is about 31,680 ft. Neither measurement establishes MWRD permit coverage."
+    }
+  },
+  "new_construction": [
+    {
+      "id": "SEG1D-08", "title": "County Home Road / SR 745 roundabout", "road": "Home Road at Dublin Road (SR 745)", "place": "Delaware County",
+      "features": ["S1-S034-Bore"], "ll": null, "agency": "Delaware County Engineer",
+      "type": "intersection", "status": "Published planning window", "severity": "High", "confidence": "Schedule published, overlap to verify",
+      "segkey": "seg1_delaware", "seg": "Segment 1 – Delaware Co. / Powell",
+      "start": "ROW 2026–27, utility relocations 2027–28", "end": "Construction shown in 2028",
+      "what": "County project to replace the intersection with a single-lane roundabout. Separate from water plant access work.",
+      "permit_effect": "Check the approach work, new utilities and staging against the fiber path near the reservoir.",
+      "action": "Obtain the county project plans and confirm the fiber offset and installation window.",
+      "source_url": "https://engineer.co.delaware.oh.us/home-road-sr-745-intersection-improvements/", "source_date": "Checked November 24, 2026"
+    },
+    {
+      "id": "SEG1U-08", "title": "Scottslawn to US 42 water main extension", "road": "Scottslawn Road / US 42 corridor", "place": "Marysville / Union County",
+      "features": [], "ll": null, "agency": "City of Marysville",
+      "type": "utility", "status": "Planning", "severity": "Medium", "confidence": "Project published, overlap to verify",
+      "segkey": "seg1_union", "seg": "Segment 1 – Union Co. / Marysville",
+      "start": "Late 2027 or early 2028, subject to contractor selection", "end": "City estimates approximately 1.5–2 years of construction",
+      "what": "The program adds water capacity and connects toward a future Watkins Road facility. Much of the work is expected outside road ROW.",
+      "permit_effect": "Potential utility, access and easement coordination. Compare exact footprints before assigning a conflict.",
+      "action": "Request the latest city design and screen the work against the reference alignment and stage areas.",
+      "source_url": "https://www.marysvilleohio.org/803/Scottslawn-To-US-42-Water-Main-Extension", "source_date": "Checked November 24, 2026"
+    },
+    {
+      "id": "SPURS-11", "title": "Arlington Heights Road pedestrian bridge at Busse Woods", "road": "Arlington Heights Road south of Higgins Road", "place": "Elk Grove Village",
+      "features": ["Spur1-S01-Bore"], "ll": null, "agency": "Village of Elk Grove Village",
+      "type": "pedestrian bridge", "status": "Construction updates published", "severity": "Medium", "confidence": "Project published, overlap to verify",
+      "segkey": "spurs", "seg": "Chicago spurs",
+      "start": "", "end": "Confirm remaining work and restoration with the Village",
+      "what": "Pedestrian bridge project connects The Vue development to Busse Woods. The Village reports railing installation in its August 2026 update.",
+      "permit_effect": "Bridge approaches, retaining walls, lighting and traffic staging may constrain the fiber work area.",
+      "action": "Check the bridge plans and closeout status against the route and bore pits.",
+      "source_url": "https://www.elkgrove.org/government/public-works-department/village-construction-projects/arlington-heights-road-pedestrian-bridge", "source_date": "Checked November 24, 2026"
+    }
+  ],
+  "parcel_notes": {
+    "In ROW": ["Mapped, presumed or unparceled", "Combined screening classes. Confirm legal ROW and property rights separately."],
+    "KMZ centerline length (ft)": ["Sampled centerline footage (ft)", "5-ft road and parcel sampling totals. Use the original route geometry for full length."],
+    "Unparceled (presumed public ROW / water / rail)": ["Unparceled (may include road, water or rail)", null]
+  },
+  "open_items": {
+    "10": {"why": "Confirm Village-controlled road footage and applicant-specific fee and security terms"},
+    "12": {"why": "The original Segment 0 and Segment 1 endpoints are roughly 102 ft apart. Confirm the intended tie and any connecting scope."}
+  },
+  "source_replacements": {
+    "https://www.transportation.ohio.gov/business/permits/row-permits": "https://www.transportation.ohio.gov/travel/maintenance/right-of-way",
+    "https://www.columbus.gov/files/sharedassets/city/v/1/public-service/right-of-way-permit/903-rules-and-regulations.pdf": "https://columbus.legistar.com/LegislationDetail.aspx?FullText=1&GUID=3522B4CF-33A3-4278-A9E9-EED1F2325E6E&ID=7480234",
+    "https://www.franklincountyengineer.org/utilities-department/": "https://franklincountyengineer.org/permits/"
+  },
+  "rail_locator_ids": {
+    "6839.1": "174076L", "12634.1": "174062D", "14864.1": "174061W",
+    "15519.1": "174059V", "16255.2": "174057G", "5839.8": "174080B"
+  }
+}

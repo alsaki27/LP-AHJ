@@ -12,6 +12,7 @@ window.SEGS={Segment0:'Segment 0',Segment1:'Segment 1',Spurs:'Chicago spurs'};
 window.CLS_COL={'State DOT':'#c0262d','State DOT (limited access)':'#7b0f16','State route in city':'#e8590c','County':'#1f6feb','County-numbered, in city':'#7048e8','County-numbered road, city maintains':'#7048e8','County-numbered road, shared / unresolved':'#e03131','Municipal street':'#2a8f5c','Township':'#a0762c','Off-road / no public road':'#888'};
 window.LAND_COL={'Mapped / presumptive public ROW':'#2a8f5c','Private parcel':'#d6336c','Public-owner parcel':'#1098ad','Parcel (owner not published)':'#e8a317','Unparceled (public ROW / water / rail)':'#868e96'};
 window.SEV_COL={Critical:'#c0262d',High:'#e07b00',Medium:'#c9a400'};
+window.rerouteStatus = route => ({withdrawn:'Withdrawn',hold:'On hold'})[route.status];
 window.railCrossingNote = (note, expanded = false) => {
   if (!note) return '';
   const checks = note.checks.map(({label, text}) => `<li><strong>${esc(label)}.</strong> ${esc(text)}</li>`).join('');

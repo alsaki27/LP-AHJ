@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Director Brief | LP-AHJ Atlas</title>
 <script>
-  if (/^#(?:risk|img|rr|water)=/.test(location.hash)) {
+  if (/^#(?:risk|img|rr|water|construction)=/.test(location.hash)) {
     location.replace('map.html' + location.search + location.hash);
   }
 </script>
@@ -25,6 +25,8 @@
     </div>
     <div class="brief-actions"><button type="button" id="print-brief">Print one-page brief</button></div>
   </header>
+
+  <p class="note brief-screen-only">See the <a href="construction.html">construction register</a> for published work windows and pavement rules. <a href="report.html#rrs">Reroutes on hold</a> need comparable tie-ins or documented road rights before pricing.</p>
   <section aria-labelledby="decision-title">
     <h2 id="decision-title">Decisions to make first</h2>
     <div id="brief-decisions" class="brief-decisions"></div>
