@@ -45,6 +45,25 @@
     <h2 id="site-proof-title">Evidence behind the priority decisions</h2>
     <div id="decision-proof-list"></div>
   </section>
+  <section aria-labelledby="devon-proof-title">
+    <h2 id="devon-proof-title">Chicago drainage follow-up</h2>
+    <article class="decision-proof" id="proof-CHI-W01" tabindex="-1">
+      <p class="brief-ref">Chicago spurs · CHI-W01 · Spur1-S01-Bore · 1,615.4 ft</p>
+      <h3>Devon Avenue at Arlington Heights Road</h3>
+      <p>Treat this as a buried drainage conflict within the road bore. Obtain record plans and verify clearance at the actual culvert before setting the bore profile.</p>
+      <div class="brief-record-links"><a href="water.html#CHI-W01">Crossing card</a> <a href="map.html#water=CHI-W01">Map</a></div>
+      <h4>Where the marker came from</h4>
+      <p>Illinois EPA flowline 18369 (NHD 109975692, intermittent) intersects the proposed route at 41.99238888, −88.00291791. This is about 95 ft south-southeast of DuPage County’s road intersection point at 41.99262224, −88.00307425. It is a hydrography intersection with the drawn route. The GIS angle and station describe that point.</p>
+      <p class="water-links"><a href="https://geoservices.epa.illinois.gov/arcgis/rest/services/Environmental/WaterFeatures/MapServer/2" target="_blank" rel="noopener">Illinois EPA flowline layer</a> · <a href="https://gis.dupageco.org/arcgis/rest/services/DPMS_STREET_INTERSECTION_SERVICE/MapServer/0/query?objectIds=21219&amp;outFields=OBJECTID,STREET_INTERSECTION&amp;outSR=4326&amp;f=pjson" target="_blank" rel="noopener">DuPage intersection point 21219</a></p>
+      <h4>What the engineering records show</h4>
+      <ul>
+        <li>IDOT 63055 sheet 32 (May 2008) shows an existing <strong>7 × 12 ft box culvert</strong> beneath Devon through the intersection. The road baselines meet at Devon Sta. 62+42.83 and Arlington Heights Sta. 15+99.38. The sheet shows other storm sewers and utilities nearby. <a href="https://apps.dot.illinois.gov/eplan/desenv/110708/63055-064/Plans/110708-63055-064-094-032-11x17.pdf" target="_blank" rel="noopener">IDOT drainage plan and profile</a></li>
+        <li>The Itasca board packet describes a buried box crossing Arlington Heights Road parallel to Devon and discharging to the Devon Avenue ditch, then Salt Creek. The study’s drop box D12 is about 400 ft west of the intersection. <a href="https://www.itasca.com/AgendaCenter/ViewFile/Agenda/_03182025-1164?packet=true#page=24" target="_blank" rel="noopener">March 2025 packet, PDF pp. 24–26 and 33–34</a></li>
+      </ul>
+      <h4>What still controls the design</h4>
+      <p>DuPage Highway Permits and Itasca Public Works should establish the road and drainage limits. Elk Grove Village was the 2008 stormwater permit applicant and can help locate contract and closeout records. Confirm the box owner, survey its outside envelope and the adjacent utilities, and check the full work area against the ditch, outfall, wetland and flood limits. The Zone X result applies to the GIS point. <a href="https://www.itasca.com/71/Public-Works" target="_blank" rel="noopener">Itasca Public Works</a> · <a href="https://www.elkgrove.org/government/public-works-department" target="_blank" rel="noopener">Elk Grove Village Public Works</a></p>
+    </article>
+  </section>
 </main>
 <script>
 nav('research.html');
@@ -67,7 +86,8 @@ $('#decision-proof-list').innerHTML = directorDecisions.map(decision => {
 function landOnProof() {
   const target = document.getElementById(location.hash.slice(1));
   if (!target?.classList.contains('decision-proof')) return;
-  target.querySelector('.water-evidence').open = true;
+  const evidence = target.querySelector('.water-evidence');
+  if (evidence) evidence.open = true;
   target.focus({preventScroll: true});
   target.scrollIntoView({block: 'start'});
 }

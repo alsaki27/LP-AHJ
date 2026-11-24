@@ -4,14 +4,14 @@ window.WATER_CROSSINGS = [
     "segment": "Spurs",
     "feature": "Spur1-S01-Bore",
     "station": 1615.4,
-    "name": "Devon Avenue drainage near Arlington Heights Road",
-    "priority": "Asset and ROW",
-    "method": "Short trenchless clearance bore after drainage locate.",
-    "blocker": "No confirmed pipe or open channel at the mapped hit. The Devon and Arlington Heights road-leg limits and the dry workspace beside the mapped pond remain unresolved.",
-    "lead": "DuPage DOT Highway Permits for county road work. Itasca Engineering for village ROW or drainage. Ask both to assign the controller using the plan and recorded ROW.",
-    "conditional": "Drainage asset owner for clearance. IDNR and USACE Chicago if the field survey shows regulated water or floodway work. Illinois EPA if the federal authorization and discharge trigger certification.",
-    "submit": "Dimension surveyed drainage and possible pipe inverts, road transition, ROW document 507662, nearby pond/outlet, bore and pit locations, traffic and restoration. Ask for both agencies’ jurisdiction limits in writing.",
-    "fallback": "If the intersection position or pits are rejected, test a short shift along the owner-confirmed road leg. If the line is a pipe, use a separate bore outside its structural envelope. If it is open and the shift still affects the pond, move to a surveyed upland landfall with access rights.",
+    "name": "Devon Avenue storm drainage at Arlington Heights Road",
+    "priority": "Storm sewer screen",
+    "method": "Carry a buried drainage utility conflict within the road bore. IDOT sheet 32 shows an existing 7 × 12 ft box culvert under Devon through the intersection.",
+    "blocker": "The intermittent GIS line hits the route about 95 ft south-southeast of the county’s road intersection point. Its position and angle do not locate the culvert. Current box footprint, elevations, owner clearance and dry workspace remain open.",
+    "lead": "Start with DuPage Highway Permits and Itasca Public Works for road-leg and drainage limits. Include Elk Grove Village Public Works for contract 63055 and resurfacing closeout records. Confirm who maintains the box and who signs the work permit.",
+    "conditional": "Drainage owner approval for clearance. Have DuPage Stormwater screen the complete footprint if it approaches the ditch, outlet, mapped floodplain or wetland. Screen state and federal water permits if the design actually affects regulated resources.",
+    "submit": "Send the crossing plan and profile keyed to IDOT 63055 sheet 32, Devon Sta. 62+42.83 / Arlington Heights Sta. 15+99.38. Obtain record plans and survey the box, adjacent sewers and duct banks, ROW, pits and outfall. Show owner-approved clearance, work limits and traffic control.",
+    "fallback": "Compare an adjusted bore or surveyed shift within approved ROW if the box or utilities block clearance. Keep pits out of the pond and outlet. If controlled access or clearance cannot be secured, carry a short alignment shift along the permitted road leg.",
     "lat": 41.99238888,
     "lon": -88.00291791,
     "evidence": {
@@ -37,6 +37,18 @@ window.WATER_CROSSINGS = [
       "source_layer": "https://geoservices.epa.illinois.gov/arcgis/rest/services/Environmental/WaterFeatures/MapServer/2"
     },
     "sources": [
+      [
+        "Devon drainage investigation",
+        "research.html#proof-CHI-W01"
+      ],
+      [
+        "IDOT 63055 drainage plan and profile, sheet 32",
+        "https://apps.dot.illinois.gov/eplan/desenv/110708/63055-064/Plans/110708-63055-064-094-032-11x17.pdf"
+      ],
+      [
+        "Itasca hydraulic study, March 2025 packet pp. 24–26 and 33–34",
+        "https://www.itasca.com/AgendaCenter/ViewFile/Agenda/_03182025-1164?packet=true#page=24"
+      ],
       [
         "DuPage Highway Permits",
         "https://www.dupagecounty.gov/government/departments/transportation/doing_business/permits/construction_permits.php"

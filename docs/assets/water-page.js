@@ -22,7 +22,8 @@ function crossingCard(crossing) {
     </div><span class="water-priority">${esc(crossing.priority)}</span></header>
     ${waterDecision(crossing)}
     ${waterEvidence(crossing)}
-    <a class="water-map-link" href="${waterMapLink(crossing.id)}">View crossing on map</a>
+    <p class="water-links"><a href="${waterMapLink(crossing.id)}">View crossing on map</a> ·
+    <a href="${esc(streetViewLink(crossing.lat, crossing.lon))}" target="_blank" rel="noopener noreferrer">Google Street View</a></p>
   </article>`;
 }
 

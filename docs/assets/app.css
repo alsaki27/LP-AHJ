@@ -47,6 +47,16 @@ table.t td{border:1px solid var(--line);padding:5px 8px;vertical-align:top}table
 .lead{width:14px;height:14px;border:1.5px solid #5a6b7d;background:#fff;color:#5a6b7d;font:10px/11px Arial;text-align:center;border-radius:2px;transform:rotate(0)}
 .rk.Critical,.rk.High{width:22px;height:22px}
 .map-shell{position:relative;flex:1;display:flex;min-width:0}
+.street-view-control { background:#fff; border:2px solid rgba(0,0,0,.2); border-radius:5px; max-width:158px; }
+.street-view-control button { border:0; border-radius:3px; text-align:left; padding:5px 8px; }
+.street-view-control button[aria-pressed="true"] { background:var(--navy); color:#fff; }
+#street-view-instructions { padding:0 6px 5px; }
+#street-view-instructions p { margin:4px 2px; font-size:12px; }
+.street-view-result { margin:3px 8px 6px; font-size:12px; }
+.street-view-result:not([hidden]) { display:block; }
+.street-view-person { display:grid; place-items:center; background:#fff; border:2px solid var(--navy); border-radius:50%; font-size:20px; box-shadow:0 1px 5px #0004; }
+#map.street-view-picking, #map.street-view-picking .leaflet-interactive { cursor:crosshair; }
+#map.street-view-picking .street-view-person { cursor:grab; }
 @media screen and (max-width:1100px){
   .nav b{margin-right:6px}
   .nav a{padding:6px 8px}

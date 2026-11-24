@@ -9,6 +9,9 @@ ROOT = Path(__file__).resolve().parent / 'data'
 SOURCE_LINKS = {
     'dupage': ('DuPage Highway Permits', 'https://www.dupagecounty.gov/government/departments/transportation/doing_business/permits/construction_permits.php'),
     'itasca': ('Itasca utility plan requirements', 'https://www.itasca.com/DocumentCenter/View/16622/Utility-Permit-projects-Requirmentspdf'),
+    'devonproof': ('Devon drainage investigation', 'research.html#proof-CHI-W01'),
+    'devonplan': ('IDOT 63055 drainage plan and profile, sheet 32', 'https://apps.dot.illinois.gov/eplan/desenv/110708/63055-064/Plans/110708-63055-064-094-032-11x17.pdf'),
+    'devonstudy': ('Itasca hydraulic study, March 2025 packet pp. 24–26 and 33–34', 'https://www.itasca.com/AgendaCenter/ViewFile/Agenda/_03182025-1164?packet=true#page=24'),
     'cook': ('Cook DoTH utility permit intake', 'https://www.cookcountyil.gov/service/constructionmaintenance-permits'),
     'idotbridge': ('IDOT structure inventory', 'https://gis1.dot.illinois.gov/arcgis/rest/services/TrafficSafety/cis_LocationTool2026/MapServer/4'),
     'idnr': ('IDNR waterway permits', 'https://dnr.illinois.gov/waterresources/permitprograms.html'),

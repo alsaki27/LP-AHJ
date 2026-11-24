@@ -1,6 +1,13 @@
 window.$=(s,r)=> (r||document).querySelector(s);window.$$=(s,r)=>[...(r||document).querySelectorAll(s)];
 window.esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 window.fmt=n=>Math.round(n).toLocaleString('en-US');
+window.streetViewLink = (lat, lng) => {
+ const url = new URL('https://www.google.com/maps/@');
+ url.search = new URLSearchParams({
+   api: '1', map_action: 'pano', viewpoint: [lat.toFixed(7), lng.toFixed(7)].join(',')
+ });
+ return url.href;
+};
 window.SEGS={Segment0:'Segment 0',Segment1:'Segment 1',Spurs:'Chicago spurs'};
 window.CLS_COL={'State DOT':'#c0262d','State DOT (limited access)':'#7b0f16','State route in city':'#e8590c','County':'#1f6feb','County-numbered, in city':'#7048e8','County-numbered road, city maintains':'#7048e8','County-numbered road, shared / unresolved':'#e03131','Municipal street':'#2a8f5c','Township':'#a0762c','Off-road / no public road':'#888'};
 window.LAND_COL={'Mapped / presumptive public ROW':'#2a8f5c','Private parcel':'#d6336c','Public-owner parcel':'#1098ad','Parcel (owner not published)':'#e8a317','Unparceled (public ROW / water / rail)':'#868e96'};

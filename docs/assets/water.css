@@ -21,6 +21,7 @@
 .water-links { line-height: 1.6; }
 .water-map-link { display: inline-block; margin-top: 5px; }
 .water-marker { background: #0e7490; color: #fff; border: 2px solid #fff; border-radius: 50%; width: 19px; height: 19px; box-shadow: 0 0 0 1px #0e5267; display: grid; place-items: center; font: bold 10px/1 system-ui, sans-serif; }
+.storm-sewer-marker { background: #945113; box-shadow: 0 0 0 1px #69370d; }
 #detail .water-decision, #detail .water-evidence dl { grid-template-columns: 1fr; }
 @media (max-width: 640px) {
   .water-decision { grid-template-columns: 1fr; }

@@ -2,6 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><title>AHJ atlas – map</title><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="assets/leaflet.css"><link rel="stylesheet" href="assets/app.css"><link rel="stylesheet" href="assets/water.css">
 <script src="data/data.js"></script><script src="data/water.js"></script><script src="assets/config.js"></script><script src="assets/leaflet.js"></script><script src="assets/common.js"></script><script src="assets/water-common.js"></script>
+<script src="assets/street-view.js"></script>
 </head><body>
 <div class="nav" id="nav"></div>
 <div id="app">
@@ -78,16 +79,21 @@ LP.reroutes.forEach(r=>{if(r.c&&r.c.length>1)L.polyline(r.c.map(p=>[p[1],p[0]]),
  if(r.rfp&&r.rfp.length>1)L.polyline(r.rfp.map(p=>[p[1],p[0]]),{pane:'rr',color:'#fa5252',weight:7,opacity:.45}).bindTooltip(r.id+' – RFP stretch replaced',{sticky:true}).addTo(L_rfp);});
 // ---- mapped water crossings ----
 const L_water=L.layerGroup();
-const waterMarkers=WATER_CROSSINGS.map(crossing=>({
-  crossing,
-  marker:L.marker([crossing.lat,crossing.lon],{
+const waterMarkers=WATER_CROSSINGS.map(crossing=>{
+  const drainage = crossing.priority === 'Storm sewer screen';
+  const marker = L.marker([crossing.lat,crossing.lon],{
     title:crossing.id+' · '+crossing.name,
-    alt:'Water crossing '+crossing.id,
-    icon:L.divIcon({className:'',html:'<div class="water-marker">W</div>',iconSize:[19,19]}),
+    alt:(drainage ? 'Drainage utility screen ' : 'Mapped water point ') + crossing.id,
+    icon:L.divIcon({
+      className:'',
+      html:drainage ? '<div class="water-marker storm-sewer-marker">D</div>' : '<div class="water-marker">W</div>',
+      iconSize:[19,19],
+    }),
     zIndexOffset:950
   }).on('click',()=>openWater(crossing.id))
-    .bindTooltip(esc(crossing.id+' · '+crossing.name),{direction:'top'})
-}));
+    .bindTooltip(esc(crossing.id+' · '+crossing.name),{direction:'top'});
+  return { crossing, marker };
+});
 function drawWater(){
   L_water.clearLayers();
   waterMarkers.filter(({crossing})=>inScope(crossing.segment)).forEach(({marker})=>marker.addTo(L_water));
@@ -125,7 +131,8 @@ function openWater(id,fly){
  <span class="chip st">${esc(SEGS[crossing.segment])}</span><h3>${esc(crossing.name)}</h3>
  <div class="note">${esc(crossing.id)} · ${esc(crossing.feature)} · ${waterStation(crossing.station)} ft</div></div>
  <div class="dc">${waterDecision(crossing)}${waterEvidence(crossing)}
- <a href="${waterRegisterLink(id)}">Open in water crossing register</a></div>`);
+ <p class="water-links"><a href="${waterRegisterLink(id)}">Open in water crossing register</a> ·
+ <a href="${esc(streetViewLink(crossing.lat, crossing.lon))}" target="_blank" rel="noopener noreferrer">Google Street View</a></p></div>`);
 }
 function openRisk(id,fly){if(waterByLegacyId.has(id))return openWater(waterByLegacyId.get(id),true);
  const r=LP.risks.concat(LP.leads).find(x=>x.id===id);if(!r)return;const lead=r.id[0]==='L';history.replaceState(null,'','#risk='+id);if(fly)map.setView([r.ll[1],r.ll[0]],Math.max(map.getZoom(),15),{animate:true});
@@ -148,7 +155,7 @@ function openReroute(id,fly){const r=LP.reroutes.find(x=>x.id===id);history.repl
  <h5>Benefit</h5><p>${esc(r.benefit)}</p><h5>Authorities removed</h5><p>${esc(Array.isArray(r.removed)?r.removed.join('; '):r.removed)}</p><h5>Authorities added</h5><p>${esc(Array.isArray(r.added)?r.added.join('; '):r.added)}</p><h5>Risks / unknowns</h5><p>${esc(Array.isArray(r.risks)?r.risks.join('; '):r.risks)}</p>${r.notes?`<h5>Full write-up (street by street, evidence, sources)</h5><div class="notes">${r.notes}</div>`:''}</div>`);}
 // ---- sidebar controls ----
 const LAYERS=[['Jurisdiction: counties / ODOT & IDOT districts',L_counties,true,'#1971c2'],['Jurisdiction: cities & villages',L_places,true,'#868e96'],['Route (by authority / land)',L_route,true,'#c0262d'],
- ['Risk flags',L_risk,true,'#e07b00'],['Mapped water crossings ('+waterCount()+')',L_water,true,'#0e7490'],['Reroute alternatives (conceptual)',L_rr,true,'#82c91e'],['RFP stretches replaced by reroutes (red band)',L_rfp,true,'#fa5252'],['Aerial review crops (85 NAIP)',L_img,false,'#3b4a5c'],['Screening leads: structures and unresolved locations',L_lead,false,'#868e96'],['Planned construction (C) – click opens Project risks',L_con,true,'#e8590c']];
+ ['Risk flags',L_risk,true,'#e07b00'],['Mapped water and drainage points ('+waterCount()+')',L_water,true,'#0e7490'],['Reroute alternatives (conceptual)',L_rr,true,'#82c91e'],['RFP stretches replaced by reroutes (red band)',L_rfp,true,'#fa5252'],['Aerial review crops (85 NAIP)',L_img,false,'#3b4a5c'],['Screening leads: structures and unresolved locations',L_lead,false,'#868e96'],['Planned construction (C) – click opens Project risks',L_con,true,'#e8590c']];
 $('#layers').innerHTML=LAYERS.map((l,i)=>`<div class="row"><input type="checkbox" id="ly${i}" ${l[2]?'checked':''}><span class="sw" style="background:${l[3]}"></span><label for="ly${i}">${l[0]}</label></div>`).join('');
 LAYERS.forEach((l,i)=>{const cb=$('#ly'+i);const f=()=>cb.checked?l[1].addTo(map):map.removeLayer(l[1]);cb.onchange=f;f();});
 $('#sevs').innerHTML=['Critical','High','Medium'].filter(s=>LP.risks.some(r=>r.sev===s)).map(s=>`<button class="on" data-s="${s}" style="border-left:5px solid ${SEV_COL[s]}">${s}</button>`).join('');
@@ -166,8 +173,9 @@ $('#by-land').onclick=()=>{byAuth=false;$('#by-land').classList.add('on');$('#by
 $('#exp').onclick=()=>csv((window._vis||[]).map(r=>({id:r.id,severity:r.sev,type:r.type,segment:r.seg,feature:r.feature,station:r.station,title:r.title,detail:r.detail,agencies:r.agencies,action:r.action,lat:r.ll[1],lon:r.ll[0],source:r.source})),'lp_risk_flags.csv');
 function legend(){const cols=byAuth?CLS_COL:LAND_COL;const used=new Set((byAuth?LP.route_runs.map(r=>r.cls):LP.land_runs.map(r=>r.cat)));
  $('#legend').innerHTML='<b>Route</b>'+Object.entries(cols).filter(([k])=>used.has(k)).map(([k,c])=>`<div class="row"><span class="sw line" style="background:${c}"></span>${k}</div>`).join('')
- +'<div class="row"><span class="sw line" style="background:#82c91e"></span>Reroute alternative</div><div class="row" style="margin-top:4px"><span class="sw" style="border:2px dashed #1971c2"></span>ODOT D6</div><div class="row"><span class="sw" style="border:2px dashed #f08c00"></span>ODOT D5</div><div class="row"><span class="sw" style="border:2px dashed #2f9e44"></span>IDOT D1</div>'}
+ +'<div class="row"><span class="sw line" style="background:#82c91e"></span>Reroute alternative</div><div class="row" style="margin-top:4px"><span class="sw" style="border:2px dashed #1971c2"></span>ODOT D6</div><div class="row"><span class="sw" style="border:2px dashed #f08c00"></span>ODOT D5</div><div class="row"><span class="sw" style="border:2px dashed #2f9e44"></span>IDOT D1</div><div class="row"><span class="water-marker storm-sewer-marker">D</span> Drainage utility screen</div>'}
 drawRoute();drawRisks();drawWater();map.fitBounds(bounds('All').pad(.05));
 function fromHash(){const h=location.hash.match(/^#(risk|img|rr|water)=(.+)/);if(h){const handlers={risk:openRisk,img:openImage,rr:openReroute,water:openWater};handlers[h[1]](h[2],true)}}fromHash();addEventListener('hashchange',fromHash);
 addBasemaps();
+addStreetViewPicker(map);
 </script></body></html>
